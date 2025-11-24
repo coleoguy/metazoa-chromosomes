@@ -70,6 +70,7 @@ CleanHaploid <- function(df) {
   return(df)
 }
 
+# makes the tree ultrametric
 AdjustTree <- function(tree){
   if (!is.ultrametric(tree)) {
     if (clade %in% plants) {
@@ -89,17 +90,22 @@ AdjustTree <- function(tree){
 ###### End Functions ######
 
 ## ----- SINGLE CLADE RUN -----
-clade <- "solanaceae"   # <-- choose your clade
+# this is the number of generations that our MCMC should run for. If you have
+# trouble running or it takes a long time to run you can change it to a smaller
+# number at least for trying to get your code to work. 
+iter <- 10
+
+
+clade <- "phasmatodea"   # <-- choose your clade (lowercase)
 
 f <- paste0("../data/chrome/", clade, ".csv") # <-- change path as needed
+# For Example if you have your script in the same folder as your data files
+# you would edit the line above to look like this:
+# f <- paste0(clade, ".csv")
 
-print(clade)
-
-# list of plant clades
+# list of plant clades we run this because if you have one of these clades
+# we have to use slightly different functions later.
 plants <- c("asteraceae", "fabaceae", "brassicaceae", "orchidaceae", "lilaceae")
-
-# initialize results list
-results <- list()
 
 # read chromosome data
 dat <- read.csv(f)
@@ -108,12 +114,11 @@ dat <- CleanHaploid(dat)
 # read tree
 tree <- GetTree(clade)
 
-# match tree + data
+# Prune the phylogeny to only those species that you have chromosome data for. 
 if(class(tree) == "phylo"){
   matched <- intersect(tree$tip.label, dat$species)
   tree <- drop.tip(tree, setdiff(tree$tip.label, matched))
 }
-
 if(class(tree) == "multiPhylo"){
   result <- list()
   for(i in 1:length(tree)){
@@ -125,18 +130,17 @@ if(class(tree) == "multiPhylo"){
   class(tree) <- "multiPhylo"
 }
 
-# subset data
+# Prune chromosome data to only those that are present on the phylogeny.
 dat <- dat[dat$species %in% matched, ]
 dat <- dat[, c("species", "haploid")]
 
-# convert to diversitree format
+# convert the chromosome data to ChromePlus format
 mat <- datatoMatrix(x = dat, buffer = 1, hyper = FALSE)
 
-# adjust tree(s)
+# If trees are not ultrametric then we have to make them ultrametric
 if("phylo" %in% class(tree)){
   tree <- AdjustTree(tree)
 }
-
 if("multiPhylo" %in% class(tree)){
   for(j in 1:length(tree)){
     tree[[j]] <- AdjustTree(tree[[j]])
@@ -144,21 +148,23 @@ if("multiPhylo" %in% class(tree)){
   }
 }
 
-# run model(s)
+# Now we make the likelihood function that we will use to estimate rates of 
+# chromosome evolution in each clade.
 if("phylo" %in% class(tree)){
   lik <- make.mkn(tree = tree, states = mat, k=ncol(mat), 
                   strict=FALSE,
                   control=list(method="ode", root=ROOT.OBS))
-  
   conlik <- constrainMkn(data = mat, lik = lik, hyper=FALSE,
                          polyploidy = FALSE, verbose=FALSE)
-  
+  # here you should only see: "asc1", "desc1", "pol1", and "dem1"
+  # some of you may not see either pol1 or dem1 why? Try to have an answer
+  # to this question before coming back to class next week.
   print(argnames(conlik))
   
   res <- mcmc(lik=conlik,
               x.init=runif(length(argnames(conlik))),
               prior=make.prior.exponential(2),
-              nsteps=1000, w=1)
+              nsteps=iter, w=1)
 }
 
 if("multiPhylo" %in% class(tree)){
@@ -176,33 +182,29 @@ if("multiPhylo" %in% class(tree)){
     res[[j]] <- mcmc(lik=conlik,
                      x.init=runif(length(argnames(conlik))),
                      prior=make.prior.exponential(2),
-                     nsteps=1000, w=1)
+                     nsteps=iter, w=1)
   }
 }
 
 ## ----- WRITE OUT RESULTS -----
-
 # single tree results
 if("phylo" %in% class(tree)){
-
   # write csv
   write.csv(as.data.frame(res),
             file = paste0(clade, "_mcmc.csv"),
             row.names = FALSE)
 }
-
 # multiple tree results
 if("multiPhylo" %in% class(tree)){
+  result <- res[[1]]
 
   # loop in the same style as earlier code
-  for(j in 1:length(res)){
-    this <- res[[j]]
-    
-    # skip if NULL (failed run)
-    if(!is.null(this)){
-      write.csv(as.data.frame(this),
-                file = paste0(clade, "_tree", j, ".csv"),
-                row.names = FALSE)
-    }
+  for(j in 2:length(res)){
+    result <- rbind(result, res[[j]])
   }
+  result$tree <- rep(x=1:length(tree), each=iter)
+  write.csv(as.data.frame(result),
+            file = paste0(clade, "_mcmc.csv"),
+            row.names = FALSE)
 }
+
