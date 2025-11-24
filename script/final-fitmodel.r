@@ -93,7 +93,7 @@ AdjustTree <- function(tree){
 # this is the number of generations that our MCMC should run for. If you have
 # trouble running or it takes a long time to run you can change it to a smaller
 # number at least for trying to get your code to work. 
-iter <- 10
+iter <- 1000
 
 
 clade <- "phasmatodea"   # <-- choose your clade (lowercase)
