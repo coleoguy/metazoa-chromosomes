@@ -104,15 +104,18 @@ file_list <- list.files(path = "../data/chrome", pattern = "\\.csv$", full.names
 results <- list()
 
 # iterate through each chrome data file
-for (i in 1:length(file_list)) {
+for (i in 15:length(file_list)) {
   f <- file_list[[i]]
   clade <- tools::file_path_sans_ext(basename(f))  # extract clade name from filename
   print(clade)
+  
   # read chromosome data for this clade
   dat <- read.csv(f)
   dat <- CleanHaploid(dat)
+  
   # read the corresponding tree
   tree <- GetTree(clade)
+  
   # match tree and data by species names
   if(class(tree) == "phylo"){
     matched <- intersect(tree$tip.label, dat$species)
@@ -128,11 +131,14 @@ for (i in 1:length(file_list)) {
     tree <- result
     class(tree) <- "multiPhylo"
   }
+
   # drop non-matching taxa from tree and data
   dat <- dat[dat$species %in% matched, ]
   dat <- dat[, c("species", "haploid")]
+  
   # convert data to matrix format required by diversitree
   mat <- datatoMatrix(x = dat, buffer = 1, hyper = FALSE)
+  
   if("phylo" %in% class(tree)){
     tree <- AdjustTree(tree)
   }
@@ -145,28 +151,32 @@ for (i in 1:length(file_list)) {
   if("phylo" %in% class(tree)){
     lik <- make.mkn(tree = tree, states = mat, k=ncol(mat), 
                     strict=F, control=list(method="ode",root=ROOT.OBS))
+    argnames(lik)
     #  costrain our model to match the dynamics of chromosome evolution
     conlik <- constrainMkn(data = mat, lik = lik, hyper=F,
                            polyploidy = F, verbose=F)
     print(argnames(conlik))
     # run mcmc
-    res <- mcmc(lik=conlik, x.init=runif(length(argnames(conlik))),
-                prior=make.prior.exponential(2), nsteps=1, w=1)
+    # res <- mcmc(lik=conlik, x.init=runif(length(argnames(conlik))),
+    #             prior=make.prior.exponential(2), nsteps=1, w=1)
   }
   if("multiPhylo" %in% class(tree)){
     res <- list()
     for(j in 1:100){
       lik <- make.mkn(tree = tree[[j]], states = mat, k=ncol(mat), 
                       strict=F, control=list(method="ode",root=ROOT.OBS))
+      argnames(lik)
       #  costrain our model to match the dynamics of chromosome evolution
       conlik <- constrainMkn(data = mat, lik = lik, hyper=F,
                              polyploidy = F, verbose=F)
       print(argnames(conlik))
       # run mcmc
-      res[[j]] <- mcmc(lik=conlik, x.init=runif(length(argnames(conlik))),
-                  prior=make.prior.exponential(2), nsteps=1, w=1)
+      # res[[j]] <- mcmc(lik=conlik, x.init=runif(length(argnames(conlik))),
+      #             prior=make.prior.exponential(2), nsteps=1, w=1)
     }
   }
-#  if (!is.null(res)) {
-#    results[[clade]] <- res
+
+  if (!is.null(res)) {
+    results[[clade]] <- res
+  }
 }
