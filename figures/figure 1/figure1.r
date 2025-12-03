@@ -14,7 +14,7 @@ library(viridisLite)
 library(readr)
 
 # ---- 2. Load haploid chromosome data ----
-file_list <- list.files(path = "../data/chrome", pattern = "\\.csv$", full.names = TRUE)
+file_list <- list.files(path = "../../data/chrome", pattern = "\\.csv$", full.names = TRUE)
 
 all_data <- list()
 for (file in file_list) {
@@ -58,7 +58,7 @@ final_df <- dat_clean %>%
   )
 
 # ---- 5b. Add higher classification from CSV ----
-class_df <- read.csv("../data/higher_class.csv", stringsAsFactors = FALSE)
+class_df <- read.csv("higher_class.csv", stringsAsFactors = FALSE)
 class_df <- class_df %>% mutate(Clade = tolower(str_trim(Clade)))
 
 final_df <- final_df %>%
@@ -136,7 +136,7 @@ p_final <- p +
       "Angiosperm" = "#1F968B",
       "Gymnosperms" = "#89C2D9",
       "Pteridophytes" = "#5E4FA2",
-      "Bryophytes" = "#277DA1"
+      "Bryophyta" = "#277DA1"
     )
   ) +
   guides(
