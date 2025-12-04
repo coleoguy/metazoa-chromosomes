@@ -1,0 +1,171 @@
+#NEXUS
+[R-package APE, Wed Dec  3 15:05:26 2025]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX = 79;
+	TAXLABELS
+		aphyosemion_splendopleure
+		aphyosemion_punctulatum
+		aphyosemion_volcanum
+		aphyosemion_loennbergii
+		aphyosemion_malumbresi
+		aphyosemion_melanogaster
+		aphyosemion_kouamense
+		aphyosemion_riggenbachi
+		aphyosemion_bivittatum
+		aphyosemion_lugens
+		aphyosemion_celiae
+		aphyosemion_calliurum
+		aphyosemion_franzwerneri
+		aphyosemion_maculatum
+		aphyosemion_mimbon
+		aphyosemion_cameronense
+		aphyosemion_wildekampi
+		aphyosemion_punctatum
+		aphyosemion_labarrei
+		aphyosemion_ocellatum
+		aphyosemion_coeleste
+		aphyosemion_lamberti
+		aphyosemion_rectogoense
+		aphyosemion_elegans
+		aphyosemion_christyi
+		aphyosemion_congicum
+		aphyosemion_decorsei
+		aphyosemion_cognatum
+		aphyosemion_louessense
+		aphyosemion_ogoense
+		aphyosemion_primigenium
+		aphyosemion_exigoideum
+		aphyosemion_striatum
+		aphyosemion_exiguum
+		aphyosemion_elberti
+		aphyosemion_bualanum
+		aphyosemion_georgiae
+		aphyosemion_cyanostictum
+		nothobranchius_wattersi
+		nothobranchius_kirki
+		nothobranchius_orthonotus
+		nothobranchius_furzeri
+		nothobranchius_rachovii
+		nothobranchius_krysanovi
+		nothobranchius_korthausae
+		nothobranchius_eggersi
+		nothobranchius_polli
+		nothobranchius_kafuensis
+		pronothobranchius_kiyawensis
+		nothobranchius_thierryi
+		nothobranchius_rubroreticulatus
+		fundulopanchax_robertsoni
+		fundulopanchax_walkeri
+		fundulopanchax_sjostedti
+		fundulopanchax_gularis
+		fundulopanchax_fallax
+		fundulopanchax_mirabilis
+		fundulopanchax_ndianus
+		fundulopanchax_oeseri
+		fundulopanchax_scheeli
+		fenerbahce_formosus
+		scriptaphyosemion_guignardi
+		scriptaphyosemion_fredrodi
+		scriptaphyosemion_bertholdi
+		scriptaphyosemion_chaytori
+		scriptaphyosemion_brueningi
+		scriptaphyosemion_liberiense
+		scriptaphyosemion_geryi
+		scriptaphyosemion_roloffi
+		scriptaphyosemion_schmitti
+		archiaphyosemion_guineense
+		epiplatys_maeseni
+		nimbapanchax_viridis
+		epiplatys_bifasciatus
+		epiplatys_roloffi
+		epiplatys_lamottei
+		epiplatys_multifasciatus
+		epiplatys_chaperi
+		epiplatys_singa
+	;
+END;
+BEGIN TREES;
+	TRANSLATE
+		1	aphyosemion_splendopleure,
+		2	aphyosemion_punctulatum,
+		3	aphyosemion_volcanum,
+		4	aphyosemion_loennbergii,
+		5	aphyosemion_malumbresi,
+		6	aphyosemion_melanogaster,
+		7	aphyosemion_kouamense,
+		8	aphyosemion_riggenbachi,
+		9	aphyosemion_bivittatum,
+		10	aphyosemion_lugens,
+		11	aphyosemion_celiae,
+		12	aphyosemion_calliurum,
+		13	aphyosemion_franzwerneri,
+		14	aphyosemion_maculatum,
+		15	aphyosemion_mimbon,
+		16	aphyosemion_cameronense,
+		17	aphyosemion_wildekampi,
+		18	aphyosemion_punctatum,
+		19	aphyosemion_labarrei,
+		20	aphyosemion_ocellatum,
+		21	aphyosemion_coeleste,
+		22	aphyosemion_lamberti,
+		23	aphyosemion_rectogoense,
+		24	aphyosemion_elegans,
+		25	aphyosemion_christyi,
+		26	aphyosemion_congicum,
+		27	aphyosemion_decorsei,
+		28	aphyosemion_cognatum,
+		29	aphyosemion_louessense,
+		30	aphyosemion_ogoense,
+		31	aphyosemion_primigenium,
+		32	aphyosemion_exigoideum,
+		33	aphyosemion_striatum,
+		34	aphyosemion_exiguum,
+		35	aphyosemion_elberti,
+		36	aphyosemion_bualanum,
+		37	aphyosemion_georgiae,
+		38	aphyosemion_cyanostictum,
+		39	nothobranchius_wattersi,
+		40	nothobranchius_kirki,
+		41	nothobranchius_orthonotus,
+		42	nothobranchius_furzeri,
+		43	nothobranchius_rachovii,
+		44	nothobranchius_krysanovi,
+		45	nothobranchius_korthausae,
+		46	nothobranchius_eggersi,
+		47	nothobranchius_polli,
+		48	nothobranchius_kafuensis,
+		49	pronothobranchius_kiyawensis,
+		50	nothobranchius_thierryi,
+		51	nothobranchius_rubroreticulatus,
+		52	fundulopanchax_robertsoni,
+		53	fundulopanchax_walkeri,
+		54	fundulopanchax_sjostedti,
+		55	fundulopanchax_gularis,
+		56	fundulopanchax_fallax,
+		57	fundulopanchax_mirabilis,
+		58	fundulopanchax_ndianus,
+		59	fundulopanchax_oeseri,
+		60	fundulopanchax_scheeli,
+		61	fenerbahce_formosus,
+		62	scriptaphyosemion_guignardi,
+		63	scriptaphyosemion_fredrodi,
+		64	scriptaphyosemion_bertholdi,
+		65	scriptaphyosemion_chaytori,
+		66	scriptaphyosemion_brueningi,
+		67	scriptaphyosemion_liberiense,
+		68	scriptaphyosemion_geryi,
+		69	scriptaphyosemion_roloffi,
+		70	scriptaphyosemion_schmitti,
+		71	archiaphyosemion_guineense,
+		72	epiplatys_maeseni,
+		73	nimbapanchax_viridis,
+		74	epiplatys_bifasciatus,
+		75	epiplatys_roloffi,
+		76	epiplatys_lamottei,
+		77	epiplatys_multifasciatus,
+		78	epiplatys_chaperi,
+		79	epiplatys_singa
+	;
+	TREE * UNTITLED = [&R] ((((((((((((((1:0.845229,2:0.84523):0.68408,3:1.52931):2.396172,4:3.925482):3.708073,((5:3.192542,6:3.192542):3.01667,7:6.209212):1.424343):1.46473,8:9.098284):1.185369,9:10.283653):5.930963,10:16.214616):14.726522,((11:7.042758,12:7.042758):7.656303,13:14.699061):16.242077):4.862917,(((((14:6.284564,15:6.284564):2.576641,16:8.861205):11.551442,((17:11.737183,18:11.737183):7.576213,19:19.313396):1.099251):1.23759,(20:15.61737,21:15.61737):6.032867):1.557604,(((((22:2.307998,23:2.307998):0.834405,24:3.142403):1.226052,25:4.368455):1.42714,26:5.795595):0.999287,(27:3.497322,28:3.497322):3.297559):16.412959):12.596214):2.695345,(((29:9.686781,30:9.686781):19.143943,(31:18.131346,32:18.131346):10.699379):4.735717,33:33.566442):4.932957):7.007955,(((34:5.978896,35:5.978896):0.647842,36:6.626738):36.485269,(37:5.022929,38:5.022929):38.089079):2.395347):5.320538,(((((((((39:3.490689,40:3.490689):19.686256,(41:15.525341,42:15.525341):7.651604):1.78931,(43:10.822107,44:10.822107):14.144148):0.586089,45:25.552344):5.531772,46:31.084116):1.216045,(47:11.734003,48:11.734003):20.566158):6.535339,(49:31.745472,50:31.745472):7.090027):0.187825,51:39.023325):8.135869,(((((52:13.106548,53:13.106548):5.362796,54:18.469344):5.066097,(55:16.676534,56:16.676534):6.858907):2.197022,(57:21.075158,58:21.075158):4.657306):4.538172,(59:5.75027,60:5.75027):24.520366):16.888558):3.668698):6.94854,61:57.776433):15.52545,((((((((62:12.590226,63:12.590226):1.188311,(64:11.50537,65:11.505371):2.273167):3.87974,(66:4.830757,67:4.830757):12.827519):1.315446,(68:13.726355,69:13.726356):5.247367):3.683076,70:22.656799):21.288962,71:43.945761):4.491281,(72:20.997724,73:20.997725):27.439318):4.001916,((((74:2.254464,75:2.254464):26.645253,76:28.899717):4.24605,(77:25.900805,78:25.900805):7.244963):0.824215,79:33.969983):18.468976):20.862923);
+END;

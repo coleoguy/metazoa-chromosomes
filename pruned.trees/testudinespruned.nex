@@ -1,0 +1,257 @@
+#NEXUS
+[R-package APE, Wed Dec  3 15:05:27 2025]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX = 122;
+	TAXLABELS
+		Amyda_cartilaginea
+		Pelodiscus_sinensis
+		Apalone_ferox
+		Apalone_spinifera
+		Apalone_mutica
+		Carettochelys_insculpta
+		Chelonoidis_chilensis
+		Stigmochelys_pardalis
+		Kinixys_belliana
+		Indotestudo_elongata
+		Malacochersus_tornieri
+		Testudo_graeca
+		Testudo_marginata
+		Testudo_hermanni
+		Gopherus_morafkai
+		Gopherus_berlandieri
+		Gopherus_polyphemus
+		Batagur_dhongoka
+		Batagur_borneoensis
+		Batagur_trivittata
+		Pangshura_smithii
+		Pangshura_tecta
+		Malayemys_subtrijuga
+		Siebenrockiella_crassicollis
+		Cuora_amboinensis
+		Cuora_trifasciata
+		Cuora_flavomarginata
+		Cuora_mouhotii
+		Mauremys_mutica
+		Mauremys_rivulata
+		Mauremys_leprosa
+		Mauremys_japonica
+		Mauremys_nigricans
+		Mauremys_reevesii
+		Mauremys_sinensis
+		Geoemyda_spengleri
+		Cyclemys_dentata
+		Heosemys_annandalii
+		Heosemys_grandis
+		Heosemys_spinosa
+		Sacalia_bealei
+		Notochelys_platynota
+		Melanochelys_trijuga
+		Rhinoclemmys_pulcherrima
+		Rhinoclemmys_areolata
+		Rhinoclemmys_punctularia
+		Rhinoclemmys_funerea
+		Rhinoclemmys_melanosterna
+		Rhinoclemmys_rubida
+		Chrysemys_picta
+		Graptemys_barbouri
+		Graptemys_caglei
+		Graptemys_ouachitensis
+		Graptemys_pulchra
+		Graptemys_flavimaculata
+		Graptemys_oculifera
+		Graptemys_pseudogeographica
+		Graptemys_nigrinoda
+		Malaclemys_terrapin
+		Graptemys_geographica
+		Pseudemys_nelsoni
+		Pseudemys_rubriventris
+		Pseudemys_concinna
+		Pseudemys_texana
+		Trachemys_stejnegeri
+		Trachemys_scripta
+		Clemmys_guttata
+		Glyptemys_insculpta
+		Glyptemys_muhlenbergii
+		Emys_orbicularis
+		Terrapene_carolina
+		Terrapene_coahuila
+		Terrapene_ornata
+		Platysternon_megacephalum
+		Chelydra_acutirostris
+		Chelydra_serpentina
+		Macrochelys_temminckii
+		Claudius_angustatus
+		Staurotypus_salvinii
+		Staurotypus_triporcatus
+		Kinosternon_herrerai
+		Kinosternon_hirtipes
+		Kinosternon_integrum
+		Kinosternon_scorpioides
+		Kinosternon_leucostomum
+		Kinosternon_arizonense
+		Kinosternon_flavescens
+		Kinosternon_baurii
+		Kinosternon_subrubrum
+		Sternotherus_carinatus
+		Sternotherus_odoratus
+		Sternotherus_minor
+		Dermatemys_mawii
+		Caretta_caretta
+		Lepidochelys_olivacea
+		Eretmochelys_imbricata
+		Chelonia_mydas
+		Dermochelys_coriacea
+		Platemys_platycephala
+		Mesoclemmys_nasuta
+		Phrynops_geoffroanus
+		Phrynops_hilarii
+		Hydromedusa_tectifera
+		Chelodina_expansa
+		Chelodina_steindachneri
+		Chelodina_longicollis
+		Elseya_dentata
+		Emydura_macquarii
+		Rheodytes_leukops
+		Myuchelys_latisternum
+		Erymnochelys_madagascariensis
+		Podocnemis_erythrocephala
+		Podocnemis_sextuberculata
+		Podocnemis_unifilis
+		Podocnemis_expansa
+		Podocnemis_vogli
+		Peltocephalus_dumerilianus
+		Pelusios_castaneus
+		Pelusios_subniger
+		Pelusios_sinuatus
+		Pelusios_niger
+		Pelomedusa_subrufa
+	;
+END;
+BEGIN TREES;
+	TRANSLATE
+		1	Amyda_cartilaginea,
+		2	Pelodiscus_sinensis,
+		3	Apalone_ferox,
+		4	Apalone_spinifera,
+		5	Apalone_mutica,
+		6	Carettochelys_insculpta,
+		7	Chelonoidis_chilensis,
+		8	Stigmochelys_pardalis,
+		9	Kinixys_belliana,
+		10	Indotestudo_elongata,
+		11	Malacochersus_tornieri,
+		12	Testudo_graeca,
+		13	Testudo_marginata,
+		14	Testudo_hermanni,
+		15	Gopherus_morafkai,
+		16	Gopherus_berlandieri,
+		17	Gopherus_polyphemus,
+		18	Batagur_dhongoka,
+		19	Batagur_borneoensis,
+		20	Batagur_trivittata,
+		21	Pangshura_smithii,
+		22	Pangshura_tecta,
+		23	Malayemys_subtrijuga,
+		24	Siebenrockiella_crassicollis,
+		25	Cuora_amboinensis,
+		26	Cuora_trifasciata,
+		27	Cuora_flavomarginata,
+		28	Cuora_mouhotii,
+		29	Mauremys_mutica,
+		30	Mauremys_rivulata,
+		31	Mauremys_leprosa,
+		32	Mauremys_japonica,
+		33	Mauremys_nigricans,
+		34	Mauremys_reevesii,
+		35	Mauremys_sinensis,
+		36	Geoemyda_spengleri,
+		37	Cyclemys_dentata,
+		38	Heosemys_annandalii,
+		39	Heosemys_grandis,
+		40	Heosemys_spinosa,
+		41	Sacalia_bealei,
+		42	Notochelys_platynota,
+		43	Melanochelys_trijuga,
+		44	Rhinoclemmys_pulcherrima,
+		45	Rhinoclemmys_areolata,
+		46	Rhinoclemmys_punctularia,
+		47	Rhinoclemmys_funerea,
+		48	Rhinoclemmys_melanosterna,
+		49	Rhinoclemmys_rubida,
+		50	Chrysemys_picta,
+		51	Graptemys_barbouri,
+		52	Graptemys_caglei,
+		53	Graptemys_ouachitensis,
+		54	Graptemys_pulchra,
+		55	Graptemys_flavimaculata,
+		56	Graptemys_oculifera,
+		57	Graptemys_pseudogeographica,
+		58	Graptemys_nigrinoda,
+		59	Malaclemys_terrapin,
+		60	Graptemys_geographica,
+		61	Pseudemys_nelsoni,
+		62	Pseudemys_rubriventris,
+		63	Pseudemys_concinna,
+		64	Pseudemys_texana,
+		65	Trachemys_stejnegeri,
+		66	Trachemys_scripta,
+		67	Clemmys_guttata,
+		68	Glyptemys_insculpta,
+		69	Glyptemys_muhlenbergii,
+		70	Emys_orbicularis,
+		71	Terrapene_carolina,
+		72	Terrapene_coahuila,
+		73	Terrapene_ornata,
+		74	Platysternon_megacephalum,
+		75	Chelydra_acutirostris,
+		76	Chelydra_serpentina,
+		77	Macrochelys_temminckii,
+		78	Claudius_angustatus,
+		79	Staurotypus_salvinii,
+		80	Staurotypus_triporcatus,
+		81	Kinosternon_herrerai,
+		82	Kinosternon_hirtipes,
+		83	Kinosternon_integrum,
+		84	Kinosternon_scorpioides,
+		85	Kinosternon_leucostomum,
+		86	Kinosternon_arizonense,
+		87	Kinosternon_flavescens,
+		88	Kinosternon_baurii,
+		89	Kinosternon_subrubrum,
+		90	Sternotherus_carinatus,
+		91	Sternotherus_odoratus,
+		92	Sternotherus_minor,
+		93	Dermatemys_mawii,
+		94	Caretta_caretta,
+		95	Lepidochelys_olivacea,
+		96	Eretmochelys_imbricata,
+		97	Chelonia_mydas,
+		98	Dermochelys_coriacea,
+		99	Platemys_platycephala,
+		100	Mesoclemmys_nasuta,
+		101	Phrynops_geoffroanus,
+		102	Phrynops_hilarii,
+		103	Hydromedusa_tectifera,
+		104	Chelodina_expansa,
+		105	Chelodina_steindachneri,
+		106	Chelodina_longicollis,
+		107	Elseya_dentata,
+		108	Emydura_macquarii,
+		109	Rheodytes_leukops,
+		110	Myuchelys_latisternum,
+		111	Erymnochelys_madagascariensis,
+		112	Podocnemis_erythrocephala,
+		113	Podocnemis_sextuberculata,
+		114	Podocnemis_unifilis,
+		115	Podocnemis_expansa,
+		116	Podocnemis_vogli,
+		117	Peltocephalus_dumerilianus,
+		118	Pelusios_castaneus,
+		119	Pelusios_subniger,
+		120	Pelusios_sinuatus,
+		121	Pelusios_niger,
+		122	Pelomedusa_subrufa
+	;
+	TREE * UNTITLED = [&R] (((((1:0.0182626784,2:0.018491474)1.000:0.005701867,((3:0.014120667,4:0.0037038075)1.000:0.003111139,5:0.008259903)1.000:0.016858042)1.000:0.089012656,6:0.1360044567)1.000:0.02359299,((((((7:0.0103551023,(8:0.0097632467,9:0.0135845874)0.812:0.0001923752)1.000:0.00685562,((10:0.011135084,11:0.013066277)1.000:0.002513513,((12:0.007417145,13:0.005750697)1.000:0.002800824,14:0.0088422494)1.000:0.004385324)1.000:0.004088419)1.000:0.005254193,((15:0.0035305227,16:0.003006622)1.000:0.003525221,17:0.008135377)1.000:0.0090592915)1.000:0.007746953,(((((18:0.0047062922,(19:0.0034971481,20:0.0024427543)1.000:0.001462431)0.824:0.0012242103,(21:0.0037111237,22:0.002363961)1.000:0.004165103)1.000:0.010411153,23:0.020667115)1.000:0.006958402,24:0.020166025)1.000:0.002973905,((((((25:0.0050776475,(26:0.0043326985,27:0.0068451204)0.955:0.0010660497)0.540:0.0006923648,28:0.0084809903)1.000:0.005001068,(29:0.0112411798,((((30:0.0061629963,31:0.0058407525)1.000:0.002412409,32:0.0041423652)1.000:0.00175044,(33:0.0025601906,34:0.001490191)0.706:0.0042040038)1.000:0.003713274,35:0.005779926)1.000:0.003926176)1.000:0.002958989)1.000:0.0008720775,36:0.009500683)1.000:0.001067097,((((37:0.0086906371,((38:0.00452309,39:0.0037389661)1.000:0.005325928,40:0.010526882)1.000:0.002078027)0.515:0.0006724671,41:0.0092855404)0.600:0.0005341172,42:0.0129646664)0.991:0.0006220652,43:0.0127026485)1.000:0.002739891)0.986:0.0006025562,((44:0.00482623,(45:0.003546423,(46:0.0025387646,47:0.003148004,48:0.001027199)1.000:0.001125272)1.000:0.001461252)0.690:0.0004997969,49:0.005625392)1.000:0.01773902)1.000:0.001226362)1.000:0.003304141)1.000:0.01464684,(((50:0.0055052172,(((((51:0.0015978487,(((52:0.0031582278,53:0.001548018)0.837:0.001465736,(54:0.0017081635,(55:0.0008747148,56:0.0006614745)0.998:0.0016765929)1.000:0.0008089617,57:0.0013174184)0.764:0.0007185122,58:0.0030485468)0.875:0.0002776218)0.971:0.0004274548,59:0.005003186)1.000:0.001584251,60:0.0037454577)1.000:0.001856152,((((61:0.0011358779,62:0.001288305)0.778:0.0005865833,63:0.001340252)0.772:0.0009911289,64:0.0031054359)0.764:0.0029884634,65:0.006150548)1.000:0.0007535855)1.000:0.0005272513,66:0.003853332)1.000:0.002521437)0.998:0.009010585,((67:0.008914901,(68:0.00360066942,69:0.0042029062)1.000:0.001444003)0.983:0.0005756504,(70:0.006016911,((71:0.0017959304,72:0.0021853)1.000:0.0017187991,73:0.0046403874)1.000:0.00191831)1.000:0.0011185464)1.000:0.001524038)1.000:0.008729864,74:0.014578316)1.000:0.001510693)1.000:0.007970024,((((75:0.0023669929,76:0.0020776654)1.000:0.005743407,77:0.0069978448)1.000:0.01991114,(((78:0.008538958,(79:0.002779278,80:0.001202171)0.900:0.005807898)1.000:0.01782782,((((81:0.0047210984,((82:0.004710877,83:0.0030179025)0.803:0.001145452,84:0.003306754)0.527:0.0032191839)1.000:0.001152697,85:0.0050953356)1.000:0.00297026,((86:0.0028543909,87:0.005511716)0.993:0.0009376323,(88:0.004563312,89:0.0043468811)1.000:0.009847342)1.000:0.003457141)1.000:0.002666966,((90:0.0057291612,91:0.0054403115)1.000:0.001788284,92:0.0051423152)1.000:0.005742367)1.000:0.008401468)1.000:0.01870999,93:0.0378365277)1.000:0.01821798)1.000:0.004253739,((((94:0.0110149881,95:0.0050271663)1.000:0.0008480478,96:0.0061286332)1.000:0.005698779,97:0.0081281383)1.000:0.009248661,98:0.0247038819)1.000:0.01674226)1.000:0.003593194)1.000:0.01910282)1.000:0.01195712,((((99:0.0139367667,(100:0.013617998,(101:0.0031484888,102:0.0017428574)1.000:0.003939148)1.000:0.004706816)1.000:0.02408186,103:0.030636802)1.000:0.006982753,((104:0.005582754,(105:0.0039859292,106:0.0026144549)1.000:0.002720011)0.997:0.0265281528,((107:0.0116040742,(108:0.0080008002,109:0.0061361313)1.000:0.001345079)1.000:0.003812828,110:0.0109550824)1.000:0.01043106)1.000:0.003209901)1.000:0.02292508,(((111:0.069138978,((((112:0.0063428757,113:0.009457697)1.000:0.002525795,114:0.010963808)0.998:0.001680299,115:0.0117276887)1.000:0.005732845,116:0.02324877)1.000:0.0530437)1.000:0.004733425,117:0.047546468)1.000:0.03453622,(((118:0.0128099591,(119:0.009052938,120:0.0094644424)1.000:0.00113966)1.000:0.0008032184,121:0.0086599568)1.000:0.008847972,122:0.014440275)1.000:0.0557063)1.000:0.03286191)1.000:0.02540412)1.000;
+END;

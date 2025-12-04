@@ -1,0 +1,139 @@
+#NEXUS
+[R-package APE, Wed Dec  3 15:05:22 2025]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX = 63;
+	TAXLABELS
+		sarcoramphus_papa
+		vultur_gryphus
+		gymnogyps_californianus
+		cathartes_aura
+		cathartes_burrovianus
+		coragyps_atratus
+		stephanoaetus_coronatus
+		spizaetus_tyrannus
+		aquila_audax
+		aquila_chrysaetos
+		aquila_rapax
+		aquila_adalberti
+		aquila_heliaca
+		lophaetus_occipitalis
+		nisaetus_nipalensis
+		harpia_harpyja
+		morphnus_guianensis
+		accipiter_virgatus
+		accipiter_novaehollandiae
+		circus_pygargus
+		circus_aeruginosus
+		circus_cyaneus
+		accipiter_gentilis
+		accipiter_nisus
+		buteogallus_meridionalis
+		buteo_nitidus
+		buteo_regalis
+		buteo_lagopus
+		buteo_buteo
+		buteo_jamaicensis
+		buteo_swainsoni
+		buteo_platypterus
+		pseudastur_albicollis
+		geranoaetus_melanoleucus
+		geranoaetus_albicaudatus
+		rupornis_magnirostris
+		parabuteo_unicinctus
+		geranospiza_caerulescens
+		butastur_teesa
+		haliaeetus_leucoryphus
+		haliaeetus_pelagicus
+		haliaeetus_leucocephalus
+		haliaeetus_albicilla
+		haliastur_indus
+		milvus_migrans
+		pithecophaga_jefferyi
+		terathopius_ecaudatus
+		circaetus_gallicus
+		aegypius_monachus
+		sarcogyps_calvus
+		necrosyrtes_monachus
+		gyps_coprotheres
+		gyps_fulvus
+		gyps_rueppelli
+		gyps_himalayensis
+		gyps_bengalensis
+		gypaetus_barbatus
+		neophron_percnopterus
+		pernis_apivorus
+		leptodon_cayanensis
+		elanus_caeruleus
+		pandion_haliaetus
+		sagittarius_serpentarius
+	;
+END;
+BEGIN TREES;
+	TRANSLATE
+		1	sarcoramphus_papa,
+		2	vultur_gryphus,
+		3	gymnogyps_californianus,
+		4	cathartes_aura,
+		5	cathartes_burrovianus,
+		6	coragyps_atratus,
+		7	stephanoaetus_coronatus,
+		8	spizaetus_tyrannus,
+		9	aquila_audax,
+		10	aquila_chrysaetos,
+		11	aquila_rapax,
+		12	aquila_adalberti,
+		13	aquila_heliaca,
+		14	lophaetus_occipitalis,
+		15	nisaetus_nipalensis,
+		16	harpia_harpyja,
+		17	morphnus_guianensis,
+		18	accipiter_virgatus,
+		19	accipiter_novaehollandiae,
+		20	circus_pygargus,
+		21	circus_aeruginosus,
+		22	circus_cyaneus,
+		23	accipiter_gentilis,
+		24	accipiter_nisus,
+		25	buteogallus_meridionalis,
+		26	buteo_nitidus,
+		27	buteo_regalis,
+		28	buteo_lagopus,
+		29	buteo_buteo,
+		30	buteo_jamaicensis,
+		31	buteo_swainsoni,
+		32	buteo_platypterus,
+		33	pseudastur_albicollis,
+		34	geranoaetus_melanoleucus,
+		35	geranoaetus_albicaudatus,
+		36	rupornis_magnirostris,
+		37	parabuteo_unicinctus,
+		38	geranospiza_caerulescens,
+		39	butastur_teesa,
+		40	haliaeetus_leucoryphus,
+		41	haliaeetus_pelagicus,
+		42	haliaeetus_leucocephalus,
+		43	haliaeetus_albicilla,
+		44	haliastur_indus,
+		45	milvus_migrans,
+		46	pithecophaga_jefferyi,
+		47	terathopius_ecaudatus,
+		48	circaetus_gallicus,
+		49	aegypius_monachus,
+		50	sarcogyps_calvus,
+		51	necrosyrtes_monachus,
+		52	gyps_coprotheres,
+		53	gyps_fulvus,
+		54	gyps_rueppelli,
+		55	gyps_himalayensis,
+		56	gyps_bengalensis,
+		57	gypaetus_barbatus,
+		58	neophron_percnopterus,
+		59	pernis_apivorus,
+		60	leptodon_cayanensis,
+		61	elanus_caeruleus,
+		62	pandion_haliaetus,
+		63	sagittarius_serpentarius
+	;
+	TREE * UNTITLED = [&R] ((((1:9.261365,2:9.254698):1.097524,3:10.350546):5.586698,((4:3.234515,5:3.234751):11.232242,6:14.46471):1.48527):45.125451,(((((((7:15.953741,((8:14.810744,(((9:4.552397,10:4.561616):2.863422,((11:1.386801,12:1.388379):0.194138,13:1.580145):5.837682):1.916123,14:9.332091):5.476386):0.810693,15:15.614155):0.344831):12.940546,((16:17.131886,17:17.12545):11.548165,(((18:13.970341,19:13.981445):8.509751,((((20:6.870785,21:6.870293):2.143994,22:9.01043):10.146912,23:19.15058):1.222284,24:20.390822):2.104457):3.265365,((((25:11.945588,(((26:5.482095,(((((27:1.698162,28:1.705502):0.427437,29:2.124204):1.169489,30:3.292753):0.05128,31:3.343455):1.833237,32:5.179432):0.307058):2.153696,(33:7.157308,(34:4.008136,35:4.02011):3.14936):0.473511):3.110949,(36:9.521211,37:9.520348):1.224479):1.204298):1.957003,38:13.914735):4.526566,39:18.449493):1.750412,(((40:6.371699,41:6.367728):0.619604,(42:1.881841,43:1.88187):5.111194):9.500247,(44:9.050756,45:9.048362):7.449439):3.686926):5.527843):2.990299):0.219202):0.880795,((46:19.902136,(47:17.165599,48:17.181715):2.721371):4.277461,((49:10.415232,50:10.420046):1.764242,(51:10.555259,((52:1.958817,(53:1.732546,54:1.724184):0.234617):0.674052,(55:2.022278,56:2.020348):0.611482):7.899341):1.647696):11.990255):5.596038):6.205585,((57:22.234833,58:22.251548):9.819207,(59:30.952086,60:30.941852):1.133753):3.924116):9.238581,61:45.314296):5.444636,62:50.713299):10.117107,63:60.796568):0.436872);
+END;

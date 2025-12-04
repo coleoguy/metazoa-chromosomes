@@ -1,0 +1,189 @@
+#NEXUS
+[R-package APE, Wed Dec  3 15:05:23 2025]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX = 88;
+	TAXLABELS
+		labeotropheus_trewavasae
+		labeotropheus_fuelleborni
+		cynotilapia_afra
+		melanochromis_auratus
+		aulonocara_baenschi
+		aulonocara_stuartgranti
+		haplochromis_obliquidens
+		astatotilapia_burtoni
+		neolamprologus_savoryi
+		julidochromis_ornatus
+		lamprologus_congoensis
+		tilapia_zillii
+		oreochromis_karongae
+		oreochromis_urolepis
+		oreochromis_tanganicae
+		oreochromis_andersonii
+		oreochromis_mossambicus
+		oreochromis_macrochir
+		oreochromis_leucostictus
+		oreochromis_niloticus
+		oreochromis_aureus
+		sarotherodon_galilaeus
+		sarotherodon_melanotheron
+		hemichromis_bimaculatus
+		pelvicachromis_pulcher
+		thysochromis_ansorgii
+		tylochromis_lateralis
+		herichthys_cyanoguttatus
+		herichthys_labridens
+		thorichthys_ellioti
+		thorichthys_meeki
+		cichlasoma_salvini
+		amphilophus_citrinellus
+		archocentrus_centrarchus
+		cichlasoma_trimaculatum
+		cichlasoma_beani
+		cichlasoma_istlanum
+		parachromis_managuensis
+		australoheros_facetus
+		caquetaia_kraussii
+		symphysodon_aequifasciatus
+		symphysodon_discus
+		heros_severus
+		heros_efasciatus
+		uaru_amphiacanthoides
+		mesonauta_festivus
+		hypselecara_coryphaenoides
+		cichlasoma_bimaculatum
+		cichlasoma_dimerus
+		aequidens_tetramerus
+		aequidens_metae
+		bujurquina_vittata
+		laetacara_dorsigera
+		laetacara_curviceps
+		laetacara_araguaiae
+		nannacara_anomala
+		cleithracara_maronii
+		crenicichla_iguassuensis
+		crenicichla_vittata
+		crenicichla_lacustris
+		crenicichla_reticulata
+		crenicichla_semifasciata
+		crenicichla_britskii
+		crenicichla_lepidota
+		crenicichla_lugubris
+		crenicichla_notophthalmus
+		acarichthys_heckelii
+		apistogramma_agassizii
+		satanoperca_jurupari
+		geophagus_surinamensis
+		gymnogeophagus_balzanii
+		gymnogeophagus_labiatus
+		gymnogeophagus_gymnogenys
+		gymnogeophagus_rhabdotus
+		geophagus_brasiliensis
+		geophagus_proximus
+		dicrossus_filamentosus
+		biotodoma_cupido
+		astronotus_ocellatus
+		cichla_kelberi
+		cichla_orinocensis
+		cichla_piquiti
+		cichla_temensis
+		cichla_monoculus
+		chaetobranchus_flavescens
+		etroplus_suratensis
+		etroplus_maculatus
+		heterochromis_multidens
+	;
+END;
+BEGIN TREES;
+	TRANSLATE
+		1	labeotropheus_trewavasae,
+		2	labeotropheus_fuelleborni,
+		3	cynotilapia_afra,
+		4	melanochromis_auratus,
+		5	aulonocara_baenschi,
+		6	aulonocara_stuartgranti,
+		7	haplochromis_obliquidens,
+		8	astatotilapia_burtoni,
+		9	neolamprologus_savoryi,
+		10	julidochromis_ornatus,
+		11	lamprologus_congoensis,
+		12	tilapia_zillii,
+		13	oreochromis_karongae,
+		14	oreochromis_urolepis,
+		15	oreochromis_tanganicae,
+		16	oreochromis_andersonii,
+		17	oreochromis_mossambicus,
+		18	oreochromis_macrochir,
+		19	oreochromis_leucostictus,
+		20	oreochromis_niloticus,
+		21	oreochromis_aureus,
+		22	sarotherodon_galilaeus,
+		23	sarotherodon_melanotheron,
+		24	hemichromis_bimaculatus,
+		25	pelvicachromis_pulcher,
+		26	thysochromis_ansorgii,
+		27	tylochromis_lateralis,
+		28	herichthys_cyanoguttatus,
+		29	herichthys_labridens,
+		30	thorichthys_ellioti,
+		31	thorichthys_meeki,
+		32	cichlasoma_salvini,
+		33	amphilophus_citrinellus,
+		34	archocentrus_centrarchus,
+		35	cichlasoma_trimaculatum,
+		36	cichlasoma_beani,
+		37	cichlasoma_istlanum,
+		38	parachromis_managuensis,
+		39	australoheros_facetus,
+		40	caquetaia_kraussii,
+		41	symphysodon_aequifasciatus,
+		42	symphysodon_discus,
+		43	heros_severus,
+		44	heros_efasciatus,
+		45	uaru_amphiacanthoides,
+		46	mesonauta_festivus,
+		47	hypselecara_coryphaenoides,
+		48	cichlasoma_bimaculatum,
+		49	cichlasoma_dimerus,
+		50	aequidens_tetramerus,
+		51	aequidens_metae,
+		52	bujurquina_vittata,
+		53	laetacara_dorsigera,
+		54	laetacara_curviceps,
+		55	laetacara_araguaiae,
+		56	nannacara_anomala,
+		57	cleithracara_maronii,
+		58	crenicichla_iguassuensis,
+		59	crenicichla_vittata,
+		60	crenicichla_lacustris,
+		61	crenicichla_reticulata,
+		62	crenicichla_semifasciata,
+		63	crenicichla_britskii,
+		64	crenicichla_lepidota,
+		65	crenicichla_lugubris,
+		66	crenicichla_notophthalmus,
+		67	acarichthys_heckelii,
+		68	apistogramma_agassizii,
+		69	satanoperca_jurupari,
+		70	geophagus_surinamensis,
+		71	gymnogeophagus_balzanii,
+		72	gymnogeophagus_labiatus,
+		73	gymnogeophagus_gymnogenys,
+		74	gymnogeophagus_rhabdotus,
+		75	geophagus_brasiliensis,
+		76	geophagus_proximus,
+		77	dicrossus_filamentosus,
+		78	biotodoma_cupido,
+		79	astronotus_ocellatus,
+		80	cichla_kelberi,
+		81	cichla_orinocensis,
+		82	cichla_piquiti,
+		83	cichla_temensis,
+		84	cichla_monoculus,
+		85	chaetobranchus_flavescens,
+		86	etroplus_suratensis,
+		87	etroplus_maculatus,
+		88	heterochromis_multidens
+	;
+	TREE * UNTITLED = [&R] ((((((((((((1:0.128401,2:0.128401):0.415905,3:0.544307):0.008706,(4:0.342225,5:0.342226):0.210788):0.33056,6:0.883574):7.48481,(7:7.832283,8:7.832284):0.536101):15.35962,((9:4.939538,10:4.939537):1.066475,11:6.006012):17.721994):4.047806,12:27.775812):2.304083,((((((13:7.437392,14:7.437391):0.435886,15:7.873277):3.318151,((16:3.544473,17:3.544473):1.819096,18:5.363569):5.827859):2.189818,19:13.381246):1.336481,20:14.717727):3.82159,((21:3.739598,22:3.739598):8.900035,23:12.639633):5.899684):11.540576):10.587392,24:40.667285):2.49021,(25:39.271781,26:39.271781):3.885715):2.358063,27:45.515559):22.222179,(((((((((((28:6.98925,29:6.989249):7.676559,((30:9.237711,31:9.237711):4.217917,32:13.455628):1.21018):3.728396,((((((33:6.55523,34:6.55523):1.835897,35:8.391127):1.748063,(36:5.698389,37:5.698389):4.440801):0.896715,38:11.035905):3.775041,39:14.810945):1.358129,40:16.169075):2.225129):4.506135,((((41:1.854454,42:1.854454):13.997973,(43:0.244945,44:0.244945):15.607482):2.702611,45:18.555038):1.46344,46:20.018479):2.88186):3.640619,47:26.540957):12.177588,(((((48:10.445502,49:10.445501):4.797681,50:15.243183):4.068496,51:19.311679):11.580653,(52:28.078683,((53:11.22884,54:11.22884):6.298707,55:17.527548):10.551137):2.813648):3.041926,(56:28.829685,57:28.829685):5.104573):4.784287):4.93294,(((((((58:6.556757,59:6.556756):6.910553,60:13.467309):7.177394,(61:15.659368,62:15.659368):4.985335):5.145159,(((63:3.069381,64:3.069381):18.889288,65:21.958669):2.916218,66:24.874888):0.914975):11.307791,67:37.097654):2.120626,(68:35.241396,69:35.241397):3.976884):0.878725,((((70:32.745156,(((71:9.047719,72:9.047719):1.199366,73:10.247084):3.637003,74:13.884087):18.861068):2.716228,(75:7.317869,76:7.317869):28.143515):1.725216,77:37.1866):0.97918,78:38.165781):1.931224):3.55448):2.372081,79:46.023566):6.151898,((((80:1.462337,81:1.462337):3.658937,82:5.121273):7.355319,(83:6.85438,84:6.854381):5.622211):33.142923,85:45.619516):6.555949):6.674973,(86:20.562788,87:20.562788):38.287649):5.233691,88:64.084128):3.65361);
+END;

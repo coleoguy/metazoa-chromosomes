@@ -1,0 +1,193 @@
+#NEXUS
+[R-package APE, Wed Dec  3 15:05:27 2025]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX = 90;
+	TAXLABELS
+		Pan_troglodytes
+		Pan_paniscus
+		Homo_sapiens
+		Gorilla_gorilla
+		Pongo_pygmaeus
+		Pongo_abelii
+		Hylobates_moloch
+		Hylobates_lar
+		Symphalangus_syndactylus
+		Hoolock_leuconedys
+		Hoolock_hoolock
+		Nomascus_gabriellae
+		Nomascus_siki
+		Nomascus_leucogenys
+		Nomascus_concolor
+		Cercocebus_torquatus
+		Cercocebus_galeritus
+		Mandrillus_sphinx
+		Papio_hamadryas
+		Papio_anubis
+		Papio_papio
+		Theropithecus_gelada
+		Macaca_fascicularis
+		Macaca_mulatta
+		Macaca_fuscata
+		Macaca_nigra
+		Macaca_sylvanus
+		Cercopithecus_petaurista
+		Cercopithecus_ascanius
+		Cercopithecus_cephus
+		Cercopithecus_nictitans
+		Cercopithecus_mitis
+		Cercopithecus_diana
+		Cercopithecus_pogonias
+		Cercopithecus_neglectus
+		Erythrocebus_patas
+		Miopithecus_talapoin
+		Allenopithecus_nigroviridis
+		Colobus_guereza
+		Trachypithecus_obscurus
+		Trachypithecus_cristatus
+		Semnopithecus_entellus
+		Nasalis_larvatus
+		Pygathrix_nemaeus
+		Cebuella_pygmaea
+		Callithrix_jacchus
+		Callithrix_geoffroyi
+		Callimico_goeldii
+		Leontopithecus_rosalia
+		Leontopithecus_chrysopygus
+		Saguinus_midas
+		Saguinus_oedipus
+		Saguinus_mystax
+		Saguinus_imperator
+		Aotus_trivirgatus
+		Aotus_nancymaae
+		Cebus_capucinus
+		Cebus_albifrons
+		Cebus_olivaceus
+		Saimiri_sciureus
+		Lagothrix_lagotricha
+		Brachyteles_arachnoides
+		Ateles_geoffroyi
+		Ateles_paniscus
+		Alouatta_sara
+		Alouatta_seniculus
+		Alouatta_caraya
+		Alouatta_belzebul
+		Alouatta_guariba
+		Alouatta_palliata
+		Pithecia_irrorata
+		Pithecia_pithecia
+		Cacajao_calvus
+		Callicebus_personatus
+		Callicebus_coimbrai
+		Callicebus_nigrifrons
+		Lepilemur_ruficaudatus
+		Lepilemur_leucopus
+		Lepilemur_septentrionalis
+		Lemur_catta
+		Eulemur_fulvus
+		Eulemur_macaco
+		Microcebus_murinus
+		Propithecus_tattersalli
+		Daubentonia_madagascariensis
+		Nycticebus_coucang
+		Loris_tardigradus
+		Galago_moholi
+		Otolemur_crassicaudatus
+		Galago_alleni
+	;
+END;
+BEGIN TREES;
+	TRANSLATE
+		1	Pan_troglodytes,
+		2	Pan_paniscus,
+		3	Homo_sapiens,
+		4	Gorilla_gorilla,
+		5	Pongo_pygmaeus,
+		6	Pongo_abelii,
+		7	Hylobates_moloch,
+		8	Hylobates_lar,
+		9	Symphalangus_syndactylus,
+		10	Hoolock_leuconedys,
+		11	Hoolock_hoolock,
+		12	Nomascus_gabriellae,
+		13	Nomascus_siki,
+		14	Nomascus_leucogenys,
+		15	Nomascus_concolor,
+		16	Cercocebus_torquatus,
+		17	Cercocebus_galeritus,
+		18	Mandrillus_sphinx,
+		19	Papio_hamadryas,
+		20	Papio_anubis,
+		21	Papio_papio,
+		22	Theropithecus_gelada,
+		23	Macaca_fascicularis,
+		24	Macaca_mulatta,
+		25	Macaca_fuscata,
+		26	Macaca_nigra,
+		27	Macaca_sylvanus,
+		28	Cercopithecus_petaurista,
+		29	Cercopithecus_ascanius,
+		30	Cercopithecus_cephus,
+		31	Cercopithecus_nictitans,
+		32	Cercopithecus_mitis,
+		33	Cercopithecus_diana,
+		34	Cercopithecus_pogonias,
+		35	Cercopithecus_neglectus,
+		36	Erythrocebus_patas,
+		37	Miopithecus_talapoin,
+		38	Allenopithecus_nigroviridis,
+		39	Colobus_guereza,
+		40	Trachypithecus_obscurus,
+		41	Trachypithecus_cristatus,
+		42	Semnopithecus_entellus,
+		43	Nasalis_larvatus,
+		44	Pygathrix_nemaeus,
+		45	Cebuella_pygmaea,
+		46	Callithrix_jacchus,
+		47	Callithrix_geoffroyi,
+		48	Callimico_goeldii,
+		49	Leontopithecus_rosalia,
+		50	Leontopithecus_chrysopygus,
+		51	Saguinus_midas,
+		52	Saguinus_oedipus,
+		53	Saguinus_mystax,
+		54	Saguinus_imperator,
+		55	Aotus_trivirgatus,
+		56	Aotus_nancymaae,
+		57	Cebus_capucinus,
+		58	Cebus_albifrons,
+		59	Cebus_olivaceus,
+		60	Saimiri_sciureus,
+		61	Lagothrix_lagotricha,
+		62	Brachyteles_arachnoides,
+		63	Ateles_geoffroyi,
+		64	Ateles_paniscus,
+		65	Alouatta_sara,
+		66	Alouatta_seniculus,
+		67	Alouatta_caraya,
+		68	Alouatta_belzebul,
+		69	Alouatta_guariba,
+		70	Alouatta_palliata,
+		71	Pithecia_irrorata,
+		72	Pithecia_pithecia,
+		73	Cacajao_calvus,
+		74	Callicebus_personatus,
+		75	Callicebus_coimbrai,
+		76	Callicebus_nigrifrons,
+		77	Lepilemur_ruficaudatus,
+		78	Lepilemur_leucopus,
+		79	Lepilemur_septentrionalis,
+		80	Lemur_catta,
+		81	Eulemur_fulvus,
+		82	Eulemur_macaco,
+		83	Microcebus_murinus,
+		84	Propithecus_tattersalli,
+		85	Daubentonia_madagascariensis,
+		86	Nycticebus_coucang,
+		87	Loris_tardigradus,
+		88	Galago_moholi,
+		89	Otolemur_crassicaudatus,
+		90	Galago_alleni
+	;
+	TREE * UNTITLED = [&R] ((((((((1:2.24,2:2.24):4.54,3:6.79):2.46,4:9.25):8.33,(5:2.91,6:2.91):14.66):2.92,((((7:2.95,8:2.96):3.5,9:6.46):0.91,(10:1.52,11:1.52):5.85):0.7,((12:1.44,(13:0.41,14:0.41):1.02):0.28,15:1.71):6.36):12.42):8.93,((((((16:3.39,17:3.4):2.46,18:5.85):2.38,(((19:1.4,20:1.4):0.23,21:1.63):3.61,22:5.23):2.99):2.3,(((23:2.88,(24:2.27,25:2.27):0.61):1.97,26:4.85):1.22,27:6.07):4.45):2.54,((((((((28:3.41,29:3.41):0.88,30:4.29):0.65,(31:2.6,32:2.6):2.34):1.18,33:6.12):0.13,(34:5.61,35:5.61):0.63):1.6,36:7.84):1.38,37:9.23):1.17,38:10.4):2.67):4.99,(39:12.86,(((40:2.75,41:2.75):6.69,42:9.44):0.54,(43:7.29,44:7.28):2.68):2.88):5.2):11.36):12.75,((((((((45:5.08,(46:0.91,47:0.91):4.17):6.78,48:11.86):0.87,(49:0.49,50:0.49):12.23):1.62,((51:5.67,52:5.67):1.46,(53:2.87,54:2.86):4.27):7.21):3.02,(55:4.05,56:4.05):13.31):0.91,((57:2.21,(58:1.65,59:1.65):0.56):13.21,60:15.42):2.86):1.67,(((61:8.85,62:8.83):2.25,(63:4.18,64:4.18):6.91):3.7,((((65:2.37,66:2.37):1.24,67:3.61):0.56,(68:2.98,69:2.98):1.19):0.29,70:4.46):10.32):5.16):1.16,(((71:4.75,72:4.75):6.29,73:11.04):6.43,((74:1.77,75:1.77):1.47,76:3.24):14.22):3.63):21.07):29.06,(((((((77:7.11,78:7.11):0.53,79:7.64):26.09,(80:20.52,(81:10.82,82:10.81):9.71):13.21):0.99,83:34.73):0.29,84:35.02):16.79,85:51.81):5.15,((86:24.68,87:24.68):10.83,(88:15.6,(89:10.6,90:10.6):4.99):19.93):21.44):14.27);
+END;

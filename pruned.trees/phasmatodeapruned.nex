@@ -1,0 +1,35 @@
+#NEXUS
+[R-package APE, Wed Dec  3 15:05:27 2025]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX = 11;
+	TAXLABELS
+		Pachymorpha_sp.
+		Podacanthus_wilkinsoni
+		Extatosoma_tiaratum
+		Acrophylla_titan
+		Tropidoderus_childrenii
+		Clitarchus_hookeri
+		Bacillus_rossius
+		Bacillus_grandii
+		Bacillus_atticus
+		Sipyloidea_sipylus
+		Carausius_morosus
+	;
+END;
+BEGIN TREES;
+	TRANSLATE
+		1	Pachymorpha_sp.,
+		2	Podacanthus_wilkinsoni,
+		3	Extatosoma_tiaratum,
+		4	Acrophylla_titan,
+		5	Tropidoderus_childrenii,
+		6	Clitarchus_hookeri,
+		7	Bacillus_rossius,
+		8	Bacillus_grandii,
+		9	Bacillus_atticus,
+		10	Sipyloidea_sipylus,
+		11	Carausius_morosus
+	;
+	TREE * UNTITLED = [&R] ((((((1:23.46,2:23.46)'25':15.5019,3:38.9619)'48':0,(4:28.10192,5:28.10192)'82':10.85998)'80':6.29,6:45.2519)'123':81.22043,((7:18.05,(8:16.96,9:16.96)'20':1.09)'188':85.0564,10:103.1064)'251':23.36593)'245':13.77912,11:140.25145)'194';
+END;
