@@ -6,10 +6,8 @@ library(ape)
 ## =========================
 ## 1. Read and plot tree
 ## =========================
-# setwd("~/GitHub/CURE-chromosome-number")  # run once if needed
 
-tree_path <- file.path("figures", "figure 1", "cladetree.new")
-tree      <- read.tree(tree_path)
+tree      <- read.tree("../figure 1/cladetree.new")
 
 # quick plot to get coordinates
 plot(tree, direction = "rightwards", cex = 0.6)
@@ -32,11 +30,10 @@ tip_y <- lp$yy[1:Ntip(tree)]
 ## =========================
 ## 1b. Higher classification + colors
 ## =========================
-hc_path   <- file.path("figures", "figure 1", "higher_class.csv")
-higher_df <- read.csv(hc_path, stringsAsFactors = FALSE, check.names = FALSE)
+higher_df <- read.csv("../figure 1/higher_class.csv")
 
 # assume columns: "Clade" and "Higher Classification"
-hc_lookup <- higher_df[["Higher Classification"]]
+hc_lookup <- higher_df[["Higher.Classification"]]
 names(hc_lookup) <- tolower(higher_df[["Clade"]])
 
 class_cols <- c(
@@ -58,14 +55,14 @@ class_cols <- c(
 ## 2. Read all *_mcmc.csv and get log(asc1[i > 500])
 ## =========================
 mcmc_dir   <- file.path("results", "Results_mcmc")
-mcmc_files <- list.files(mcmc_dir, pattern = "_mcmc\\.csv$", full.names = TRUE)
+mcmc_files <- list.files("../../results/trainee_results", full.names = TRUE)
 
 # global scale for log(asc1)
 global_min <- Inf
 global_max <- -Inf
 
-for (f in mcmc_files) {
-  dat <- read.csv(f, stringsAsFactors = FALSE, check.names = FALSE)
+for (i in 1:length(mcmc_files)) {
+  dat <- read.csv(mcmc_files[i], stringsAsFactors = FALSE, check.names = FALSE)
   
   # log-transform, post-burnin, positive values only
   log_vals <- log(dat$asc1[dat$i > 500 & dat$asc1 > 0])
@@ -83,11 +80,14 @@ bump_height <- 1.1     # vertical size of each density bump
 ## =========================
 ## 3. Draw colored log-densities + mean lines + fill
 ## =========================
+# we will use these ages to get rates into units MY
+ages <- read.csv("../../data/clade.ages.csv")
+
 for (f in mcmc_files) {
   dat <- read.csv(f, stringsAsFactors = FALSE, check.names = FALSE)
-  
+  age <- ages$Age[tolower(ages$Clade) == strsplit(basename(f), "_")[[1]][1]]
   # log-transform in one line
-  log_vals <- log(dat$asc1[dat$i > 500 & dat$asc1 > 0])
+  log_vals <- log(dat$asc1[dat$i > 500 & dat$asc1 > 0]/age)
   if (length(log_vals) < 2) next  # need ≥2 points for density()
   
   clade <- sub("_mcmc\\.csv$", "", basename(f))
@@ -151,3 +151,4 @@ legend("bottomleft",
        x.intersp = 0.6,
        bty       = "n",
        title     = "Higher classification")
+
