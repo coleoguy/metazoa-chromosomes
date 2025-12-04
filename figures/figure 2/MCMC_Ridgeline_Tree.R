@@ -52,30 +52,29 @@ class_cols <- c(
 
 
 ## =========================
-## 2. Read all *_mcmc.csv and get log(asc1[i > 500])
+## 2. Read all *_mcmc.csv and get log(dem1[i > 500])
 ## =========================
 mcmc_dir   <- file.path("results", "Results_mcmc")
 mcmc_files <- list.files("../../results/trainee_results", full.names = TRUE)
 # we will use these ages to get rates into units MY
 ages <- read.csv("../../data/clade.ages.csv")
 
-# global scale for log(asc1/age)
+# global scale for log(dem1/age)
 global_min <- Inf
 global_max <- -Inf
 
 for (f in mcmc_files) {
-  dat  <- read.csv(f, stringsAsFactors = FALSE, check.names = FALSE)
+  dat   <- read.csv(f, stringsAsFactors = FALSE, check.names = FALSE)
   clade <- strsplit(basename(f), "_")[[1]][1]
   age   <- ages$Age[tolower(ages$Clade) == tolower(clade)]
   
-  log_vals <- log(dat$asc1[dat$i > 500 & dat$asc1 > 0] / age)
+  log_vals <- log(dat$dem1[dat$i > 500 & dat$dem1 > 0] / age)
+  if (length(log_vals) < 2) next  # need ≥2 points for density()
   
-  if (length(log_vals) > 0) {
-    global_min <- min(global_min, min(log_vals))
-    global_max <- max(global_max, max(log_vals))
-  }
+  d <- density(log_vals)          # <--- use d$x, not log_vals
+  global_min <- min(global_min, d$x)
+  global_max <- max(global_max, d$x)
 }
-
 par(xpd = NA)          # allow drawing beyond plot region
 bump_height <- 1.1     # vertical size of each density bump
 
@@ -88,7 +87,7 @@ for (f in mcmc_files) {
   dat <- read.csv(f, stringsAsFactors = FALSE, check.names = FALSE)
   age <- ages$Age[tolower(ages$Clade) == strsplit(basename(f), "_")[[1]][1]]
   # log-transform in one line
-  log_vals <- log(dat$asc1[dat$i > 500 & dat$asc1 > 0]/age)
+  log_vals <- log(dat$dem1[dat$i > 500 & dat$dem1 > 0]/age)
   if (length(log_vals) < 2) next  # need ≥2 points for density()
   
   clade <- sub("_mcmc\\.csv$", "", basename(f))
@@ -101,8 +100,9 @@ for (f in mcmc_files) {
   col_line <- class_cols[hc_name]
   if (is.na(col_line)) col_line <- "black"
   
-  # density of log(asc1[i > 500])
+  # density of log(dem1[i > 500])
   d <- density(log_vals)
+  print(range(log_vals))
   
   # scale density x into reserved band on the right
   x_scaled <- x_max + offset +
@@ -137,7 +137,7 @@ for (f in mcmc_files) {
            x_mean_scaled, y0 + bump_height,
            col = col_line, lwd = 1)
 }
-
+axis(side=1, at=c(1930,2815,3700), labels=c(0, 0.00005,0.186))
 
 ## =========================
 ## 4. Legend
