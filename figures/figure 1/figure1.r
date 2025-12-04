@@ -120,7 +120,7 @@ p_final <- p +
     panel = "Clade labels",
     mapping = aes(x = x_text, y = y_pos, label = label_text),
     geom = geom_text,
-    size = 2.6,
+    size = 2.9,
     hjust = 0
   ) +
   scale_color_manual(
@@ -136,7 +136,8 @@ p_final <- p +
       "Angiosperm" = "#1F968B",
       "Gymnosperms" = "#89C2D9",
       "Pteridophytes" = "#5E4FA2",
-      "Bryophyta" = "#277DA1"
+      "Bryophyta" = "#277DA1",
+      "Fungi" = "#A6761D"
     )
   ) +
   guides(
