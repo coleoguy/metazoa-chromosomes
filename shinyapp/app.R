@@ -23,7 +23,13 @@ ui <- fluidPage(
     mainPanel(
       tabsetPanel(
         tabPanel("Distributions", plotOutput("distPlot")),
-        tabPanel("Data table", tableOutput("cladeTable"))
+        tabPanel(
+          "Data table",
+          # Download button for the table
+          downloadButton("downloadData", "Download CSV"),
+          br(), br(),
+          tableOutput("cladeTable")
+        )
       )
     )
   )
@@ -37,6 +43,7 @@ server <- function(input, output, session) {
     all_chrome[all_chrome$clade %in% input$clades, , drop = FALSE]
   })
   
+  # ---- Plot densities ----
   output$distPlot <- renderPlot({
     
     df <- filtered_data()
@@ -105,14 +112,32 @@ server <- function(input, output, session) {
     legend("topright",
            legend = clades,
            col = base_cols,
-           lwd = 2,
+           lwd = 3,
            cex = 0.9,
            bty = "n")
   })
   
+  # ---- Table ----
   output$cladeTable <- renderTable({
     filtered_data()
   })
+  
+  # ---- Download handler ----
+  output$downloadData <- downloadHandler(
+    filename = function() {
+      clades <- input$clades
+      if (!length(clades)) {
+        "chromosome_data.csv"
+      } else {
+        # Safe-ish filename based on clades
+        paste0("chromosome_data_", paste(clades, collapse = "_"), ".csv")
+      }
+    },
+    content = function(file) {
+      df <- filtered_data()
+      write.csv(df, file, row.names = FALSE)
+    }
+  )
 }
 
 # ---- Run app ----
