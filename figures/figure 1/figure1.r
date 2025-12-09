@@ -126,18 +126,18 @@ p_final <- p +
   scale_color_manual(
     name = "Higher classification",
     values = c(
-      "Chondrichthyes" = "#414487",
-      "Actinopterygii" = "#2A788E",
-      "Amphibia" = "#22A884",
-      "Mammalia" = "#7AD151",
-      "Reptilia" = "#F8961E",
-      "Arachnida" = "#D1495B",
-      "Insecta" = "#8E3B9E",
-      "Angiosperm" = "#1F968B",
-      "Gymnosperms" = "#89C2D9",
-      "Pteridophytes" = "#5E4FA2",
-      "Bryophyta" = "#277DA1",
-      "Fungi" = "#A6761D"
+      Bryophyta      = "#A8E6A3",
+      Pteridophytes  = "#6CCF70",
+      Gymnosperms    = "#3FA34D",
+      Angiosperm    = "#1F7A3A",
+      Fungi          = "#956A1A",
+      Arachnida      = "#F8961E",
+      Insecta        = "#D1495B",
+      Chondrichthyes = "#414487",
+      Actinopterygii = "#2A788E",
+      Amphibia       = "#5CB7B4",
+      Mammalia       = "#22A884",
+      Reptilia       = "#8E3B9E"
     )
   ) +
   guides(
