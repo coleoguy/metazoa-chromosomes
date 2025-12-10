@@ -13,6 +13,7 @@ ui <- fluidPage(
   
   sidebarLayout(
     sidebarPanel(
+      width = 3,
       checkboxGroupInput(
         "clades",
         "Select clades:",
@@ -22,7 +23,7 @@ ui <- fluidPage(
     
     mainPanel(
       tabsetPanel(
-        tabPanel("Distributions", plotOutput("distPlot")),
+        tabPanel("Distributions", plotOutput("distPlot", height = "600px")),
         tabPanel(
           "Data table",
           # Download button for the table
