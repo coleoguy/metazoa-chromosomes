@@ -106,7 +106,7 @@ parallel_results <- foreach(i = 1:length(file_list), .combine = 'list') %dopar% 
 ###### End Functions ######
 
 # get all plant clades that are using the angiosperm phylo TODO why?
-plants <- c("asteraceae", "fabaceae", "brassicaceae", "orchidaceae", "lilaceae")
+plants <- c("asteraceae", "fabaceae", "brassicaceae", "orchidaceae", "lilaceae", "solanaceae")
 
 
 # iterate through each clade data file

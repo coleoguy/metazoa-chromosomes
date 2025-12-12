@@ -105,7 +105,7 @@ f <- paste0("../data/chrome/", clade, ".csv") # <-- change path as needed
 
 # list of plant clades we run this because if you have one of these clades
 # we have to use slightly different functions later.
-plants <- c("asteraceae", "fabaceae", "brassicaceae", "orchidaceae", "lilaceae")
+plants <- c("asteraceae", "fabaceae", "brassicaceae", "orchidaceae", "lilaceae", "solanaceae")
 
 # read chromosome data
 dat <- read.csv(f)
