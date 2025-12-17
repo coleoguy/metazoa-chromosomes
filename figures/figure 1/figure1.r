@@ -95,7 +95,7 @@ lp <- get("last_plot.phylo", envir = .PlotPhyloEnv)
 
 x_range    <- range(lp$xx)
 bees_width <- diff(x_range) * 1.5        # width of beeswarm panel
-label_gap  <- diff(x_range) * 0.1        # gap between beeswarm and labels
+label_gap  <- diff(x_range) * 0.2        # gap between beeswarm and labels
 
 # How much space do labels need?
 label_margin <- max(strwidth(counts$label_text, cex = 0.6)) * 1.2
@@ -200,7 +200,7 @@ text(
   y      = counts$y0,
   labels = counts$label_text,
   adj    = c(0, 0.5),
-  cex    = 0.9
+  cex    = 0.4
 )
 
 # ---- 15. X-axis for beeswarm (log10 haploid) ----
@@ -226,15 +226,15 @@ axis(
   pos       = axis_y_pos,
   lwd       = 0,
   lwd.ticks = 1,
-  cex.axis  = 1.2
+  cex.axis  = .65
 )
 
 mtext(
   "Haploid chromosome number",
   side = 1,
   line = 2,
-  at   = x_start_bees + (bees_width / 2),
-  cex  = 1.6
+  at   = x_start_bees + (bees_width / 2.5),
+  cex  = .8
 )
 
 # ---- 16. Legend ----
@@ -245,9 +245,9 @@ legend(
   pt.bg     = legend_fills,
   pch       = 22,
   pt.cex    = 1.5,
-  cex       = 0.85,
+  cex       = 0.5,
   bty       = "n",
-  y.intersp = 0.6,
-  x.intersp = 0.6,
-  inset     = c(-0.06, 0)   # <- push left (try -0.05 to -0.15)
+  y.intersp = 1.2,
+  x.intersp = 1.2,
+  inset     = c(-0.06, -.01)   # <- push left (try -0.05 to -0.15)
 )
