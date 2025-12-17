@@ -95,7 +95,7 @@ lp <- get("last_plot.phylo", envir = .PlotPhyloEnv)
 
 x_range    <- range(lp$xx)
 bees_width <- diff(x_range) * 1.5        # width of beeswarm panel
-label_gap  <- diff(x_range) * 0.3        # gap between beeswarm and labels
+label_gap  <- diff(x_range) * 0.1        # gap between beeswarm and labels
 
 # How much space do labels need?
 label_margin <- max(strwidth(counts$label_text, cex = 0.6)) * 1.2
@@ -109,6 +109,10 @@ xlim_new <- c(
 par(xpd = NA, mar = c(5, 4, 4, 2) + 0.1)
 
 # ---- 9. Plot tree (no tip labels) ----
+shrink_factor <- 0.4   # try 0.2–0.6
+tree$edge.length <- tree$edge.length * shrink_factor
+
+
 plot(tree,
      direction      = "rightwards",
      cex            = 0.6,
@@ -196,7 +200,7 @@ text(
   y      = counts$y0,
   labels = counts$label_text,
   adj    = c(0, 0.5),
-  cex    = 0.6
+  cex    = 0.9
 )
 
 # ---- 15. X-axis for beeswarm (log10 haploid) ----
@@ -230,17 +234,20 @@ mtext(
   side = 1,
   line = 2,
   at   = x_start_bees + (bees_width / 2),
-  cex  = 0.9
+  cex  = 1.2
 )
 
 # ---- 16. Legend ----
 legend(
   "bottomleft",
-  legend = higher_order,
-  col    = legend_cols,
-  pt.bg  = legend_fills,
-  pch    = 22,
-  pt.cex = 1.5,
-  bty    = "n",
-  cex    = 0.65
+  legend   = higher_order,
+  col      = legend_cols,
+  pt.bg    = legend_fills,
+  pch      = 22,
+  pt.cex   = 1.2,
+  cex      = 0.85,
+  bty      = "n",
+  y.intersp = 0.5,   # << tighter vertical spacing (try 0.6–0.85)
+  x.intersp = 0.6    # << tighter spacing between symbol and text
 )
+
