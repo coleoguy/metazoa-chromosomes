@@ -226,7 +226,7 @@ axis(
   pos       = axis_y_pos,
   lwd       = 0,
   lwd.ticks = 1,
-  cex.axis  = 0.8
+  cex.axis  = 1.2
 )
 
 mtext(
@@ -234,20 +234,20 @@ mtext(
   side = 1,
   line = 2,
   at   = x_start_bees + (bees_width / 2),
-  cex  = 1.2
+  cex  = 1.6
 )
 
 # ---- 16. Legend ----
 legend(
   "bottomleft",
-  legend   = higher_order,
-  col      = legend_cols,
-  pt.bg    = legend_fills,
-  pch      = 22,
-  pt.cex   = 1.2,
-  cex      = 0.85,
-  bty      = "n",
-  y.intersp = 0.5,   # << tighter vertical spacing (try 0.6–0.85)
-  x.intersp = 0.6    # << tighter spacing between symbol and text
+  legend    = higher_order,
+  col       = legend_cols,
+  pt.bg     = legend_fills,
+  pch       = 22,
+  pt.cex    = 1.5,
+  cex       = 0.85,
+  bty       = "n",
+  y.intersp = 0.6,
+  x.intersp = 0.6,
+  inset     = c(-0.06, 0)   # <- push left (try -0.05 to -0.15)
 )
-
