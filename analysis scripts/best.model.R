@@ -11,7 +11,7 @@ library(chromePlus)
 library(phangorn)
 
 # 1. Detect cores
-num_cores <- detectCores() - 2
+num_cores <- 20
 
 # 2. Setup the cluster
 my_cluster <- makeCluster(num_cores)
@@ -29,6 +29,7 @@ parallel_results <- foreach(i = 1:length(file_list), .combine = 'list') %dopar% 
   library(diversitree)
   library(chromePlus)
   library(phangorn)
+  
   ###### Functions ######
   # function to read and return a tree object for a given clade name
   GetTree <- function(x){
@@ -46,6 +47,7 @@ parallel_results <- foreach(i = 1:length(file_list), .combine = 'list') %dopar% 
     tree <- GetCleanTree(tree)
     return(tree)
   }
+  
   # function to remove duplicated tip labels from a phylo or multiPhylo object
   GetCleanTree <- function(tree){
     if(class(tree) == "phylo"){
@@ -63,6 +65,7 @@ parallel_results <- foreach(i = 1:length(file_list), .combine = 'list') %dopar% 
     }
     return(tree)
   }
+  
   # clean haploid values
   CleanHaploid <- function(df) {
     stoch_round <- function(x) floor(x) + (runif(1) < (x - floor(x)))
@@ -90,6 +93,7 @@ parallel_results <- foreach(i = 1:length(file_list), .combine = 'list') %dopar% 
     df$haploid <- vapply(df$haploid, stoch_round, numeric(1))
     return(df)
   }
+  
   # makes the tree ultrametric
   AdjustTree <- function(tree){
     if (!is.ultrametric(tree)) {
@@ -106,6 +110,7 @@ parallel_results <- foreach(i = 1:length(file_list), .combine = 'list') %dopar% 
     return(tree)
   }
   ###### End Functions ######
+  
   ###### Settings ######
   plants <- c("asteraceae", "fabaceae", "brassicaceae",
               "orchidaceae", "lilaceae", "solanaceae")
@@ -115,74 +120,81 @@ parallel_results <- foreach(i = 1:length(file_list), .combine = 'list') %dopar% 
   
   model_names <- c("full", "no_pol", "no_dem", "no_poly_no_demi")
   ###### Settings ######
+  
   ###### Identify clade + paths ######
   f <- file_list[[i]]
   clade <- tools::file_path_sans_ext(basename(f))
   ex.result <- read.csv("../results/AIC.csv")
-  if(!clade %in% ex.result$clade){
-  mcmc_path <- paste0("../results/exponential.prior/trainee_results/",
-                      clade, "_mcmc.csv")
-  ###### Get start values from MCMC ######
-  dat_mcmc <- read.csv(mcmc_path, check.names = FALSE)
-  keep <- dat_mcmc$i > burnin
-  starts_core <- rep(NA_real_, length(target_params))
-  names(starts_core) <- target_params
-  for(p in target_params){
-    if(p %in% names(dat_mcmc)){
-      vals <- dat_mcmc[keep, p]
-      vals <- vals[is.finite(vals) & vals > 0]
-      if(length(vals) > 0)
-        starts_core[p] <- mean(vals)
-    }
-  }
-  ###### Read chromosome data + tree ######
-  dat_full <- read.csv(f, stringsAsFactors = FALSE)
-  dat_full <- CleanHaploid(dat_full)
-  tree <- GetTree(clade)
-  ###### Make trees ultrametric ######
-  if("phylo" %in% class(tree))
-    tree <- AdjustTree(tree)
-  if("multiPhylo" %in% class(tree)){
-    for(j in 1:length(tree)){
-      tree[[j]] <- AdjustTree(tree[[j]])
-      print(paste("working on tree", j))
-    }
-  }
-  ###### Candidate models ######
-  candidates <- list(
-    full = function(mat, lik) {
-      constrainMkn(data = mat, lik = lik, hyper=FALSE,
-                   polyploidy = FALSE, verbose=FALSE)
-    },
-    no_pol = function(mat, lik) {
-      constrainMkn(data = mat, lik = lik, hyper=FALSE,
-                   polyploidy = FALSE, verbose=FALSE,
-                   constrain = list(drop.poly = TRUE))
-    },
-    no_dem = function(mat, lik) {
-      constrainMkn(data = mat, lik = lik, hyper=FALSE,
-                   polyploidy = FALSE, verbose=FALSE,
-                   constrain = list(drop.demi = TRUE))
-    },
-    no_poly_no_demi = function(mat, lik) {
-      constrainMkn(data = mat, lik = lik, hyper=FALSE,
-                   polyploidy = FALSE, verbose=FALSE,
-                   constrain = list(drop.poly = TRUE, drop.demi = TRUE))
-    }
-  )
-  ###### Run models (per tree) ######
-  clade_aic_results <- list()
   
-  if("phylo" %in% class(tree)){
+  if(!clade %in% ex.result$clade){
+    mcmc_path <- paste0("../results/exponential.prior/trainee_results/",
+                        clade, "_mcmc.csv")
     
-    matched <- intersect(tree$tip.label, dat_full$species)
-    tree2 <- drop.tip(tree, setdiff(tree$tip.label, matched))
+    ###### Get start values from MCMC ######
+    dat_mcmc <- read.csv(mcmc_path, check.names = FALSE)
+    keep <- dat_mcmc$i > burnin
+    starts_core <- rep(NA_real_, length(target_params))
+    names(starts_core) <- target_params
     
-    dat <- dat_full[dat_full$species %in% matched, ]
-    dat <- dat[, c("species", "haploid")]
-    dat <- dat[!is.na(dat$haploid), ]
+    for(p in target_params){
+      if(p %in% names(dat_mcmc)){
+        vals <- dat_mcmc[keep, p]
+        vals <- vals[is.finite(vals) & vals > 0]
+        if(length(vals) > 0)
+          starts_core[p] <- mean(vals)
+      }
+    }
     
-    if(nrow(dat) >= 2){
+    ###### Read chromosome data + tree ######
+    dat_full <- read.csv(f, stringsAsFactors = FALSE)
+    dat_full <- CleanHaploid(dat_full)
+    tree <- GetTree(clade)
+    
+    ###### Make trees ultrametric ######
+    if("phylo" %in% class(tree))
+      tree <- AdjustTree(tree)
+    if("multiPhylo" %in% class(tree)){
+      for(j in 1:length(tree)){
+        tree[[j]] <- AdjustTree(tree[[j]])
+        print(paste("working on tree", j))
+      }
+    }
+    
+    ###### Candidate models ######
+    candidates <- list(
+      full = function(mat, lik) {
+        constrainMkn(data = mat, lik = lik, hyper=FALSE,
+                     polyploidy = FALSE, verbose=FALSE)
+      },
+      no_pol = function(mat, lik) {
+        constrainMkn(data = mat, lik = lik, hyper=FALSE,
+                     polyploidy = FALSE, verbose=FALSE,
+                     constrain = list(drop.poly = TRUE))
+      },
+      no_dem = function(mat, lik) {
+        constrainMkn(data = mat, lik = lik, hyper=FALSE,
+                     polyploidy = FALSE, verbose=FALSE,
+                     constrain = list(drop.demi = TRUE))
+      },
+      no_poly_no_demi = function(mat, lik) {
+        constrainMkn(data = mat, lik = lik, hyper=FALSE,
+                     polyploidy = FALSE, verbose=FALSE,
+                     constrain = list(drop.poly = TRUE, drop.demi = TRUE))
+      }
+    )
+    
+    ###### Run models (per tree) ######
+    clade_aic_results <- list()
+    
+    if("phylo" %in% class(tree)){
+      
+      matched <- intersect(tree$tip.label, dat_full$species)
+      tree2 <- drop.tip(tree, setdiff(tree$tip.label, matched))
+      
+      dat <- dat_full[dat_full$species %in% matched, ]
+      dat <- dat[, c("species", "haploid")]
+      dat <- dat[!is.na(dat$haploid), ]
+      
       mat <- datatoMatrix(x = dat, buffer = 1, hyper = FALSE)
       lik <- make.mkn(tree = tree2, states = mat, k=ncol(mat),
                       strict=FALSE,
@@ -194,7 +206,8 @@ parallel_results <- foreach(i = 1:length(file_list), .combine = 'list') %dopar% 
         x0 <- starts_core[par_m]
         if(all(is.finite(x0)) && all(x0 > 0)){
           fit <- tryCatch(
-            find.mle(conlik_m, x.init = x0),
+            # UPDATED: Added subplex method and limits
+            find.mle(conlik_m, x.init = x0, method = "subplex", lower = 0, upper = 30),
             error = function(e) e
           )
           if(!inherits(fit, "error"))
@@ -204,54 +217,56 @@ parallel_results <- foreach(i = 1:length(file_list), .combine = 'list') %dopar% 
       clade_aic_results[[1]] <- tree_row
     }
   }
-  if("multiPhylo" %in% class(tree)){
     
+  if("multiPhylo" %in% class(tree)){
+      
     for(j in 1:length(tree)){
       
       tr <- tree[[j]]
-      
+        
       matched <- intersect(tr$tip.label, dat_full$species)
       tr2 <- drop.tip(tr, setdiff(tr$tip.label, matched))
-      
+        
       dat <- dat_full[dat_full$species %in% matched, ]
       dat <- dat[, c("species", "haploid")]
       dat <- dat[!is.na(dat$haploid), ]
-      
+        
       tree_row <- c(full=NA, no_pol=NA, no_dem=NA, no_poly_no_demi=NA)
-      
+        
       if(nrow(dat) >= 2){
-        
+          
         mat <- datatoMatrix(x = dat, buffer = 1, hyper = FALSE)
-        
+          
         lik <- make.mkn(tree = tr2, states = mat, k=ncol(mat),
                         strict=FALSE,
                         control=list(method="ode", root=ROOT.OBS))
-        
-        for(m in model_names){
           
+        for(m in model_names){
+            
           conlik_m <- candidates[[m]](mat, lik)
           par_m <- argnames(conlik_m)
-          
-          x0 <- starts_core[par_m]
-          
-          if(all(is.finite(x0)) && all(x0 > 0)){
             
+          x0 <- starts_core[par_m]
+            
+          if(all(is.finite(x0)) && all(x0 > 0)){
+              
             fit <- tryCatch(
-              find.mle(conlik_m, x.init = x0),
+              # UPDATED: Added subplex method and limits (and fixed syntax)
+              find.mle(conlik_m, x.init = x0, method = "subplex", lower = 0, upper = 30),
               error = function(e) e
             )
-            
+              
             if(!inherits(fit, "error"))
               tree_row[m] <- AIC(fit)
           }
         }
       }
-      
+        
       clade_aic_results[[j]] <- tree_row
     }
   }
-  
-  ###### Aggregate + write results ######
+    
+    ###### Aggregate + write results ######
   if(length(clade_aic_results) > 0){
     res_mat <- do.call(rbind, clade_aic_results)
     mean_aics <- colMeans(res_mat, na.rm = TRUE)
@@ -261,6 +276,7 @@ parallel_results <- foreach(i = 1:length(file_list), .combine = 'list') %dopar% 
   }
   return(clade)
 }
+
 
 # Always stop cluster
 stopCluster(my_cluster)
