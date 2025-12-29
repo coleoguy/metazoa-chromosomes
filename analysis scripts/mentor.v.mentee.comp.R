@@ -74,16 +74,9 @@ ggplot(results, aes(x = mentor.median, y = student.median)) +
                    color = I(ifelse(highlight, "darkblue", "gray40"))),
                lwd = 0.8) +
   
-  # 5. Labels
-  geom_text_repel(data = subset(results, highlight), 
-                  aes(label = clade), 
-                  box.padding = 0.5, 
-                  point.padding = 0.3,
-                  min.segment.length = 0) +
-  
   # Alpha Scaling: Non-highlighted = 0.5, Highlighted = 1.0
   scale_alpha_manual(values = c(`FALSE` = 0.5, `TRUE` = 1), guide = "none") +
   
-  labs(x = "Mentor: Sum of Changes (95% HPD)",
-       y = "Student: Sum of Changes (95% HPD)") +
+  labs(x = "Mentor: Dysploidy Rates (95% HPD; units of tree length)",
+       y = "Student: Sum of Changes (95% HPD; units of tree length)") +
   theme_bw()
