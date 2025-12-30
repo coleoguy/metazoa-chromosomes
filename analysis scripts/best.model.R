@@ -290,3 +290,11 @@ parallel_results <- foreach(i = 1:length(file_list), .combine = 'list') %dopar% 
 
 # Always stop cluster
 stopCluster(my_cluster)
+
+
+# write all model testing results out to file
+#files <- list.files("../results/model.testing/", full.names = TRUE)
+#dat <- do.call(rbind,  lapply(files, read.csv))
+#colnames(dat) <- c("clade", colnames(dat[2:5]))
+#write.csv(dat, "../results/AIC.csv", row.names = F)
+
