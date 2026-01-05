@@ -166,7 +166,7 @@ plants <- c("asteraceae", "fabaceae", "brassicaceae", "orchidaceae", "lilaceae")
     args <- argnames(conlik)
     # run mcmc
     res <- mcmc(lik=conlik, x.init=runif(length(argnames(conlik))),
-                prior=make.prior.uniform(0,10), nsteps=iter, w=1)
+                prior=make.prior.uniform(0,20), nsteps=iter, w=1)
   }
   if("multiPhylo" %in% class(tree)){
     res <- list()
@@ -180,7 +180,7 @@ plants <- c("asteraceae", "fabaceae", "brassicaceae", "orchidaceae", "lilaceae")
       args <- argnames(conlik)
       # run mcmc
       res[[j]] <- mcmc(lik=conlik, x.init=runif(length(argnames(conlik))),
-                   prior=make.prior.uniform(0,10), nsteps=iter, w=1)
+                   prior=make.prior.uniform(0,20), nsteps=iter, w=1)
     }
     res <- do.call(rbind, res)
   }
