@@ -132,8 +132,8 @@ parallel_results <- foreach(i = 1:length(file_list), .combine = 'list') %dopar% 
   
   if(!clade %in% ex.result$clade){
     
-    mcmc_path <- paste0("../results/exponential.prior/trainee_results/",
-                        clade, "_mcmc.csv")
+    mcmc_path <- paste0("../results/exponential.prior - full model/mentor_results/",
+                        clade, ".p.res.csv")
     
     ###### Get start values from MCMC ######
     dat_mcmc <- read.csv(mcmc_path, check.names = FALSE)
@@ -292,9 +292,8 @@ parallel_results <- foreach(i = 1:length(file_list), .combine = 'list') %dopar% 
 stopCluster(my_cluster)
 
 
-# write all model testing results out to file
-#files <- list.files("../results/model.testing/", full.names = TRUE)
+#write all model testing results out to file
+#files <- list.files("../results/model.testing (some missing results)", full.names = TRUE)
 #dat <- do.call(rbind,  lapply(files, read.csv))
 #colnames(dat) <- c("clade", colnames(dat[2:5]))
 #write.csv(dat, "../results/AIC.csv", row.names = F)
-
