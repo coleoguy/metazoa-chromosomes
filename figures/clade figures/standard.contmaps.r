@@ -16,7 +16,8 @@ chrom_dir  <- "../../data/chrome/"
 output_dir <- "contmaps/"
 
 # List of plant clades (used to select tree adjustment method)
-plants <- c("asteraceae", "fabaceae", "brassicaceae", "orchidaceae", "liliaceae", "solanaceae")
+plants <- c("asteraceae", "fabaceae", "brassicaceae", "orchidaceae", 
+            "liliaceae", "solanaceae", "rubiaceae", "passifloraceae")
 
 ###### Functions ######
 
