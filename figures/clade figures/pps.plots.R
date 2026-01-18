@@ -33,7 +33,7 @@ for (f in files) {
     
     # Calculate percentile of empirical value
     pct <- mean(null_vals <= emp_val)
-    in_tail <- pct < 0.05 | pct > 0.95
+    in_tail <- pct < 0.025 | pct > 0.975
     
     if (stat == "variance") var_flag <- in_tail
     if (stat == "entropy") ent_flag <- in_tail
