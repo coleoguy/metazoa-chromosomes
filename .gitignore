@@ -3,3 +3,4 @@
 
 # Exception: Keep the gitignore itself
 !.gitignore
+results/.DS_Store
