@@ -4,7 +4,7 @@ library(coda)
 # --- 1. Setup ---
 tree       <- read.tree("../figure 1/cladetree.new")
 higher_df  <- read.csv("../figure 1/higher_class.csv")
-mcmc_files <- list.files("../../results/exponential.prior/mentor_results/", full.names = TRUE)
+mcmc_files <- list.files("../../results/exponential.prior - full model/mentor_results/", full.names = TRUE)
 ages       <- read.csv("../../data/clade.ages.csv")
 
 # VISUALIZATION SETTINGS
@@ -13,6 +13,9 @@ min_rate_threshold <- 1e-05
 nbuffer <- 0.4  # <--- TWEAK THIS: Larger number moves the plots further right
 
 hc_lookup  <- setNames(higher_df$Higher.Classification, tolower(higher_df$Clade))
+
+#--- FIX 1: Drop magnolicaceae from tree
+tree <- drop.tip(tree, "Magnoliaceae")
 
 # --- FIX 2: Optimized Color Palette (3 Greens + Maximal Divergence) ---
 class_cols <- c(
@@ -181,7 +184,8 @@ mtext("Dysploidy Rate (events / Myr)", side = 1, line = 1.5,
 
 # Legend
 legend_fills <- sapply(class_cols, function(x) adjustcolor(x, alpha.f = plot_alpha))
-legend("bottomleft", 
+legend("bottomleft",
+       inset = c(-.03,0),
        legend = names(class_cols), 
        col = class_cols,       
        pt.bg = legend_fills,   
