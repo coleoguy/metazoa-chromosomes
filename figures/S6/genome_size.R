@@ -148,3 +148,47 @@ p <- ggplot(new_dat, aes(x = genome_size, y = Median_Rate, color = Clade)) +
   )
 
 print(p)
+
+
+
+# ------------------------------------------------------------
+# Plot 2: mean C-value per clade vs dysploidy rate
+# (base R aggregation + weighted regression)
+# ------------------------------------------------------------
+
+# mean C-value per clade
+mean_C <- aggregate(genome_size ~ Clade, data = new_dat, mean)
+
+# one rate per clade (they are constant within clade)
+rate_df <- aggregate(Median_Rate ~ Clade, data = new_dat, function(x) x[1])
+
+# weights = number of observations per clade
+n_df <- aggregate(genome_size ~ Clade, data = new_dat, length)
+names(n_df)[2] <- "n"
+
+# merge summaries
+clade_summary <- Reduce(function(x, y) merge(x, y, by = "Clade"),
+                        list(mean_C, rate_df, n_df))
+
+# weighted regression in log–log space
+fit <- lm(log10(Median_Rate) ~ log10(genome_size),
+          data = clade_summary,
+          weights = n)
+print(summary(fit))
+
+# plot
+p2 <- ggplot(clade_summary,
+             aes(x = genome_size, y = Median_Rate, color = Clade)) +
+  geom_point(aes(size = n), show.legend = FALSE) +
+  geom_smooth(method = "lm", se = TRUE, aes(weight = n), color = "red") +
+  scale_x_log10() +
+  scale_y_log10() +
+  scale_color_manual(values = cols) +
+  theme_classic() +
+  theme(legend.position = "none") +
+  labs(
+    x = "Mean C-Value (pg) per clade",
+    y = "Dysploidy rate (Median_Rate)"
+  )
+
+print(p2)
