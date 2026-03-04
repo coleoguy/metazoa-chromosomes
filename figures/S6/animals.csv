@@ -5062,9 +5062,9 @@ Reptilia,Squamata,Gekkonidae,Thecadactylus rapicauda,Turnip-tailed gecko,2.36
 Reptilia,Squamata,Hydrophiidae,Enhydrina schistosa,Beaked sea snake,2.75
 Reptilia,Squamata,Hydrophiidae,Laticauda sp.,Sea snake,3.69
 Reptilia,Squamata,Hydrophiidae,Thalassophina viperina,Sea snake,2.4
-Reptilia,Squamata,Iguanidae,Cyclura cornuta,Horned ground iguana,1.8
-Reptilia,Squamata,Iguanidae,Iguana iguana,Iguana,2.89
-Reptilia,Squamata,Iguanidae,Sauromalus obesus,Chuckwalla,2.66
+Reptilia,Squamata,,Cyclura cornuta,Horned ground iguana,1.8
+Reptilia,Squamata,Iguania,Iguana iguana,Iguana,2.89
+Reptilia,Squamata,Iguania,Sauromalus obesus,Chuckwalla,2.66
 Reptilia,Squamata,Lacertidae,Acanthodactylus pardalis,Fringe-finger lizard,1.44
 Reptilia,Squamata,Lacertidae,Eremias grammica,Reticulate racerunner,1.9
 Reptilia,Squamata,Lacertidae,Eremias multiocellata,Multi-cellated racerunner,1.73
@@ -5118,41 +5118,41 @@ Reptilia,Squamata,Polychrotidae,Anolis sagraei,Brown anole,1.89
 Reptilia,Squamata,Polychrotidae,Enyalius iheringii,Unknown,2.48
 Reptilia,Squamata,Polychrotidae,Polychrus marmoratus,Common monkey lizard,1.86
 Reptilia,Squamata,Pygopodidae,Lialis burtonis,Burton's snake lizard,2.51
-Reptilia,Squamata,Scincidae,Asymblepharus alaicus,Skink,1.93
-Reptilia,Squamata,Scincidae,Carlia triacantha,Desert rainbow skink,1.41
-Reptilia,Squamata,Scincidae,Chalcides chalcides,Three-toed skink,1.68
-Reptilia,Squamata,Scincidae,Chalcides mionecton,Skink,1.05
-Reptilia,Squamata,Scincidae,Chalcides mionecton,Skink,2.08
-Reptilia,Squamata,Scincidae,Chalcides ocellatus,Ocellated skink,1.72
-Reptilia,Squamata,Scincidae,Chalcides ocellatus,Ocellated skink,3.2
-Reptilia,Squamata,Scincidae,Chalcides viridanus,Canarian skink,1.75
-Reptilia,Squamata,Scincidae,Cryptoblepharus plagiocephalus,Snake-eyed skink,1.51
-Reptilia,Squamata,Scincidae,Ctenotus alacer,Skink,1.57
-Reptilia,Squamata,Scincidae,Ctenotus leonhardii,Leonhard's skink,1.65
-Reptilia,Squamata,Scincidae,Ctenotus quattuordecimlineatus,Fourteen-lined skink,1.59
-Reptilia,Squamata,Scincidae,Ctenotus saxatilis,Skink,1.5
-Reptilia,Squamata,Scincidae,Egernia inornata,Desert skink,1.69
-Reptilia,Squamata,Scincidae,Eremiascincus fasciolatus,Narrow-banded sand swimmer,1.61
-Reptilia,Squamata,Scincidae,Eumeces inexpectatus,Southeastern five-lined skink,2.67
-Reptilia,Squamata,Scincidae,Lerista desertorum,Skink,1.64
-Reptilia,Squamata,Scincidae,Lerista frosti,Skink,2.6
-Reptilia,Squamata,Scincidae,Lerista labialis,Southern sandslider,1.73
-Reptilia,Squamata,Scincidae,Mabuya capensis,Cape skink,1.72
-Reptilia,Squamata,Scincidae,Mabuya carinata,Shiny skink,1.44
-Reptilia,Squamata,Scincidae,Mabuya mabouya,American shiny skink,1.27
-Reptilia,Squamata,Scincidae,Mabuya macularia,Spotted skink,2.11
-Reptilia,Squamata,Scincidae,Mabuya multifasciata,Many-striped mabuya,1.44
-Reptilia,Squamata,Scincidae,Mabuya quinquetaeniata,Rainbow rock skink,1.09
-Reptilia,Squamata,Scincidae,Mabuya sp.,Skink,1.73
-Reptilia,Squamata,Scincidae,Mabuya varia,Savannah variable skink,1.26
-Reptilia,Squamata,Scincidae,Mabuya varia,Savannah variable skink,1.54
-Reptilia,Squamata,Scincidae,Menetia greyii,Common dwarf skink,1.71
-Reptilia,Squamata,Scincidae,Mochlus sundevalli,Skink,1.3
-Reptilia,Squamata,Scincidae,Morethia ruficauda,Southwestern mulch skink,1.64
-Reptilia,Squamata,Scincidae,Novoeumeces schneideri,Schneider's skink,2.59
-Reptilia,Squamata,Scincidae,Sphenops sphenopsiformis,Skink,2.27
-Reptilia,Squamata,Scincidae,Tiliqua scincoides,Eastern blue-tongued lizard,1.82
-Reptilia,Squamata,Scincidae,Tiliqua scincoides,Eastern blue-tongued lizard,1.82
+Reptilia,Squamata,Scincoidea,Asymblepharus alaicus,Skink,1.93
+Reptilia,Squamata,Scincoidea,Carlia triacantha,Desert rainbow skink,1.41
+Reptilia,Squamata,Scincoidea,Chalcides chalcides,Three-toed skink,1.68
+Reptilia,Squamata,Scincoidea,Chalcides mionecton,Skink,1.05
+Reptilia,Squamata,Scincoidea,Chalcides mionecton,Skink,2.08
+Reptilia,Squamata,Scincoidea,Chalcides ocellatus,Ocellated skink,1.72
+Reptilia,Squamata,Scincoidea,Chalcides ocellatus,Ocellated skink,3.2
+Reptilia,Squamata,Scincoidea,Chalcides viridanus,Canarian skink,1.75
+Reptilia,Squamata,Scincoidea,Cryptoblepharus plagiocephalus,Snake-eyed skink,1.51
+Reptilia,Squamata,Scincoidea,Ctenotus alacer,Skink,1.57
+Reptilia,Squamata,Scincoidea,Ctenotus leonhardii,Leonhard's skink,1.65
+Reptilia,Squamata,Scincoidea,Ctenotus quattuordecimlineatus,Fourteen-lined skink,1.59
+Reptilia,Squamata,Scincoidea,Ctenotus saxatilis,Skink,1.5
+Reptilia,Squamata,Scincoidea,Egernia inornata,Desert skink,1.69
+Reptilia,Squamata,Scincoidea,Eremiascincus fasciolatus,Narrow-banded sand swimmer,1.61
+Reptilia,Squamata,Scincoidea,Eumeces inexpectatus,Southeastern five-lined skink,2.67
+Reptilia,Squamata,Scincoidea,Lerista desertorum,Skink,1.64
+Reptilia,Squamata,Scincoidea,Lerista frosti,Skink,2.6
+Reptilia,Squamata,Scincoidea,Lerista labialis,Southern sandslider,1.73
+Reptilia,Squamata,Scincoidea,Mabuya capensis,Cape skink,1.72
+Reptilia,Squamata,Scincoidea,Mabuya carinata,Shiny skink,1.44
+Reptilia,Squamata,Scincoidea,Mabuya mabouya,American shiny skink,1.27
+Reptilia,Squamata,Scincoidea,Mabuya macularia,Spotted skink,2.11
+Reptilia,Squamata,Scincoidea,Mabuya multifasciata,Many-striped mabuya,1.44
+Reptilia,Squamata,Scincoidea,Mabuya quinquetaeniata,Rainbow rock skink,1.09
+Reptilia,Squamata,Scincoidea,Mabuya sp.,Skink,1.73
+Reptilia,Squamata,Scincoidea,Mabuya varia,Savannah variable skink,1.26
+Reptilia,Squamata,Scincoidea,Mabuya varia,Savannah variable skink,1.54
+Reptilia,Squamata,Scincoidea,Menetia greyii,Common dwarf skink,1.71
+Reptilia,Squamata,Scincoidea,Mochlus sundevalli,Skink,1.3
+Reptilia,Squamata,Scincoidea,Morethia ruficauda,Southwestern mulch skink,1.64
+Reptilia,Squamata,Scincoidea,Novoeumeces schneideri,Schneider's skink,2.59
+Reptilia,Squamata,Scincoidea,Sphenops sphenopsiformis,Skink,2.27
+Reptilia,Squamata,Scincoidea,Tiliqua scincoides,Eastern blue-tongued lizard,1.82
+Reptilia,Squamata,Scincoidea,Tiliqua scincoides,Eastern blue-tongued lizard,1.82
 Reptilia,Squamata,Teiidae,Ameiva ameiva,Jungle runner,1.66
 Reptilia,Squamata,Teiidae,Ameiva ameiva,Jungle runner,2.42
 Reptilia,Squamata,Teiidae,Ameiva chrysolaema,Blue ameiva,2.45

@@ -1,137 +1,96 @@
-# ------------------------------------------------------------
-# Full script: distinct color per clade, NO legend,
-# and non-overlapping right-side colored clade labels with leader lines
-# ------------------------------------------------------------
+library(ggplot2)
 
-# ---- 0. Load data ----
+# ---- Load data ----
 animals <- read.csv("animals.csv")
 plants  <- read.csv("plants.fungi.csv")
 rates   <- read.csv("../../results/median_dysploidy_rates.csv")
-rates$Clade <- paste0(toupper(substr(rates$Clade, 1, 1)), substr(rates$Clade, 2, nchar(rates$Clade)))
 
-# ------------------------------------------------------------
-# Full script: distinct color per clade, NO legend,
-# and non-overlapping right-side colored clade labels with leader lines
-# ------------------------------------------------------------
+rates$Clade <- paste0(
+  toupper(substr(rates$Clade, 1, 1)),
+  substr(rates$Clade, 2, nchar(rates$Clade))
+)
 
-# ---- 1. Build merged plotting dataset ----
-new_dat <- data.frame()
+# ---- Build dataset ----
+new_dat <- data.frame(stringsAsFactors = FALSE)
 
-for (i in 1:length(rates$Clade)) {
+for (i in seq_len(nrow(rates))) {
   
   clade <- rates$Clade[i]
   rate  <- rates$Median_Rate[i]
   
-  # ---- CASE 1: plants ----
   if (clade %in% plants$Family) {
     
     idx <- plants$Family == clade
-    
-    rows <- data.frame(
+    new_dat <- rbind(new_dat, data.frame(
       genome_size = plants$Cvalue[idx],
       Clade       = clade,
       Median_Rate = rate,
-      Source      = "Plants"
-    )
-    
-    new_dat <- rbind(new_dat, rows)
+      stringsAsFactors = FALSE
+    ))
     
   } else {
     
-    # ---- CASE 2: animals ----
     family_name <- clade
-    
-    if (clade == "Iguania")    family_name <- "Iguanidae"
-    if (clade == "Scincoidea") family_name <- "Scincidae"
     
     idx <- animals$Order  == family_name |
       animals$Family == family_name |
       animals$Class  == family_name
     
     if (any(idx, na.rm = TRUE)) {
-      
-      rows <- data.frame(
+      new_dat <- rbind(new_dat, data.frame(
         genome_size = animals$Cvalue[idx],
         Clade       = clade,
         Median_Rate = rate,
-        Source      = "Animals"
-      )
-      
-      new_dat <- rbind(new_dat, rows)
+        stringsAsFactors = FALSE
+      ))
     }
   }
 }
 
-# ---- 2. Libraries ----
-library(ggplot2)
-library(dplyr)
-
-# ---- 3. Clean / coerce types ----
+# ---- Clean ----
 new_dat$genome_size <- as.numeric(new_dat$genome_size)
 new_dat$Median_Rate <- as.numeric(new_dat$Median_Rate)
 
-# Drop rows that break log scales
-new_dat <- new_dat %>%
-  filter(
-    is.finite(genome_size), is.finite(Median_Rate),
-    genome_size > 0, Median_Rate > 0
-  )
+# Convert pg -> Mb (1 pg ≈ 978 Mbp)
+new_dat$genome_size <- new_dat$genome_size * 978
 
-# Stable factor ordering
 new_dat$Clade <- factor(new_dat$Clade, levels = sort(unique(new_dat$Clade)))
-n_clades <- nlevels(new_dat$Clade)
 
-# ---- 4. One unique color per clade ----
-cols <- setNames(
-  grDevices::hcl.colors(n_clades, "Dark 3"),
-  levels(new_dat$Clade)
-)
+# ---- Anchor: max genome_size per clade; y = clade's (constant) Median_Rate ----
+rep_df <- aggregate(genome_size ~ Clade, data = new_dat, FUN = max)
+names(rep_df)[names(rep_df) == "genome_size"] <- "x_anchor"
+rep_df$y_anchor <- new_dat$Median_Rate[match(rep_df$Clade, new_dat$Clade)]
 
-# ---- 5. Build non-overlapping label positions + leader lines ----
-# Representative y per clade: median rate
-# Representative x per clade: a high quantile of genome_size (anchor near right edge of that clade’s cloud)
-rep_df <- new_dat %>%
-  group_by(Clade) %>%
-  summarize(
-    y_anchor = median(Median_Rate, na.rm = TRUE),
-    x_anchor = as.numeric(quantile(genome_size, probs = 0.90, na.rm = TRUE)),
-    .groups = "drop"
-  ) %>%
-  filter(is.finite(x_anchor), is.finite(y_anchor), x_anchor > 0, y_anchor > 0)
-
-# Global plot bounds
+# ---- Label positions (stacked evenly in log space) ----
 x_max <- max(new_dat$genome_size, na.rm = TRUE)
 y_min <- min(new_dat$Median_Rate, na.rm = TRUE)
 y_max <- max(new_dat$Median_Rate, na.rm = TRUE)
 
-# Put labels in a neat vertical stack *in log space* (so it looks even on a log axis)
-# Order by the clade’s anchor y so leader lines cross less.
-rep_df <- rep_df %>%
-  arrange(y_anchor) %>%
-  mutate(
-    # label column x location slightly beyond the data
-    x_label = x_max * 1.25,
-    # evenly spaced positions in log10(y)
-    y_label = 10^(seq(log10(y_min), log10(y_max), length.out = n()))
-  )
+rep_df <- rep_df[order(rep_df$y_anchor), , drop = FALSE]
+rep_df$x_label <- x_max * 1.30
+rep_df$y_label <- 10^(seq(log10(y_min), log10(y_max), length.out = nrow(rep_df)))
 
-# ---- 6. Plot ----
+# ---- Colors (fixed per clade) ----
+n_clades <- nlevels(new_dat$Clade)
+cols <- setNames(grDevices::hcl.colors(n_clades, "Dark 3"), levels(new_dat$Clade))
+
+# ---- Plot ----
 p <- ggplot(new_dat, aes(x = genome_size, y = Median_Rate, color = Clade)) +
-  geom_point(alpha = 0.3, size = 1.8, show.legend = FALSE) +
+  geom_point(alpha = 0.35, size = 1.8, show.legend = FALSE) +
   
-  # leader lines from clade anchor -> label position
   geom_segment(
     data = rep_df,
     aes(x = x_anchor, y = y_anchor, xend = x_label, yend = y_label, color = Clade),
+    inherit.aes = FALSE,
     linewidth = 0.4,
     alpha = 0.9,
     show.legend = FALSE
   ) +
   
-  # stacked colored labels
   geom_text(
     data = rep_df,
     aes(x = x_label, y = y_label, label = Clade, color = Clade),
+    inherit.aes = FALSE,
     hjust = 0,
     size = 3,
     show.legend = FALSE
@@ -142,53 +101,47 @@ p <- ggplot(new_dat, aes(x = genome_size, y = Median_Rate, color = Clade)) +
   scale_color_manual(values = cols) +
   theme_classic() +
   theme(legend.position = "none") +
-  labs(
-    x = "C-Value (pg)",
-    y = "Dysploidy rate (Median_Rate)"
-  )
+  labs(x = "Genome size (Mb)", y = "Dysploidy rate (Median_Rate)")
 
 print(p)
 
+### ---- PGLS ----
+library(ape)
+library(nlme)
+
+tree <- read.tree("cladetree.new")
+
+# One row per clade: mean genome size + clade dysploidy rate
+dat_clade <- data.frame(
+  Clade = unique(new_dat$Clade),
+  Median_Rate = new_dat$Median_Rate[match(unique(new_dat$Clade), new_dat$Clade)],
+  GenomeSize = as.numeric(tapply(new_dat$genome_size, new_dat$Clade, mean, na.rm = TRUE)),
+  stringsAsFactors = FALSE)
+
+# Match tree and data
+rownames(dat_clade) <- dat_clade$Clade
+shared <- intersect(tree$tip.label, dat_clade$Clade)
+
+tree_p <- drop.tip(tree, setdiff(tree$tip.label, shared))
+dat_p  <- dat_clade[tree_p$tip.label, , drop = FALSE]
+
+# Fit PGLS (Brownian motion correlation)
+phylo_cor <- corBrownian(1, phy = tree_p)
+
+pgls_model <- gls(
+  Median_Rate ~ GenomeSize,
+  data = dat_p,
+  correlation = phylo_cor,
+  method = "ML")
+
+summary(pgls_model)
 
 
-# ------------------------------------------------------------
-# Plot 2: mean C-value per clade vs dysploidy rate
-# (base R aggregation + weighted regression)
-# ------------------------------------------------------------
+dat_p$pred <- predict(pgls_model)
+dat_plot <- dat_p[order(dat_p$GenomeSize), ]
 
-# mean C-value per clade
-mean_C <- aggregate(genome_size ~ Clade, data = new_dat, mean)
-
-# one rate per clade (they are constant within clade)
-rate_df <- aggregate(Median_Rate ~ Clade, data = new_dat, function(x) x[1])
-
-# weights = number of observations per clade
-n_df <- aggregate(genome_size ~ Clade, data = new_dat, length)
-names(n_df)[2] <- "n"
-
-# merge summaries
-clade_summary <- Reduce(function(x, y) merge(x, y, by = "Clade"),
-                        list(mean_C, rate_df, n_df))
-
-# weighted regression in log–log space
-fit <- lm(log10(Median_Rate) ~ log10(genome_size),
-          data = clade_summary,
-          weights = n)
-print(summary(fit))
-
-# plot
-p2 <- ggplot(clade_summary,
-             aes(x = genome_size, y = Median_Rate, color = Clade)) +
-  geom_point(aes(size = n), show.legend = FALSE) +
-  geom_smooth(method = "lm", se = TRUE, aes(weight = n), color = "red") +
-  scale_x_log10() +
-  scale_y_log10() +
-  scale_color_manual(values = cols) +
-  theme_classic() +
-  theme(legend.position = "none") +
-  labs(
-    x = "Mean C-Value (pg) per clade",
-    y = "Dysploidy rate (Median_Rate)"
-  )
-
-print(p2)
+ggplot(dat_plot, aes(GenomeSize, Median_Rate)) +
+  geom_point(size = 2) +
+  geom_line(aes(y = pred), color = "red", linewidth = 1) +
+  scale_y_log10() +          # <-- match your original plot
+  theme_classic()
