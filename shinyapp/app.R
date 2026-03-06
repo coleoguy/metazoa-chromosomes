@@ -1,110 +1,171 @@
+## ============================
+##  Libraries
+## ============================
 library(shiny)
 library(viridisLite)
+library(bslib)
+library(DT)
+library(shinycssloaders)
 
-# ---- Load data ----
+## ============================
+##  Load data
+## ============================
 all_chrome <- read.csv("all_chrome.csv", stringsAsFactors = FALSE)
 all_chrome$haploid <- as.numeric(all_chrome$haploid)
+all_chrome$clade   <- tolower(all_chrome$clade)
 
-# Standardize clade names to lower case
-all_chrome$clade <- tolower(all_chrome$clade)
-
-# ---- Load higher classification ----
 higher_class <- read.csv("higher_class.csv", stringsAsFactors = FALSE)
-
-# Standardize clade names here too
 higher_class$Clade <- tolower(higher_class$Clade)
 
-# Keep only clades that are in all_chrome (safety)
+# Keep only valid clades
 higher_class <- higher_class[higher_class$Clade %in% all_chrome$clade, ]
-
-# Unique higher-level groups (you can reorder this if you want a custom order)
 higher_levels <- unique(higher_class$Higher.Classification)
 
-# ---- UI ----
-ui <- fluidPage(
-  # Some light CSS to make the collapsible headers look nice
+## ============================
+##  UI
+## ============================
+ui <- bslib::page_sidebar(
+  theme = bslib::bs_theme(
+    version    = 5,
+    bootswatch = "flatly",
+    primary    = "#7FA58C",   # sage green
+    secondary  = "#E6EFEA"
+  ),
+  title = "Chromosome Data Across the Tree of Life",
+  
+  sidebar = bslib::sidebar(
+    width = 350,
+    
+    # Record counters
+    bslib::card(
+      bslib::card_body(
+        strong(textOutput("totalRecords")),
+        strong(textOutput("filteredRecords"))
+      )
+    ),
+    br(),
+    
+    # Clade selectors
+    h5("Select clades"),
+    div(class = "clade-scroll", uiOutput("cladeSelector"))
+  ),
+  
+  bslib::navset_card_tab(
+    bslib::nav_panel(
+      "Distributions",
+      bslib::card_body(
+        fluidRow(
+          column(
+            5,
+            radioButtons(
+              "plotType",
+              NULL,
+              choices = c("Density" = "density",
+                          "Histogram" = "hist"),
+              inline = TRUE
+            )
+          ),
+          column(
+            7,
+            fluidRow(
+              column(6, checkboxInput("showMedian", "Show median lines", TRUE)),
+              column(6, checkboxInput("showN", "Show n in legend", TRUE))
+            )
+          )
+        ),
+        shinycssloaders::withSpinner(
+          plotOutput("distPlot", height = "65vh")
+        )
+      )
+    ),
+    bslib::nav_panel(
+      "Data table",
+      bslib::card_body(
+        downloadButton("downloadData", "Download CSV"),
+        br(), br(),
+        shinycssloaders::withSpinner(DT::DTOutput("cladeTable"))
+      )
+    )
+  ),
+  
+  ## ---- CSS polish ----
   tags$head(
     tags$style(HTML("
       .clade-scroll {
-        max-height: 400px;
+        max-height: 520px;
         overflow-y: auto;
-        padding-right: 5px;
-        border: 1px solid #ddd;
-        border-radius: 4px;
+        padding-right: 6px;
+        border: 1px solid #e5e5e5;
+        border-radius: 8px;
+        padding: 8px;
+        background: #fff;
       }
+
       details > summary {
-        font-weight: bold;
+        font-weight: 600;
         margin-top: 8px;
         cursor: pointer;
+        list-style: none;
       }
+
       details > summary::-webkit-details-marker {
         display: none;
       }
-      details summary::before {
+
+      details > summary::before {
         content: '▸ ';
       }
-      details summary::before {
+
+      details[open] > summary::before {
         content: '▾ ';
       }
+
+      .card {
+        border-color: #D6E2DA;
+      }
+
+      .card-header {
+        background-color: #EEF4F1;
+      }
+
+      .card-body {
+        overflow: hidden;
+      }
+
+      /* spacing between Density / Histogram radio buttons */
+      .shiny-options-group label {
+        margin-right: 18px;
+      }
     "))
-  ),
-  
-  titlePanel("Chromosome Data Across the Tree of Life"),
-  
-  sidebarLayout(
-    sidebarPanel(
-      width = 3,
-      
-      # Record counts
-      textOutput("totalRecords"),
-      textOutput("filteredRecords"),
-      br(),
-      
-      h4("Select clades:"),
-      
-      # Scrollable container for the grouped clade selectors
-      div(
-        class = "clade-scroll",
-        uiOutput("cladeSelector")
-      )
-    ),
-    
-    mainPanel(
-      tabsetPanel(
-        tabPanel("Distributions", plotOutput("distPlot", height = "600px")),
-        tabPanel(
-          "Data table",
-          downloadButton("downloadData", "Download CSV"),
-          br(), br(),
-          tableOutput("cladeTable")
-        )
-      )
-    )
   )
 )
 
-# ---- SERVER ----
+## ============================
+##  SERVER
+## ============================
 server <- function(input, output, session) {
   
-  # ---- Dynamic grouped checkboxes in collapsible sections ----
+  ## ---- Dynamic grouped clade selectors ----
   output$cladeSelector <- renderUI({
     tagList(
       lapply(seq_along(higher_levels), function(i) {
         hg <- higher_levels[i]
         
-        # Clades that belong to this higher group
-        clades_in_group <- sort(unique(higher_class$Clade[higher_class$Higher.Classification == hg]))
+        clades_in_group <- sort(
+          unique(higher_class$Clade[higher_class$Higher.Classification == hg])
+        )
         
-        # Pretty labels (capitalized) but values stay lowercase
-        label_vec <- stats::setNames(clades_in_group, tools::toTitleCase(clades_in_group))
+        label_vec <- stats::setNames(
+          clades_in_group,
+          tools::toTitleCase(clades_in_group)
+        )
         
-        # First group open by default, others collapsed
         tags$details(
           if (i == 1) list(open = "") else list(),
           tags$summary(hg),
           checkboxGroupInput(
-            inputId = paste0("clades_", gsub("\\s+", "_", tolower(hg))),  # e.g., "clades_angiosperm"
-            label  = NULL,   # label is handled by <summary>
+            inputId = paste0("clades_", gsub("\\s+", "_", tolower(hg))),
+            label   = NULL,
             choices = label_vec
           )
         )
@@ -112,59 +173,62 @@ server <- function(input, output, session) {
     )
   })
   
-  # Collect selected clades across *all* higher groups
+  ## ---- Collect selected clades ----
   selected_clades <- reactive({
-    unlist(
+    out <- unlist(
       lapply(higher_levels, function(hg) {
         input[[paste0("clades_", gsub("\\s+", "_", tolower(hg)))]]
       }),
       use.names = FALSE
     )
+    out[!is.na(out)]
   })
   
-  # Reactive filtered data
+  ## ---- Filtered data ----
   filtered_data <- reactive({
     clades <- selected_clades()
-    req(!is.null(clades), length(clades) > 0)
+    req(length(clades) > 0)
     all_chrome[all_chrome$clade %in% clades, , drop = FALSE]
   })
   
-  # ---- Record counters ----
+  ## ---- Record counters ----
   output$totalRecords <- renderText({
     paste("Total records in dataset:", nrow(all_chrome))
   })
   
   output$filteredRecords <- renderText({
     clades <- selected_clades()
-    if (is.null(clades) || !length(clades)) {
-      return("Records shown: 0")
-    }
+    if (!length(clades)) return("Records shown: 0")
     paste("Records shown:", nrow(filtered_data()))
   })
   
-  # ---- Plot densities ----
+  ## ---- Plot ----
   output$distPlot <- renderPlot({
+    par(mar = c(4, 4, 3, 1))
     
     clades <- selected_clades()
-    if (is.null(clades) || !length(clades)) {
+    if (!length(clades)) {
       plot.new()
       text(0.5, 0.5, "Select at least one clade to show distributions")
       return()
     }
     
     df <- filtered_data()
-    n  <- length(clades)
-    
-    # All haploid values across selected clades
     all_vals <- df$haploid[!is.na(df$haploid)]
     if (!length(all_vals)) {
       plot.new()
-      text(0.5, 0.5, "No haploid data available for selected clades")
+      text(0.5, 0.5, "No haploid data available")
       return()
     }
-    xlim <- range(all_vals)
     
-    # Precompute densities and global y max
+    if (input$plotType == "hist") {
+      hist(all_vals, breaks = "FD",
+           main = "Haploid chromosome number",
+           xlab = "Haploid chromosome number")
+      return()
+    }
+    
+    xlim <- range(all_vals)
     density_list <- list()
     max_y <- 0
     
@@ -184,72 +248,67 @@ server <- function(input, output, session) {
     }
     
     ylim <- c(0, max_y * 1.05)
+    base_cols <- viridisLite::viridis(length(clades), option = "C")
+    fill_cols <- sapply(base_cols, adjustcolor, alpha.f = 0.25)
     
-    # Base colors + transparent versions for fill
-    base_cols <- viridis(n)
-    fill_cols <- sapply(base_cols, function(z) adjustcolor(z, alpha.f = 0.3))
-    
-    # Empty canvas
-    plot(0,
-         type = "n",
-         xlim = xlim,
-         ylim = ylim,
+    plot(0, type = "n", xlim = xlim, ylim = ylim,
          xlab = "Haploid chromosome number",
          ylab = "Density",
-         main = "Haploid chromosome number distributions (density)"
-    )
+         main = "Haploid chromosome number distributions")
     
-    # Draw filled polygons + outlines
     for (i in seq_along(clades)) {
-      cl <- clades[i]
-      d  <- density_list[[cl]]
-      
+      d <- density_list[[clades[i]]]
       if (!is.null(d)) {
-        # Filled polygon under the curve
-        polygon(
-          x = c(d$x, rev(d$x)),
-          y = c(d$y, rep(0, length(d$y))),
-          col = fill_cols[i],
-          border = NA
-        )
-        
-        # Outline on top
+        polygon(c(d$x, rev(d$x)),
+                c(d$y, rep(0, length(d$y))),
+                col = fill_cols[i], border = NA)
         lines(d, col = base_cols[i], lwd = 2)
       }
     }
     
-    # Legend: show pretty labels (capitalized)
+    if (isTRUE(input$showMedian)) {
+      for (i in seq_along(clades)) {
+        x <- df$haploid[df$clade == clades[i] & !is.na(df$haploid)]
+        if (length(x)) {
+          abline(v = median(x), col = base_cols[i], lty = 2, lwd = 2)
+        }
+      }
+    }
+    
     legend_labels <- tools::toTitleCase(clades)
+    if (isTRUE(input$showN)) {
+      ns <- sapply(clades, function(cl)
+        sum(df$clade == cl & !is.na(df$haploid)))
+      legend_labels <- paste0(legend_labels, " (n=", ns, ")")
+    }
+    
     legend("topright",
            legend = legend_labels,
            col = base_cols,
            lwd = 3,
-           cex = 0.9,
            bty = "n")
   })
   
-  # ---- Table ----
-  output$cladeTable <- renderTable({
+  ## ---- Data table ----
+  output$cladeTable <- DT::renderDT({
     clades <- selected_clades()
-    if (is.null(clades) || !length(clades)) {
-      return(NULL)
-    }
+    if (!length(clades)) return(NULL)
     
     df <- filtered_data()
+    df$haploid <- as.integer(df$haploid)
     
-    # Show haploid as integers (no extra digits) in the table only
-    if ("haploid" %in% names(df)) {
-      df$haploid <- as.integer(df$haploid)
-    }
-    
-    df
+    DT::datatable(
+      df,
+      options = list(pageLength = 25, scrollX = TRUE),
+      rownames = FALSE
+    )
   })
   
-  # ---- Download handler ----
+  ## ---- Download ----
   output$downloadData <- downloadHandler(
     filename = function() {
       clades <- selected_clades()
-      if (is.null(clades) || !length(clades)) {
+      if (!length(clades)) {
         "chromosome_data.csv"
       } else {
         paste0("chromosome_data_", paste(clades, collapse = "_"), ".csv")
@@ -257,16 +316,16 @@ server <- function(input, output, session) {
     },
     content = function(file) {
       clades <- selected_clades()
-      if (is.null(clades) || !length(clades)) {
-        # Write empty file if nothing selected
+      if (!length(clades)) {
         write.csv(all_chrome[0, ], file, row.names = FALSE)
       } else {
-        df <- filtered_data()
-        write.csv(df, file, row.names = FALSE)
+        write.csv(filtered_data(), file, row.names = FALSE)
       }
     }
   )
 }
 
-# ---- Run app ----
+## ============================
+##  Run app
+## ============================
 shinyApp(ui = ui, server = server)
