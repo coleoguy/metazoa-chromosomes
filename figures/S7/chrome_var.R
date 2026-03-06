@@ -82,3 +82,6 @@ plot(animals_dat$Median_Rate,
      xlab = "Median dysploidy rate",
      ylab = "Variance in haploid chromosome number",
      main = "Animals")
+
+
+wilcox.test(Variance ~ Group, data = plot_dat)
