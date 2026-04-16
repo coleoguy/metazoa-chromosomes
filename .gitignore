@@ -1,6 +1,22 @@
-# Ignore all hidden files
-.*
+# macOS
+.DS_Store
 
-# Exception: Keep the gitignore itself
-!.gitignore
-results/.DS_Store
+# R
+.Rhistory
+.RData
+.Rproj.user/
+.Ruserdata
+*.Rproj
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*~
+
+# Auto-rendered README
+README.html
+
+# System / temp
+Thumbs.db
+*.log
