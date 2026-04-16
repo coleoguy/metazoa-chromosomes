@@ -1,0 +1,439 @@
+#NEXUS
+[R-package APE, Wed Dec  3 15:05:27 2025]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX = 213;
+	TAXLABELS
+		Python_molurus
+		Python_curtus
+		Antaresia_childreni
+		Antaresia_perthensis
+		Morelia_viridis
+		Bothrochilus_albertisii
+		Simalia_amethistina
+		Simalia_boeleni
+		Simalia_oenpelliensis
+		Liasis_olivaceus
+		Liasis_mackloti
+		Aspidites_melanocephalus
+		Loxocemus_bicolor
+		Xenopeltis_unicolor
+		Epicrates_cenchria
+		Epicrates_crassus
+		Eunectes_murinus
+		Chilabothrus_striatus
+		Corallus_caninus
+		Boa_constrictor
+		Eryx_conicus
+		Eryx_johnii
+		Eryx_jaculus
+		Candoia_bibroni
+		Candoia_paulsoni
+		Exiliboa_placata
+		Charina_bottae
+		Acrantophis_dumerili
+		Sanzinia_madagascariensis
+		Salvadora_grahamiae
+		Oligodon_formosanus
+		Platyceps_karelini
+		Dolichophis_jugularis
+		Hierophis_gemonensis
+		Hierophis_viridiflavus
+		Chrysopelea_ornata
+		Dendrelaphis_punctulatus
+		Ahaetulla_nasuta
+		Antaioserpens_warro
+		Bungarus_caeruleus
+		Bungarus_sindanus
+		Bungarus_multicinctus
+		Bungarus_fasciatus
+		Oxyuranus_microlepidotus
+		Oxyuranus_scutellatus
+		Pseudonaja_affinis
+		Pseudonaja_guttata
+		Pseudonaja_inframacula
+		Pseudonaja_ingrami
+		Pseudonaja_textilis
+		Pseudonaja_modesta
+		Pseudonaja_nuchalis
+		Denisonia_devisi
+		Vermicella_annulata
+		Tropidechis_carinatus
+		Hoplocephalus_stephensii
+		Hoplocephalus_bitorquatus
+		Hoplocephalus_bungaroides
+		Austrelaps_superbus
+		Drysdalia_rhodogaster
+		Drysdalia_mastersii
+		Drysdalia_coronoides
+		Echiopsis_curta
+		Hydrophis_cyanocinctus
+		Hydrophis_jerdonii
+		Hydrophis_spiralis
+		Hydrophis_ornatus
+		Hydrophis_major
+		Hydrophis_fasciatus
+		Hydrophis_viperinus
+		Aipysurus_duboisii
+		Aipysurus_fuscus
+		Aipysurus_laevis
+		Emydocephalus_annulatus
+		Hemiaspis_damelii
+		Hemiaspis_signata
+		Cryptophis_nigrescens
+		Rhinoplocephalus_bicolor
+		Suta_suta
+		Parasuta_spectabilis
+		Parasuta_monachus
+		Parasuta_nigriceps
+		Suta_fasciata
+		Cacophis_squamulosus
+		Cacophis_krefftii
+		Acanthophis_praelongus
+		Acanthophis_antarcticus
+		Acanthophis_pyrrhus
+		Pseudechis_butleri
+		Pseudechis_australis
+		Pseudechis_guttatus
+		Pseudechis_colletti
+		Pseudechis_porphyriacus
+		Simoselaps_bertholdi
+		Laticauda_colubrina
+		Laticauda_laticaudata
+		Laticauda_semifasciata
+		Dendroaspis_polylepis
+		Ophiophagus_hannah
+		Aspidelaps_scutatus
+		Aspidelaps_lubricus
+		Walterinnesia_aegyptia
+		Naja_mossambica
+		Naja_nigricollis
+		Naja_haje
+		Naja_melanoleuca
+		Naja_annulata
+		Naja_naja
+		Naja_kaouthia
+		Naja_oxiana
+		Micrurus_browni
+		Micrurus_alleni
+		Micrurus_diastema
+		Micrurus_fulvius
+		Micrurus_nigrocinctus
+		Micrurus_elegans
+		Micrurus_lemniscatus
+		Micrurus_surinamensis
+		Micrurus_mipartitus
+		Micrurus_mosquitensis
+		Ptyas_nigromarginata
+		Ptyas_mucosa
+		Phyllorhynchus_decurtatus
+		Spilotes_pullatus
+		Chironius_bicarinatus
+		Chironius_foveatus
+		Drymarchon_couperi
+		Drymarchon_corais
+		Chironius_quadricarinatus
+		Coluber_constrictor
+		Lycodon_aulicus
+		Lycodon_semicarinatus
+		Arizona_elegans
+		Rhinocheilus_lecontei
+		Lampropeltis_getula
+		Lampropeltis_californiae
+		Lampropeltis_mexicana
+		Lampropeltis_calligaster
+		Bogertophis_subocularis
+		Pantherophis_bairdi
+		Pantherophis_obsoletus
+		Pantherophis_guttatus
+		Pantherophis_vulpinus
+		Pituophis_melanoleucus
+		Coronella_austriaca
+		Elaphe_quadrivirgata
+		Elaphe_climacophora
+		Elaphe_carinata
+		Euprepiophis_mandarinus
+		Euprepiophis_conspicillata
+		Coelognathus_radiatus
+		Boiga_forsteni
+		Boiga_irregularis
+		Telescopus_fallax
+		Boiga_trigonata
+		Echis_carinatus
+		Vipera_ammodytes
+		Vipera_monticola
+		Vipera_latastei
+		Vipera_aspis
+		Daboia_russelii
+		Macrovipera_lebetina
+		Bothriechis_schlegelii
+		Bothriechis_lateralis
+		Bothriechis_nigroviridis
+		Lachesis_muta
+		Sistrurus_miliarius
+		Crotalus_cerastes
+		Crotalus_enyo
+		Crotalus_horridus
+		Crotalus_basiliscus
+		Crotalus_tigris
+		Crotalus_adamanteus
+		Crotalus_mitchellii
+		Crotalus_viridis
+		Crotalus_scutulatus
+		Crotalus_catalinensis
+		Crotalus_ruber
+		Crotalus_atrox
+		Agkistrodon_contortrix
+		Agkistrodon_bilineatus
+		Agkistrodon_piscivorus
+		Cerrophidion_godmani
+		Porthidium_nasutum
+		Atropoides_picadoi
+		Bothrops_alternatus
+		Bothrops_leucurus
+		Bothrops_moojeni
+		Bothrops_atrox
+		Bothrops_asper
+		Bothrops_jararacussu
+		Bothrops_insularis
+		Bothrops_jararaca
+		Bothrops_neuwiedi
+		Ovophis_okinavensis
+		Gloydius_intermedius
+		Gloydius_halys
+		Protobothrops_mucrosquamatus
+		Trimeresurus_gramineus
+		Trimeresurus_erythrurus
+		Calloselasma_rhodostoma
+		Deinagkistrodon_acutus
+		Simoselaps_bimaculatus
+		Furina_diadema
+		Furina_ornata
+		Demansia_vestigiata
+		Demansia_psammophis
+		Demansia_papuensis
+		Acrochordus_arafurae
+		Acrochordus_granulatus
+		Afrotyphlops_schlegelii
+		Typhlops_jamaicensis
+		Myriopholis_macrorhyncha
+	;
+END;
+BEGIN TREES;
+	TRANSLATE
+		1	Python_molurus,
+		2	Python_curtus,
+		3	Antaresia_childreni,
+		4	Antaresia_perthensis,
+		5	Morelia_viridis,
+		6	Bothrochilus_albertisii,
+		7	Simalia_amethistina,
+		8	Simalia_boeleni,
+		9	Simalia_oenpelliensis,
+		10	Liasis_olivaceus,
+		11	Liasis_mackloti,
+		12	Aspidites_melanocephalus,
+		13	Loxocemus_bicolor,
+		14	Xenopeltis_unicolor,
+		15	Epicrates_cenchria,
+		16	Epicrates_crassus,
+		17	Eunectes_murinus,
+		18	Chilabothrus_striatus,
+		19	Corallus_caninus,
+		20	Boa_constrictor,
+		21	Eryx_conicus,
+		22	Eryx_johnii,
+		23	Eryx_jaculus,
+		24	Candoia_bibroni,
+		25	Candoia_paulsoni,
+		26	Exiliboa_placata,
+		27	Charina_bottae,
+		28	Acrantophis_dumerili,
+		29	Sanzinia_madagascariensis,
+		30	Salvadora_grahamiae,
+		31	Oligodon_formosanus,
+		32	Platyceps_karelini,
+		33	Dolichophis_jugularis,
+		34	Hierophis_gemonensis,
+		35	Hierophis_viridiflavus,
+		36	Chrysopelea_ornata,
+		37	Dendrelaphis_punctulatus,
+		38	Ahaetulla_nasuta,
+		39	Antaioserpens_warro,
+		40	Bungarus_caeruleus,
+		41	Bungarus_sindanus,
+		42	Bungarus_multicinctus,
+		43	Bungarus_fasciatus,
+		44	Oxyuranus_microlepidotus,
+		45	Oxyuranus_scutellatus,
+		46	Pseudonaja_affinis,
+		47	Pseudonaja_guttata,
+		48	Pseudonaja_inframacula,
+		49	Pseudonaja_ingrami,
+		50	Pseudonaja_textilis,
+		51	Pseudonaja_modesta,
+		52	Pseudonaja_nuchalis,
+		53	Denisonia_devisi,
+		54	Vermicella_annulata,
+		55	Tropidechis_carinatus,
+		56	Hoplocephalus_stephensii,
+		57	Hoplocephalus_bitorquatus,
+		58	Hoplocephalus_bungaroides,
+		59	Austrelaps_superbus,
+		60	Drysdalia_rhodogaster,
+		61	Drysdalia_mastersii,
+		62	Drysdalia_coronoides,
+		63	Echiopsis_curta,
+		64	Hydrophis_cyanocinctus,
+		65	Hydrophis_jerdonii,
+		66	Hydrophis_spiralis,
+		67	Hydrophis_ornatus,
+		68	Hydrophis_major,
+		69	Hydrophis_fasciatus,
+		70	Hydrophis_viperinus,
+		71	Aipysurus_duboisii,
+		72	Aipysurus_fuscus,
+		73	Aipysurus_laevis,
+		74	Emydocephalus_annulatus,
+		75	Hemiaspis_damelii,
+		76	Hemiaspis_signata,
+		77	Cryptophis_nigrescens,
+		78	Rhinoplocephalus_bicolor,
+		79	Suta_suta,
+		80	Parasuta_spectabilis,
+		81	Parasuta_monachus,
+		82	Parasuta_nigriceps,
+		83	Suta_fasciata,
+		84	Cacophis_squamulosus,
+		85	Cacophis_krefftii,
+		86	Acanthophis_praelongus,
+		87	Acanthophis_antarcticus,
+		88	Acanthophis_pyrrhus,
+		89	Pseudechis_butleri,
+		90	Pseudechis_australis,
+		91	Pseudechis_guttatus,
+		92	Pseudechis_colletti,
+		93	Pseudechis_porphyriacus,
+		94	Simoselaps_bertholdi,
+		95	Laticauda_colubrina,
+		96	Laticauda_laticaudata,
+		97	Laticauda_semifasciata,
+		98	Dendroaspis_polylepis,
+		99	Ophiophagus_hannah,
+		100	Aspidelaps_scutatus,
+		101	Aspidelaps_lubricus,
+		102	Walterinnesia_aegyptia,
+		103	Naja_mossambica,
+		104	Naja_nigricollis,
+		105	Naja_haje,
+		106	Naja_melanoleuca,
+		107	Naja_annulata,
+		108	Naja_naja,
+		109	Naja_kaouthia,
+		110	Naja_oxiana,
+		111	Micrurus_browni,
+		112	Micrurus_alleni,
+		113	Micrurus_diastema,
+		114	Micrurus_fulvius,
+		115	Micrurus_nigrocinctus,
+		116	Micrurus_elegans,
+		117	Micrurus_lemniscatus,
+		118	Micrurus_surinamensis,
+		119	Micrurus_mipartitus,
+		120	Micrurus_mosquitensis,
+		121	Ptyas_nigromarginata,
+		122	Ptyas_mucosa,
+		123	Phyllorhynchus_decurtatus,
+		124	Spilotes_pullatus,
+		125	Chironius_bicarinatus,
+		126	Chironius_foveatus,
+		127	Drymarchon_couperi,
+		128	Drymarchon_corais,
+		129	Chironius_quadricarinatus,
+		130	Coluber_constrictor,
+		131	Lycodon_aulicus,
+		132	Lycodon_semicarinatus,
+		133	Arizona_elegans,
+		134	Rhinocheilus_lecontei,
+		135	Lampropeltis_getula,
+		136	Lampropeltis_californiae,
+		137	Lampropeltis_mexicana,
+		138	Lampropeltis_calligaster,
+		139	Bogertophis_subocularis,
+		140	Pantherophis_bairdi,
+		141	Pantherophis_obsoletus,
+		142	Pantherophis_guttatus,
+		143	Pantherophis_vulpinus,
+		144	Pituophis_melanoleucus,
+		145	Coronella_austriaca,
+		146	Elaphe_quadrivirgata,
+		147	Elaphe_climacophora,
+		148	Elaphe_carinata,
+		149	Euprepiophis_mandarinus,
+		150	Euprepiophis_conspicillata,
+		151	Coelognathus_radiatus,
+		152	Boiga_forsteni,
+		153	Boiga_irregularis,
+		154	Telescopus_fallax,
+		155	Boiga_trigonata,
+		156	Echis_carinatus,
+		157	Vipera_ammodytes,
+		158	Vipera_monticola,
+		159	Vipera_latastei,
+		160	Vipera_aspis,
+		161	Daboia_russelii,
+		162	Macrovipera_lebetina,
+		163	Bothriechis_schlegelii,
+		164	Bothriechis_lateralis,
+		165	Bothriechis_nigroviridis,
+		166	Lachesis_muta,
+		167	Sistrurus_miliarius,
+		168	Crotalus_cerastes,
+		169	Crotalus_enyo,
+		170	Crotalus_horridus,
+		171	Crotalus_basiliscus,
+		172	Crotalus_tigris,
+		173	Crotalus_adamanteus,
+		174	Crotalus_mitchellii,
+		175	Crotalus_viridis,
+		176	Crotalus_scutulatus,
+		177	Crotalus_catalinensis,
+		178	Crotalus_ruber,
+		179	Crotalus_atrox,
+		180	Agkistrodon_contortrix,
+		181	Agkistrodon_bilineatus,
+		182	Agkistrodon_piscivorus,
+		183	Cerrophidion_godmani,
+		184	Porthidium_nasutum,
+		185	Atropoides_picadoi,
+		186	Bothrops_alternatus,
+		187	Bothrops_leucurus,
+		188	Bothrops_moojeni,
+		189	Bothrops_atrox,
+		190	Bothrops_asper,
+		191	Bothrops_jararacussu,
+		192	Bothrops_insularis,
+		193	Bothrops_jararaca,
+		194	Bothrops_neuwiedi,
+		195	Ovophis_okinavensis,
+		196	Gloydius_intermedius,
+		197	Gloydius_halys,
+		198	Protobothrops_mucrosquamatus,
+		199	Trimeresurus_gramineus,
+		200	Trimeresurus_erythrurus,
+		201	Calloselasma_rhodostoma,
+		202	Deinagkistrodon_acutus,
+		203	Simoselaps_bimaculatus,
+		204	Furina_diadema,
+		205	Furina_ornata,
+		206	Demansia_vestigiata,
+		207	Demansia_psammophis,
+		208	Demansia_papuensis,
+		209	Acrochordus_arafurae,
+		210	Acrochordus_granulatus,
+		211	Afrotyphlops_schlegelii,
+		212	Typhlops_jamaicensis,
+		213	Myriopholis_macrorhyncha
+	;
+	TREE * UNTITLED = [&R] (((((((1:21.00087,2:21.00087)'34':3.56586,((((3:10.47778,4:10.47778)'57':3.92143,5:14.39921)'48':2.5918,6:16.99101)'68':0.84264,(((7:11.74897,8:11.74897)'83':4.13401,9:15.88298)'82':1.1588,((10:12.60388,11:12.60388)'94':3.02586,12:15.62974)'78':1.41204)'98':0.79187)'97':6.73308)'67':19.13327,13:43.7)'66':17.48307,14:61.18307)'46':17.31344,(((((((((15:3.65479,16:3.65479)'23':24.15873,17:27.81352)'144':1.89112,18:29.70464)'168':5.47414,19:35.17878)'151':11.82663,20:47.00541)'150':0,(21:34.29704,(22:21.49738,23:21.49738)'191':12.79966)'207':12.70837)'213':1.98741,(24:13.89346,25:13.89346)'205':35.09936)'218':2.12962,(26:50.11748,27:50.11748)'224':1.00496)'234':12.51272,(28:25.51323,29:25.51323)'203':38.12193)'199':14.86135)'240':7.27792,((((30:36.6009,(31:35.17238,(32:24.46975,(33:20.10269,(34:8.80644,35:8.80644)'369':11.29625)'422':4.36706)'421':10.70263)'435':1.42852)'442':4.89039,((36:29.08175,37:29.08175)'482':0.83793,38:29.91968)'485':11.57161)'463':11.83613,((((39:41.02514,((((((((40:10.72354,41:10.72354)'515':3.80481,42:14.52835)'406':4.64065,43:19.169)'392':9.96378,((((((((((((((44:9.00944,45:9.00944)'541':4.98259,46:13.99203)'538':0,47:13.99203)'537':0,48:13.99203)'391':0,49:13.99203)'365':0.76267,(50:12.56298,51:12.56298)'554':2.19172)'553':0,52:14.7547)'551':5.17435,53:19.92905)'560':2.03872,54:21.96777)'567':1.42373,(((((55:10.87144,(56:4.73165,(57:4.73165,58:4.73165)'579':0)'584':6.13979)'589':3.13382,59:14.00526)'592':2.57589,(60:6.0983,(61:5.65764,62:5.65764)'588':0.44066)'587':10.48285)'577':2.76107,63:19.34222)'576':2.76299,((((((64:2.6437,65:2.6437)'604':0.0163,66:2.66)'603':1.6274,((67:3.89538,68:3.89538)'644':0.2166,69:4.11198)'660':0.17542)'654':0.48706,70:4.77446)'652':12.86844,((71:4.2238,(72:1.61183,73:1.61183)'705':2.61197)'691':4.47465,74:8.69845)'690':8.94445)'689':3.12304,(75:15.07776,76:15.07776)'688':5.68818)'725':1.33927)'724':1.28629)'723':0.01335,(((77:15.34909,78:15.34909)'687':5.22431,(((79:12.99328,80:12.99328)'733':1.91216,(81:12.11246,82:12.11246)'732':2.79298)'731':1.43147,83:16.33691)'743':4.23649)'742':2.83145,(84:12.00715,85:12.00715)'730':11.3977)'686':0)'748':1.99416,(((86:2.95599,87:2.95599)'747':0.92068,88:3.87667)'684':18.74713,(((89:7.70162,90:7.70162)'758':6.70688,(91:1.35634,92:1.35634)'765':13.05216)'757':3.12956,93:17.53806)'774':5.08574)'771':2.77521)'791':0.55665,94:25.95566)'797':0,((95:15.17381,96:15.17381)'814':1.114,97:16.28781)'823':9.66785)'828':3.17712)'827':2.65239,((98:27.60312,99:27.60312)'840':1.55464,(((100:12.21605,101:12.21605)'819':11.00008,102:23.21613)'813':0.67644,((((103:5.06041,104:5.06041)'852':10.94523,(105:16.00564,(106:12.29838,107:12.29838)'858':3.70726)'807':0)'803':0.0412,(108:6.59886,109:6.59886)'869':9.44798)'889':0.09264,110:16.13948)'884':7.75309)'866':5.26519)'802':2.62741)'801':2.02505,((111:19.39216,((112:19.26224,(((113:3.023,114:3.023)'783':1.50982,115:4.53282)'902':0.72199,116:5.25481)'901':14.00743)'898':0,((117:10.70723,118:10.70723)'918':4.53744,119:15.24467)'916':4.01757)'625':0.12992)'957':0.99098,120:20.38314)'952':13.42708)'988':4.0367,((((((121:20.26191,122:20.26191)'1448':5.94582,((((123:22.74179,124:22.74179)'1444':0,((125:12.36723,126:12.36723)'1474':9.55526,(127:0.50735,128:0.50735)'1484':21.41514)'1469':0.8193)'1468':3.12431,129:25.8661)'1554':0,130:25.8661)'1592':0.34163)'1608':2.76407,(131:25.94952,132:25.94952)'1640':3.02228)'1665':1.6207,(((((((133:13.22443,134:13.22443)'1628':1.67002,(((135:3.29934,136:3.29934)'1621':4.6984,137:7.99774)'1698':3.38542,138:11.38316)'1676':3.51129)'1711':0.87042,139:15.76487)'1619':1.0133,(((140:5.52974,141:5.52974)'1716':6.0657,(142:10.6652,143:10.6652)'1750':0.93024)'1749':2.24862,144:13.84406)'1762':2.93411)'1761':2.89052,145:19.66869)'1790':2.21325,((146:13.68598,147:13.68598)'1796':0.3298,148:14.01578)'1799':7.86616)'1780':5.81557,(149:16.61,150:16.61)'1821':11.08751)'1759':2.89499)'1758':2.31037,151:32.90287)'1874':1.42429,(((152:25.90484,153:25.90484)'1870':5.84203,154:31.74687)'1911':2.58029,155:34.32716)'1943':0)'1942':3.51976)'2736':0.34278,((156:33.0677,(((157:15.15465,((158:4.44855,159:4.44855)'2842':2.04692,160:6.49547)'2849':8.65918)'2852':2.43535,161:17.59)'2858':7.32886,162:24.91886)'2868':8.14884)'2877':0.5538,(((((((((163:16.69001,(164:13.66359,165:13.66359)'2911':3.02642)'2910':2.64983,166:19.33984)'2925':0.81188,((167:14.58795,((168:9.67988,169:9.67988)'2939':2.8575,((170:10.47084,171:10.47084)'2989':0.39675,((((172:5.68448,173:5.68448)'2988':0.93184,174:6.61632)'3002':1.01765,(175:5.45428,176:5.45428)'3011':2.17969)'3007':0.59037,((177:4.07838,178:4.07838)'3001':0,179:4.07838)'2987':4.14596)'3022':2.64325)'3035':1.66979)'3041':2.05057)'3025':3.96405,(180:9.54818,(181:7.12286,182:7.12286)'3050':2.42532)'3018':9.00382)'3054':1.59972)'3053':2.20186,(((183:14.07321,184:14.07321)'3072':0.76713,185:14.84034)'3071':6.22894,(186:13.09308,(((((187:1.93624,188:1.93624)'2959':0.19777,189:2.13401)'3103':1.61366,190:3.74767)'3097':4.91835,191:8.66602)'3094':3.1883,((192:2.44087,193:2.44087)'2955':7.54133,194:9.9822)'3128':1.87212)'3122':1.23876)'2946':7.9762)'3151':1.2843)'2887':0.32357,(195:22.19912,(196:5.31849,197:5.31849)'3166':16.88063)'3172':0.47803)'3192':2.66355,198:25.3407)'3211':0,(199:23.4423,200:23.4423)'3291':1.8984)'3296':0.08785,201:25.42855)'3277':0.27781,202:25.70636)'3304':7.91514)'614':4.5682)'3317':2.83544)'3387':1.2223,203:42.24744)'3382':0.3163,(204:3.06713,205:3.06713)'3391':39.49661)'3377':0.23058,(206:7.61687,(207:6.02376,208:6.02376)'610':1.59311)'3405':35.17745)'3420':10.5331)'3432':15.66245,(209:19.77033,210:19.77033)'3454':49.21954)'3431':16.78456)'3467':38.18137,((211:64.76058,212:64.76058)'3679':58.49085,213:123.25143)'3772':0.70437)'3793';
+END;

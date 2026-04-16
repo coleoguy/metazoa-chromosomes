@@ -1,0 +1,245 @@
+#NEXUS
+[R-package APE, Wed Dec  3 15:05:22 2025]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX = 116;
+	TAXLABELS
+		Acinonyx_jubatus
+		Puma_concolor
+		Lynx_lynx
+		Lynx_rufus
+		Felis_silvestris
+		Felis_catus
+		Felis_margarita
+		Felis_chaus
+		Felis_nigripes
+		Prionailurus_bengalensis
+		Prionailurus_viverrinus
+		Felis_manul
+		Leopardus_colocolo
+		Leopardus_geoffroyi
+		Leopardus_tigrinus
+		Leopardus_pardalis
+		Caracal_caracal
+		Leptailurus_serval
+		Neofelis_nebulosa
+		Panthera_leo
+		Panthera_pardus
+		Panthera_tigris
+		Uncia_uncia
+		Prionodon_linsang
+		Arctictis_binturong
+		Paguma_larvata
+		Hemigalus_derbyanus
+		Viverricula_indica
+		Genetta_pardina
+		Genetta_maculata
+		Genetta_tigrina
+		Genetta_genetta
+		Genetta_johnstoni
+		Atilax_paludinosus
+		Herpestes_javanicus
+		Helogale_parvula
+		Suricata_suricatta
+		Cryptoprocta_ferox
+		Fossa_fossana
+		Galidia_elegans
+		Crocuta_crocuta
+		Hyaena_brunnea
+		Nandinia_binotata
+		Ailuropoda_melanoleuca
+		Helarctos_malayanus
+		Ursus_americanus
+		Ursus_thibetanus
+		Ursus_arctos
+		Ursus_maritimus
+		Tremarctos_ornatus
+		Ailurus_fulgens
+		Lutra_lutra
+		Enhydra_lutris
+		Galictis_vittata
+		Mustela_frenata
+		Mustela_altaica
+		Mustela_nivalis
+		Mustela_lutreola
+		Mustela_nigripes
+		Mustela_sibirica
+		Mustela_itatsi
+		Mustela_erminea
+		Ictonyx_striatus
+		Vormela_peregusna
+		Melogale_moschata
+		Eira_barbara
+		Gulo_gulo
+		Martes_americana
+		Martes_foina
+		Martes_martes
+		Martes_zibellina
+		Martes_melampus
+		Martes_flavigula
+		Meles_meles
+		Taxidea_taxus
+		Mellivora_capensis
+		Bassariscus_astutus
+		Nasua_nasua
+		Procyon_lotor
+		Potos_flavus
+		Conepatus_leuconotus
+		Mephitis_macroura
+		Mephitis_mephitis
+		Spilogale_putorius
+		Spilogale_gracilis
+		Arctocephalus_forsteri
+		Phocarctos_hookeri
+		Arctocephalus_pusillus
+		Eumetopias_jubatus
+		Zalophus_californianus
+		Callorhinus_ursinus
+		Odobenus_rosmarus
+		Cystophora_cristata
+		Halichoerus_grypus
+		Pusa_sibirica
+		Pusa_hispida
+		Phoca_largha
+		Phoca_vitulina
+		Pagophilus_groenlandicus
+		Erignathus_barbatus
+		Mirounga_angustirostris
+		Monachus_schauinslandi
+		Atelocynus_microtis
+		Cerdocyon_thous
+		Chrysocyon_brachyurus
+		Canis_latrans
+		Canis_lupus
+		Cuon_alpinus
+		Lycaon_pictus
+		Speothos_venaticus
+		Nyctereutes_procyonoides
+		Vulpes_corsac
+		Vulpes_vulpes
+		Vulpes_macrotis
+		Otocyon_megalotis
+		Urocyon_cinereoargenteus
+	;
+END;
+BEGIN TREES;
+	TRANSLATE
+		1	Acinonyx_jubatus,
+		2	Puma_concolor,
+		3	Lynx_lynx,
+		4	Lynx_rufus,
+		5	Felis_silvestris,
+		6	Felis_catus,
+		7	Felis_margarita,
+		8	Felis_chaus,
+		9	Felis_nigripes,
+		10	Prionailurus_bengalensis,
+		11	Prionailurus_viverrinus,
+		12	Felis_manul,
+		13	Leopardus_colocolo,
+		14	Leopardus_geoffroyi,
+		15	Leopardus_tigrinus,
+		16	Leopardus_pardalis,
+		17	Caracal_caracal,
+		18	Leptailurus_serval,
+		19	Neofelis_nebulosa,
+		20	Panthera_leo,
+		21	Panthera_pardus,
+		22	Panthera_tigris,
+		23	Uncia_uncia,
+		24	Prionodon_linsang,
+		25	Arctictis_binturong,
+		26	Paguma_larvata,
+		27	Hemigalus_derbyanus,
+		28	Viverricula_indica,
+		29	Genetta_pardina,
+		30	Genetta_maculata,
+		31	Genetta_tigrina,
+		32	Genetta_genetta,
+		33	Genetta_johnstoni,
+		34	Atilax_paludinosus,
+		35	Herpestes_javanicus,
+		36	Helogale_parvula,
+		37	Suricata_suricatta,
+		38	Cryptoprocta_ferox,
+		39	Fossa_fossana,
+		40	Galidia_elegans,
+		41	Crocuta_crocuta,
+		42	Hyaena_brunnea,
+		43	Nandinia_binotata,
+		44	Ailuropoda_melanoleuca,
+		45	Helarctos_malayanus,
+		46	Ursus_americanus,
+		47	Ursus_thibetanus,
+		48	Ursus_arctos,
+		49	Ursus_maritimus,
+		50	Tremarctos_ornatus,
+		51	Ailurus_fulgens,
+		52	Lutra_lutra,
+		53	Enhydra_lutris,
+		54	Galictis_vittata,
+		55	Mustela_frenata,
+		56	Mustela_altaica,
+		57	Mustela_nivalis,
+		58	Mustela_lutreola,
+		59	Mustela_nigripes,
+		60	Mustela_sibirica,
+		61	Mustela_itatsi,
+		62	Mustela_erminea,
+		63	Ictonyx_striatus,
+		64	Vormela_peregusna,
+		65	Melogale_moschata,
+		66	Eira_barbara,
+		67	Gulo_gulo,
+		68	Martes_americana,
+		69	Martes_foina,
+		70	Martes_martes,
+		71	Martes_zibellina,
+		72	Martes_melampus,
+		73	Martes_flavigula,
+		74	Meles_meles,
+		75	Taxidea_taxus,
+		76	Mellivora_capensis,
+		77	Bassariscus_astutus,
+		78	Nasua_nasua,
+		79	Procyon_lotor,
+		80	Potos_flavus,
+		81	Conepatus_leuconotus,
+		82	Mephitis_macroura,
+		83	Mephitis_mephitis,
+		84	Spilogale_putorius,
+		85	Spilogale_gracilis,
+		86	Arctocephalus_forsteri,
+		87	Phocarctos_hookeri,
+		88	Arctocephalus_pusillus,
+		89	Eumetopias_jubatus,
+		90	Zalophus_californianus,
+		91	Callorhinus_ursinus,
+		92	Odobenus_rosmarus,
+		93	Cystophora_cristata,
+		94	Halichoerus_grypus,
+		95	Pusa_sibirica,
+		96	Pusa_hispida,
+		97	Phoca_largha,
+		98	Phoca_vitulina,
+		99	Pagophilus_groenlandicus,
+		100	Erignathus_barbatus,
+		101	Mirounga_angustirostris,
+		102	Monachus_schauinslandi,
+		103	Atelocynus_microtis,
+		104	Cerdocyon_thous,
+		105	Chrysocyon_brachyurus,
+		106	Canis_latrans,
+		107	Canis_lupus,
+		108	Cuon_alpinus,
+		109	Lycaon_pictus,
+		110	Speothos_venaticus,
+		111	Nyctereutes_procyonoides,
+		112	Vulpes_corsac,
+		113	Vulpes_vulpes,
+		114	Vulpes_macrotis,
+		115	Otocyon_megalotis,
+		116	Urocyon_cinereoargenteus
+	;
+	TREE * UNTITLED = [&R] ((((((((((1:7,2:7)'17':4.5,(3:4.7,4:4.7)'19':6.8)'16':0.4,((((((5:1.9,6:1.9)'27':1.3,7:3.2)'26':1.2,8:4.4)'25':0.2,9:4.6)'24':7,(10:3.3,11:3.3)'31':8.3)'23':0.1,12:11.7)'22':0.2)'15':1.9,((13:2.6,(14:1.2,15:1.2)'37':1.4)'35':0.8,16:3.4)'34':10.4)'14':1.8,(17:7.5,18:7.5)'42':8.1)'12':0.7,(19:9.2,((20:2.9,21:2.9)'47':3.2,(22:3.5,23:3.5)'48':2.6)'45':3.1)'44':7.1)'11':36.6,24:52.9)'10':0.1,((((25:12.2,26:12.2)'54':4.2,27:16.4)'53':7.2,(28:23.4,((((29:1.4,30:1.4)'76':0.6,31:2)'75':2.6,32:4.6)'74':3.2,33:7.8)'72':15.6)'62':0.2)'51':8.2,((((34:11.4,35:11.4)'86':0.2,(36:6.9,37:6.9)'104':4.7)'85':9.7,(38:18,(39:16.5,40:16.5)'114':1.5)'113':3.3)'84':5.7,(41:3,42:3)'121':24)'83':4.8)'50':21.2)'9':0.2,43:53.2)'8':11.7,(((44:17.2,(((45:4.6,(46:3.6,47:3.6)'130':1)'129':0.2,(48:1.1,49:1.1)'131':3.7)'128':10.6,50:15.4)'126':1.8)'125':30.6,(((51:35,((((((((((52:8.5,53:8.5)'144':0.2,54:8.7)'143':2.8,(55:11,(((56:3.8,57:3.8)'164':1.5,((58:1.4,59:1.4,60:1.4)'167':2.1,61:3.5)'166':1.8)'163':1.3,62:6.6)'162':4.4)'156':0.5)'142':0.6,(63:4.9,64:4.9)'170':7.2)'141':1.9,65:14)'140':0.7,(66:9.7,(67:9.1,((68:2.5,(69:2.3,((70:0.7,71:0.7)'178':0.2,72:0.9)'177':1.4)'176':0.2)'175':3.9,73:6.4)'174':2.7)'173':0.6)'171':5)'139':2.3,74:17)'138':3.6,75:20.6)'137':9.5,76:30.1)'136':1.5,((77:16.5,78:16.5,79:16.5)'187':7.5,80:24)'186':7.6)'135':3.4)'134':0.7,(81:16,((82:3.3,83:3.3)'198':7.6,(84:2.9,85:2.9)'199':8)'197':5.1)'193':19.7)'133':10.4,((((((86:4.1,87:4.1)'207':0.3,88:4.4)'206':1,(89:4,90:4)'216':1.4)'205':2.7,91:8.1)'204':12.3,92:20.4)'203':2,(((93:7.3,((((94:2.1,95:2.1)'225':0.1,96:2.2)'224':0.4,(97:1.3,98:1.3)'227':1.3)'223':3.2,99:5.8)'222':1.5)'221':4.6,100:11.9)'220':3.4,(101:10.5,102:10.5)'229':4.8)'219':7.1)'202':23.7)'132':1.7)'124':13.4,((((((103:6,104:6)'242':3,105:9)'241':0.1,((106:2.6,107:2.6)'255':1.5,108:4.1)'253':5)'240':0.2,(109:6.6,110:6.6)'257':2.7)'239':6.8,((111:15.9,((112:4.9,113:4.9)'263':0.9,114:5.8)'262':10.1)'259':0.1,115:16)'258':0.1)'238':0.2,116:16.3)'237':44.9)'123':3.7)'7';
+END;

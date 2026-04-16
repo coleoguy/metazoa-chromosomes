@@ -1,0 +1,377 @@
+#NEXUS
+[R-package APE, Wed Dec  3 15:05:23 2025]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX = 182;
+	TAXLABELS
+		Altica_tamaricis
+		Altica_corni
+		Altica_subplicata
+		Altica_brevicollis
+		Systena_basalis
+		Apraea_portoricensis
+		Disonycha_alternata
+		Chaetocnema_tibialis
+		Chaetocnema_depressa
+		Phyllotreta_nemorum
+		Phyllotreta_diademata
+		Epitrix_cucumeris
+		Epitrix_fasciata
+		Chaetocnema_conducta
+		Psylliodes_cupreus
+		Psylliodes_marcidus
+		Psylliodes_thlaspis
+		Psylliodes_chrysocephalus
+		Psylliodes_napi
+		Psylliodes_obscuroaeneus
+		Psylliodes_dulcamarae
+		Psylliodes_affinis
+		Neocrepidodera_transversa
+		Hermaeophaga_cicatrix
+		Sphaeroderma_testaceum
+		Sphaeroderma_rubidum
+		Dibolia_timida
+		Aphthona_cyparissiae
+		Longitarsus_luridus
+		Longitarsus_rubiginosus
+		Longitarsus_succineus
+		Longitarsus_ochroleucus
+		Longitarsus_exsoletus
+		Longitarsus_lycopi
+		Longitarsus_tabidus
+		Longitarsus_nigrofasciatus
+		Longitarsus_candidulus
+		Longitarsus_ballotae
+		Longitarsus_pratensis
+		Longitarsus_reichei
+		Longitarsus_melanocephalus
+		Longitarsus_niger
+		Longitarsus_holsaticus
+		Aphthona_herbigrada
+		Aphthona_venustula
+		Aphthona_lutescens
+		Aphthona_depressa
+		Omophoita_albicollis
+		Oedionychus_cinctus
+		Podagrica_malvae
+		Podagrica_fuscipes
+		Podagrica_fuscicornis
+		Blepharida_rhois
+		Arrhenocoela_lineata
+		Agelastica_coerulea
+		Monoxia_obesula
+		Ophraella_conferta
+		Ophraella_notata
+		Xanthogaleruca_luteola
+		Galerucella_tenella
+		Pyrrhalta_viburni
+		Sermylassa_halensis
+		Diabrotica_adelpha
+		Diabrotica_speciosa
+		Diabrotica_nummularis
+		Diabrotica_longicornis
+		Diabrotica_viridula
+		Diabrotica_porracea
+		Diabrotica_virgifera
+		Diabrotica_lemniscata
+		Diabrotica_cristata
+		Acalymma_vittatum
+		Acalymma_blandulum
+		Acalymma_gouldi
+		Cerotoma_atrofasciata
+		Diabrotica_tibialis
+		Gynandrobrotica_variabilis
+		Zygogramma_bicolorata
+		Labidomera_clivicollis
+		Leptinotarsa_haldemani
+		Leptinotarsa_rubiginosa
+		Leptinotarsa_juncta
+		Leptinotarsa_lineolata
+		Chrysolina_fastuosa
+		Oreina_virgulata
+		Chrysolina_americana
+		Chrysolina_marginata
+		Chrysolina_varians
+		Chrysolina_oricalcia
+		Chrysolina_coerulans
+		Chrysolina_lucida
+		Chrysolina_herbacea
+		Chrysolina_cerealis
+		Chrysolina_graminis
+		Chrysolina_peregrina
+		Chrysolina_femoralis
+		Chrysolina_kuesteri
+		Chrysolina_diluta
+		Chrysolina_haemoptera
+		Chrysolina_grossa
+		Chrysolina_polita
+		Chrysolina_aurichalcea
+		Paropsis_aegrota
+		Paropsisterna_beata
+		Gonioctena_americana
+		Gonioctena_linnaeana
+		Gonioctena_nivosa
+		Gonioctena_quinquepunctata
+		Entomoscelis_adonidis
+		Colaspidema_barbarum
+		Chrysomela_schaefferi
+		Chrysomela_lapponica
+		Linaeidea_aenea
+		Chrysomela_populi
+		Plagiodera_versicolora
+		Phaedon_cochleariae
+		Phratora_polaris
+		Phratora_vulgatissima
+		Phratora_vitellinae
+		Phratora_laticollis
+		Phaedon_tumidulus
+		Gastrophysa_cyanea
+		Gastrophysa_viridula
+		Timarcha_goettingensis
+		Timarcha_tenebricosa
+		Hypocassida_subferruginea
+		Cassida_rubiginosa
+		Cassida_sanguinosa
+		Cassida_sanguinolenta
+		Cassida_vibex
+		Cassida_bergeali
+		Cassida_vittata
+		Cassida_nebulosa
+		Cassida_subreticulata
+		Cassida_flaveola
+		Cassida_azurea
+		Cassida_circumdata
+		Metriona_elatior
+		Deloyala_guttata
+		Aspidimorpha_furcata
+		Aspidimorpha_dorsata
+		Chelymorpha_cassidea
+		Charidotella_sexpunctata
+		Microrhopala_vittata
+		Hispa_atra
+		Dicladispa_testacea
+		Odontota_dorsalis
+		Chalcophana_cincta
+		Chalcophana_sp.
+		Chrysochus_auratus
+		Colasposoma_auripenne
+		Bromius_obscurus
+		Cryptocephalus_globicollis
+		Cryptocephalus_aureolus
+		Cryptocephalus_sexpustulatus
+		Cryptocephalus_violaceus
+		Cryptocephalus_rugicollis
+		Cryptocephalus_primarius
+		Cryptocephalus_ocellatus
+		Cryptocephalus_crassus
+		Cryptocephalus_bipunctatus
+		Cryptocephalus_moraei
+		Cryptocephalus_sexpunctatus
+		Lachnaia_pubescens
+		Clytra_quadripunctata
+		Clytra_laeviuscula
+		Bruchus_pisorum
+		Bruchus_rufimanus
+		Callosobruchus_maculatus
+		Callosobruchus_subinnotatus
+		Callosobruchus_chinensis
+		Lema_praeusta
+		Lema_cyanella
+		Oulema_melanopus
+		Lilioceris_lilii
+		Crioceris_paracenthesis
+		Crioceris_asparagi
+		Crioceris_duodecimpunctata
+		Donacia_subtilis
+		Donacia_vulgaris
+		Donacia_hirticollis
+		Sagra_femorata
+	;
+END;
+BEGIN TREES;
+	TRANSLATE
+		1	Altica_tamaricis,
+		2	Altica_corni,
+		3	Altica_subplicata,
+		4	Altica_brevicollis,
+		5	Systena_basalis,
+		6	Apraea_portoricensis,
+		7	Disonycha_alternata,
+		8	Chaetocnema_tibialis,
+		9	Chaetocnema_depressa,
+		10	Phyllotreta_nemorum,
+		11	Phyllotreta_diademata,
+		12	Epitrix_cucumeris,
+		13	Epitrix_fasciata,
+		14	Chaetocnema_conducta,
+		15	Psylliodes_cupreus,
+		16	Psylliodes_marcidus,
+		17	Psylliodes_thlaspis,
+		18	Psylliodes_chrysocephalus,
+		19	Psylliodes_napi,
+		20	Psylliodes_obscuroaeneus,
+		21	Psylliodes_dulcamarae,
+		22	Psylliodes_affinis,
+		23	Neocrepidodera_transversa,
+		24	Hermaeophaga_cicatrix,
+		25	Sphaeroderma_testaceum,
+		26	Sphaeroderma_rubidum,
+		27	Dibolia_timida,
+		28	Aphthona_cyparissiae,
+		29	Longitarsus_luridus,
+		30	Longitarsus_rubiginosus,
+		31	Longitarsus_succineus,
+		32	Longitarsus_ochroleucus,
+		33	Longitarsus_exsoletus,
+		34	Longitarsus_lycopi,
+		35	Longitarsus_tabidus,
+		36	Longitarsus_nigrofasciatus,
+		37	Longitarsus_candidulus,
+		38	Longitarsus_ballotae,
+		39	Longitarsus_pratensis,
+		40	Longitarsus_reichei,
+		41	Longitarsus_melanocephalus,
+		42	Longitarsus_niger,
+		43	Longitarsus_holsaticus,
+		44	Aphthona_herbigrada,
+		45	Aphthona_venustula,
+		46	Aphthona_lutescens,
+		47	Aphthona_depressa,
+		48	Omophoita_albicollis,
+		49	Oedionychus_cinctus,
+		50	Podagrica_malvae,
+		51	Podagrica_fuscipes,
+		52	Podagrica_fuscicornis,
+		53	Blepharida_rhois,
+		54	Arrhenocoela_lineata,
+		55	Agelastica_coerulea,
+		56	Monoxia_obesula,
+		57	Ophraella_conferta,
+		58	Ophraella_notata,
+		59	Xanthogaleruca_luteola,
+		60	Galerucella_tenella,
+		61	Pyrrhalta_viburni,
+		62	Sermylassa_halensis,
+		63	Diabrotica_adelpha,
+		64	Diabrotica_speciosa,
+		65	Diabrotica_nummularis,
+		66	Diabrotica_longicornis,
+		67	Diabrotica_viridula,
+		68	Diabrotica_porracea,
+		69	Diabrotica_virgifera,
+		70	Diabrotica_lemniscata,
+		71	Diabrotica_cristata,
+		72	Acalymma_vittatum,
+		73	Acalymma_blandulum,
+		74	Acalymma_gouldi,
+		75	Cerotoma_atrofasciata,
+		76	Diabrotica_tibialis,
+		77	Gynandrobrotica_variabilis,
+		78	Zygogramma_bicolorata,
+		79	Labidomera_clivicollis,
+		80	Leptinotarsa_haldemani,
+		81	Leptinotarsa_rubiginosa,
+		82	Leptinotarsa_juncta,
+		83	Leptinotarsa_lineolata,
+		84	Chrysolina_fastuosa,
+		85	Oreina_virgulata,
+		86	Chrysolina_americana,
+		87	Chrysolina_marginata,
+		88	Chrysolina_varians,
+		89	Chrysolina_oricalcia,
+		90	Chrysolina_coerulans,
+		91	Chrysolina_lucida,
+		92	Chrysolina_herbacea,
+		93	Chrysolina_cerealis,
+		94	Chrysolina_graminis,
+		95	Chrysolina_peregrina,
+		96	Chrysolina_femoralis,
+		97	Chrysolina_kuesteri,
+		98	Chrysolina_diluta,
+		99	Chrysolina_haemoptera,
+		100	Chrysolina_grossa,
+		101	Chrysolina_polita,
+		102	Chrysolina_aurichalcea,
+		103	Paropsis_aegrota,
+		104	Paropsisterna_beata,
+		105	Gonioctena_americana,
+		106	Gonioctena_linnaeana,
+		107	Gonioctena_nivosa,
+		108	Gonioctena_quinquepunctata,
+		109	Entomoscelis_adonidis,
+		110	Colaspidema_barbarum,
+		111	Chrysomela_schaefferi,
+		112	Chrysomela_lapponica,
+		113	Linaeidea_aenea,
+		114	Chrysomela_populi,
+		115	Plagiodera_versicolora,
+		116	Phaedon_cochleariae,
+		117	Phratora_polaris,
+		118	Phratora_vulgatissima,
+		119	Phratora_vitellinae,
+		120	Phratora_laticollis,
+		121	Phaedon_tumidulus,
+		122	Gastrophysa_cyanea,
+		123	Gastrophysa_viridula,
+		124	Timarcha_goettingensis,
+		125	Timarcha_tenebricosa,
+		126	Hypocassida_subferruginea,
+		127	Cassida_rubiginosa,
+		128	Cassida_sanguinosa,
+		129	Cassida_sanguinolenta,
+		130	Cassida_vibex,
+		131	Cassida_bergeali,
+		132	Cassida_vittata,
+		133	Cassida_nebulosa,
+		134	Cassida_subreticulata,
+		135	Cassida_flaveola,
+		136	Cassida_azurea,
+		137	Cassida_circumdata,
+		138	Metriona_elatior,
+		139	Deloyala_guttata,
+		140	Aspidimorpha_furcata,
+		141	Aspidimorpha_dorsata,
+		142	Chelymorpha_cassidea,
+		143	Charidotella_sexpunctata,
+		144	Microrhopala_vittata,
+		145	Hispa_atra,
+		146	Dicladispa_testacea,
+		147	Odontota_dorsalis,
+		148	Chalcophana_cincta,
+		149	Chalcophana_sp.,
+		150	Chrysochus_auratus,
+		151	Colasposoma_auripenne,
+		152	Bromius_obscurus,
+		153	Cryptocephalus_globicollis,
+		154	Cryptocephalus_aureolus,
+		155	Cryptocephalus_sexpustulatus,
+		156	Cryptocephalus_violaceus,
+		157	Cryptocephalus_rugicollis,
+		158	Cryptocephalus_primarius,
+		159	Cryptocephalus_ocellatus,
+		160	Cryptocephalus_crassus,
+		161	Cryptocephalus_bipunctatus,
+		162	Cryptocephalus_moraei,
+		163	Cryptocephalus_sexpunctatus,
+		164	Lachnaia_pubescens,
+		165	Clytra_quadripunctata,
+		166	Clytra_laeviuscula,
+		167	Bruchus_pisorum,
+		168	Bruchus_rufimanus,
+		169	Callosobruchus_maculatus,
+		170	Callosobruchus_subinnotatus,
+		171	Callosobruchus_chinensis,
+		172	Lema_praeusta,
+		173	Lema_cyanella,
+		174	Oulema_melanopus,
+		175	Lilioceris_lilii,
+		176	Crioceris_paracenthesis,
+		177	Crioceris_asparagi,
+		178	Crioceris_duodecimpunctata,
+		179	Donacia_subtilis,
+		180	Donacia_vulgaris,
+		181	Donacia_hirticollis,
+		182	Sagra_femorata
+	;
+	TREE * UNTITLED = [&R] (((((((((((1:0.12339,2:0.06962):0.03647,(3:0.04593,4:0.07622):0.09075):0.49311,5:0.361):0.0079,6:0.46686):0.02242,7:0.3865):0.03693,((((((8:0.28189,9:0.34912):0.08511,(10:0.3386,11:0.2658):0.17958):0.01853,((12:0.34514,13:0.38729):0.01163,14:0.3711):0.01752):0.00164,((((15:0.03049,16:0.02773):0.10164,17:0.2346):0.02222,(18:0.19025,19:0.26483):0.03097):0.08317,((20:0.30833,21:0.30182):0.12272,22:0.37873):0):0.05323):0.02549,((23:0.4247,24:0.44757):0.01439,(((25:0.23773,26:0.13503):0.18702,27:0.52039):0.03771,28:0.31636):0.01451):0.00679):0.00296,((((((((((29:0.21092,30:0.19651):0.02657,31:0.10285):0.0158,32:0.17813):0.05497,(33:0.24223,34:0.20933):0.00446):0.01631,(35:0.09588,36:0.08784):0.06922):0.02774,(37:0.15926,38:0.16295):0.01585):0.0239,(39:0.03623,40:0.0221):0.20796):0,((41:0.09191,42:0.08696):0.07334,43:0.11804):0.15499):0.07334,(((44:0.18563,45:0.1839):0.02431,46:0.26228):0.05439,47:0.25656):0.02708):0.01196,(48:0.14123,49:0.2195):0.15844):0.00362):0.00966):0,(((50:0.1405,51:0.11395):0.05951,52:0.17095):0.24817,(53:0.26943,54:0.27003):0.05172):0.03163):0.0088,(((55:0.48004,((56:0.42652,(57:0.11316,58:0.16376):0.21007):0.13622,(59:0.32263,(60:0.11678,61:0.20465):0.14186):0.0059):0.05208):0.006,62:0.57318):0,((((63:0.27454,(64:0.16697,65:0.07002):0.13247):0.07248,((66:0.09451,67:0.10194):0.02893,((68:0.13023,69:0.12632):0.03811,(70:0.14075,71:0.07723):0.08164):0.019):0.09117):0.06655,(((72:0.15095,(73:0.0651,74:0.12011):0.1864):0.08774,75:0.41016):0.04301,76:0.21519):0.01176):0,77:0.38931):0.05086):0.01143):0.03866,((((((78:0.27782,(79:0.41717,(((80:0.13559,81:0.12545):0.02616,82:0.17227):0.03502,83:0.36242):0.0693):0.06459):0.10103,((((((84:0.17174,85:0.14032):0.10755,86:0.35376):0.01139,87:0.247):0.02339,(88:0.26331,89:0.15047):0.04651):0.03287,((((((90:0.08551,91:0.14122):0.01703,92:0.21381):0.02651,93:0.20445):0.06237,94:0.17362):0.05642,95:0.20371):0.02044,96:0.27483):0.01867):0.01482,(((97:0.09487,98:0.12511):0.02217,99:0.07837):0.08621,(100:0.16607,101:0.17198):0.16759):0):0.03991):0.01116,102:0.28499):0.09288,((103:0.25386,104:0.21704):0.16473,(((105:0.08736,106:0.07777):0.04091,107:0.14741):0.15651,108:0.27931):0.05648):0.02465):0,(109:0.29363,110:0.17057):0.16439):0.04024,((((((((111:0.24156,112:0.19094):0.05668,113:0.30916):0.00334,114:0.31357):0.09409,115:0.39845):0.03719,116:0.35188):0.03772,((117:0.12367,(118:0.08342,119:0.19055):0.00695):0.02587,120:0.14378):0.16517):0.03412,121:0.25314):0.02576,(122:0.20673,123:0.16166):0.11468):0.09678):0.00814):0.02801,(124:0.04409,125:0.03701):0.69697):0,(((((((((((((126:0.37281,((127:0.25115,128:0.24287):0.03203,129:0.2082):0.03474):0.02724,(130:0.12354,131:0.12004):0.16562):0.08144,((132:0.29795,133:0.27566):0.04963,((134:0.30146,135:0.19192):0.04775,136:0.15208):0.12007):0.02195):0.02151,137:0.45344):0.00866,138:0.36706):0,139:0.32214):0.03182,(140:0.19694,141:0.26915):0.21346):0.03187,(142:0.36135,143:0.43):0.01881):0.01849,144:0.52619):0.02338,(145:0.32172,146:0.3082):0.05287):0,147:0.3822):0.18076,((((148:0.05994,149:0.14267):0.34554,150:0.41491):0.19677,(151:0.39943,152:0.50669):0.04226):0,((((((153:0.0385,154:0.03523):0.27166,155:0.28452):0.04367,(156:0.17503,157:0.28015):0.02368):0.14918,158:0.52716):0.03425,((159:0.42285,160:0.34669):0.01656,((161:0.29314,162:0.34072):0.01024,163:0.33721):0.03018):0.02409):0.08178,(164:0.5354,(165:0.29798,166:0.27741):0.12399):0.17683):0.20929):0.05489):0.03354,((((167:0.27192,(168:0.24179,(169:0.19499,170:0.14457):0.23776):0.0462):0.01422,171:0.55065):0.09852,(((((172:0.35302,173:0.37135):0.03296,174:0.31791):0.08501,175:0.38395):0.02215,(176:0.30485,(177:0.3175,178:0.33942):0.05828):0.11251):0.04296,((179:0.20584,180:0.29898):0.13397,181:0.38696):0.1735):0.01667):0,182:0.87391):0):0.0177):0;
+END;

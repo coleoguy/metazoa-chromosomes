@@ -1,6 +1,6 @@
-new_dir <- "../results/plants.rerun/"
-old_dir <- "../results/exponential.prior - full model/mentor_results/"
-ages    <- read.csv("../data/clade.ages.csv")
+new_dir <- "../../results/plants.rerun/"
+old_dir <- "../../results/exponential-prior-full-model/mentor_results/"
+ages    <- read.csv("../../data/clade.ages.csv")
 files   <- list.files(new_dir, pattern="\\.csv$", full.names=FALSE)
 
 dys_rate <- function(file, dir){

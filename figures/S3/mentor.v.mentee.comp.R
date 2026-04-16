@@ -2,9 +2,9 @@ library(coda)
 library(ggplot2)
 library(ggrepel)
 
-files.student <- list.files("../results/exponential.prior/trainee_results", 
+files.student <- list.files("../../results/exponential-prior-full-model/trainee_results",
                             full.names = TRUE)
-files.mentor <- list.files("../results/exponential.prior/mentor_results", 
+files.mentor <- list.files("../../results/exponential-prior-full-model/mentor_results",
                            full.names = TRUE)
 
 # Initialize storage - ADDED mentor.prob and student.prob columns

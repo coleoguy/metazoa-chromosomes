@@ -1,0 +1,873 @@
+#NEXUS
+[R-package APE, Wed Dec  3 15:05:26 2025]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX = 430;
+	TAXLABELS
+		Streptopus_amplexifolius
+		Streptopus_lanceolatus
+		Streptopus_simplex
+		Scoliopus_hallii
+		Scoliopus_bigelovii
+		Prosartes_trachycarpa
+		Prosartes_smithii
+		Prosartes_lanuginosa
+		Prosartes_maculata
+		Calochortus_plummerae
+		Calochortus_macrocarpus
+		Calochortus_ambiguus
+		Calochortus_gunnisonii
+		Calochortus_nuttallii
+		Calochortus_aureus
+		Calochortus_leichtlinii
+		Calochortus_kennedyi
+		Calochortus_clavatus
+		Calochortus_bruneaunis
+		Calochortus_concolor
+		Calochortus_argillosus
+		Calochortus_venustus
+		Calochortus_superbus
+		Calochortus_vestae
+		Calochortus_luteus
+		Calochortus_catalinae
+		Calochortus_dunnii
+		Calochortus_davidsonianus
+		Calochortus_flexuosus
+		Calochortus_palmeri
+		Calochortus_splendens
+		Calochortus_amoenus
+		Calochortus_albus
+		Calochortus_uniflorus
+		Calochortus_amabilis
+		Calochortus_pulchellus
+		Calochortus_umbellatus
+		Calochortus_tiburonensis
+		Calochortus_monophyllus
+		Calochortus_tolmiei
+		Calochortus_lyallii
+		Calochortus_nitidus
+		Calochortus_apiculatus
+		Calochortus_weedii
+		Calochortus_coeruleus
+		Calochortus_minimus
+		Calochortus_howellii
+		Calochortus_subalpinus
+		Calochortus_eurycarpus
+		Calochortus_persistens
+		Calochortus_nudus
+		Calochortus_elegans
+		Calochortus_longebarbatus
+		Calochortus_umpquaensis
+		Calochortus_obispoensis
+		Calochortus_panamintensis
+		Calochortus_simulans
+		Calochortus_invenustus
+		Calochortus_vesta
+		Clintonia_udensis
+		Tricyrtis_affinis
+		Tricyrtis_macrantha
+		Tricyrtis_perfoliata
+		Tricyrtis_flava
+		Tricyrtis_latifolia
+		Tricyrtis_maculata
+		Tricyrtis_formosana
+		Tricyrtis_ravenii
+		Tricyrtis_macropoda
+		Tricyrtis_puberula
+		Tricyrtis_dilatata
+		Gagea_terraccianoana
+		Gagea_turkestanica
+		Gagea_lutea
+		Gagea_nakaiana
+		Gagea_artemczukii
+		Gagea_chanae
+		Gagea_helenae
+		Gagea_fedtschenkoana
+		Gagea_podolica
+		Gagea_erubescens
+		Gagea_transversalis
+		Gagea_aipetriensis
+		Gagea_pratensis
+		Gagea_pomeranica
+		Gagea_pusilla
+		Gagea_paczoskii
+		Gagea_tisoniana
+		Gagea_triflora
+		Gagea_chlorantha
+		Gagea_serotina
+		Gagea_graeca
+		Gagea_bulbifera
+		Gagea_graminifolia
+		Gagea_dayana
+		Gagea_vegeta
+		Gagea_commutata
+		Gagea_alexeenkoana
+		Gagea_caroli-kochii
+		Gagea_reticulata
+		Gagea_chomutovae
+		Gagea_stipitata
+		Gagea_ova
+		Gagea_spathacea
+		Gagea_tenera
+		Gagea_sicula
+		Gagea_chrysantha
+		Gagea_soleirolii
+		Gagea_nevadensis
+		Gagea_durieui
+		Gagea_granatellii
+		Gagea_foliosa
+		Gagea_mauritanica
+		Gagea_peduncularis
+		Gagea_bohemica
+		Gagea_dubia
+		Gagea_villosa
+		Gagea_fistulosa
+		Gagea_fragifera
+		Gagea_glacialis
+		Gagea_polidorii
+		Gagea_gageoides
+		Gagea_confusa
+		Gagea_elegans
+		Gagea_granulosa
+		Gagea_davlianidzeae
+		Gagea_minima
+		Gagea_praemixta
+		Gagea_popovii
+		Gagea_fibrosa
+		Gagea_glaucescens
+		Gagea_luberonensis
+		Gagea_charadzeae
+		Gagea_minutiflora
+		Gagea_joannis
+		Gagea_reverchonii
+		Gagea_calantha
+		Gagea_calyptrifolia
+		Gagea_kamelinii
+		Gagea_micrantha
+		Gagea_ludmilae
+		Gagea_paniculata
+		Gagea_subtilis
+		Gagea_germainae
+		Gagea_longiscapa
+		Erythronium_sibiricum
+		Erythronium_caucasicum
+		Erythronium_dens-canis
+		Erythronium_japonicum
+		Erythronium_americanum
+		Erythronium_propullans
+		Erythronium_umbilicatum
+		Erythronium_albidum
+		Erythronium_mesochoreum
+		Erythronium_klamathense
+		Erythronium_purpurascens
+		Erythronium_pluriflorum
+		Erythronium_tuolumnense
+		Erythronium_quinaultense
+		Erythronium_oregonum
+		Erythronium_elegans
+		Erythronium_revolutum
+		Erythronium_helenae
+		Erythronium_californicum
+		Erythronium_multiscapideum
+		Erythronium_citrinum
+		Erythronium_hendersonii
+		Erythronium_grandiflorum
+		Erythronium_montanum
+		Erythronium_rostratum
+		Tulipa_uniflora
+		Tulipa_linifolia
+		Tulipa_aitchisonii
+		Tulipa_clusiana
+		Tulipa_praestans
+		Tulipa_montana
+		Tulipa_biflora
+		Tulipa_turkestanica
+		Tulipa_bifloriformis
+		Tulipa_neustruevae
+		Tulipa_pulchella
+		Tulipa_saxatilis
+		Tulipa_regelii
+		Tulipa_aucheriana
+		Tulipa_orphanidea
+		Tulipa_sylvestris
+		Tulipa_humilis
+		Tulipa_sprengeri
+		Tulipa_cretica
+		Tulipa_tarda
+		Tulipa_iliensis
+		Tulipa_greigii
+		Tulipa_vvedenskyi
+		Tulipa_lanata
+		Tulipa_armena
+		Tulipa_gesneriana
+		Tulipa_lehmanniana
+		Tulipa_undulatifolia
+		Tulipa_agenensis
+		Tulipa_aleppensis
+		Tulipa_julia
+		Tulipa_systola
+		Tulipa_suaveolens
+		Tulipa_urumiensis
+		Tulipa_fosteriana
+		Tulipa_bakeri
+		Tulipa_cinnabarina
+		Tulipa_kuschkensis
+		Tulipa_hungarica
+		Tulipa_persica
+		Tulipa_heterophylla
+		Tulipa_altaica
+		Tulipa_tianschanica
+		Tulipa_korolkovii
+		Tulipa_kaufmanniana
+		Tulipa_dubia
+		Tulipa_ostrowskiana
+		Tulipa_schmidtii
+		Tulipa_nitida
+		Tulipa_carinata
+		Tulipa_subquinquefolia
+		Tulipa_sinkiangensis
+		Tulipa_cypria
+		Tulipa_micheliana
+		Tulipa_hoogiana
+		Tulipa_ingens
+		Tulipa_alberti
+		Tulipa_oculus-solis
+		Tulipa_scardica
+		Tulipa_violacea
+		Notholirion_macrophyllum
+		Notholirion_bulbuliferum
+		Notholirion_campanulatum
+		Notholirion_thomsonianum
+		Cardiocrinum_giganteum
+		Cardiocrinum_cathayanum
+		Cardiocrinum_cordatum
+		Fritillaria_camschatcensis
+		Fritillaria_pudica
+		Fritillaria_falcata
+		Fritillaria_liliacea
+		Fritillaria_striata
+		Fritillaria_agrestis
+		Fritillaria_pluriflora
+		Fritillaria_micrantha
+		Fritillaria_glauca
+		Fritillaria_atropurpurea
+		Fritillaria_recurva
+		Fritillaria_phaeanthera
+		Fritillaria_maximowiczii
+		Fritillaria_dagana
+		Fritillaria_davidii
+		Fritillaria_chlorantha
+		Fritillaria_straussii
+		Fritillaria_orientalis
+		Fritillaria_gussichiae
+		Fritillaria_carica
+		Fritillaria_forbesii
+		Fritillaria_fleischeriana
+		Fritillaria_sororum
+		Fritillaria_graeca
+		Fritillaria_pinardii
+		Fritillaria_pontica
+		Fritillaria_zagrica
+		Fritillaria_bithynica
+		Fritillaria_stribrnyi
+		Fritillaria_drenovskii
+		Fritillaria_montana
+		Fritillaria_oranensis
+		Fritillaria_lusitanica
+		Fritillaria_involucrata
+		Fritillaria_tubiformis
+		Fritillaria_tenella
+		Fritillaria_meleagris
+		Fritillaria_conica
+		Fritillaria_davisii
+		Fritillaria_mutabilis
+		Fritillaria_ehrhartii
+		Fritillaria_acmopetala
+		Fritillaria_latifolia
+		Fritillaria_kotschyana
+		Fritillaria_olivieri
+		Fritillaria_uva-vulpis
+		Fritillaria_reuteri
+		Fritillaria_kurdica
+		Fritillaria_armena
+		Fritillaria_aurea
+		Fritillaria_caucasica
+		Fritillaria_crassifolia
+		Fritillaria_michailovskyi
+		Fritillaria_atrolineata
+		Fritillaria_assyriaca
+		Fritillaria_karelinii
+		Fritillaria_bucharica
+		Fritillaria_stenanthera
+		Fritillaria_amabilis
+		Fritillaria_japonica
+		Fritillaria_koidzumiana
+		Fritillaria_kaiensis
+		Fritillaria_muraiana
+		Fritillaria_pallidiflora
+		Fritillaria_walujewii
+		Fritillaria_yuminensis
+		Fritillaria_tortifolia
+		Fritillaria_verticillata
+		Fritillaria_ussuriensis
+		Fritillaria_monantha
+		Fritillaria_anhuiensis
+		Fritillaria_thunbergii
+		Fritillaria_taipaiensis
+		Fritillaria_hupehensis
+		Fritillaria_dajinensis
+		Fritillaria_mellea
+		Fritillaria_sichuanica
+		Fritillaria_cirrhosa
+		Fritillaria_unibracteata
+		Fritillaria_persica
+		Fritillaria_sewerzowii
+		Fritillaria_eduardii
+		Fritillaria_imperialis
+		Fritillaria_raddeana
+		Lilium_szovitsianum
+		Lilium_monadelphum
+		Lilium_ciliatum
+		Lilium_jankae
+		Lilium_candidum
+		Lilium_carniolicum
+		Lilium_bosniacum
+		Lilium_chalcedonicum
+		Lilium_albanicum
+		Lilium_ledebourii
+		Lilium_pyrenaicum
+		Lilium_pomponium
+		Lilium_maculatum
+		Lilium_bulbiferum
+		Lilium_tenuifolium
+		Lilium_concolor
+		Lilium_callosum
+		Lilium_amabile
+		Lilium_lancifolium
+		Lilium_cernuum
+		Lilium_martagon
+		Lilium_medeoloides
+		Lilium_distichum
+		Lilium_tsingtauense
+		Lilium_hansonii
+		Lilium_pumilum
+		Lilium_pensylvanicum
+		Lilium_davidii
+		Lilium_leichtlinii
+		Lilium_longiflorum
+		Lilium_wallichianum
+		Lilium_formosanum
+		Lilium_philippinense
+		Lilium_brownii
+		Lilium_nobilissimum
+		Lilium_speciosum
+		Lilium_japonicum
+		Lilium_auratum
+		Lilium_rubellum
+		Lilium_catesbaei
+		Lilium_henryi
+		Lilium_sulphureum
+		Lilium_sargentiae
+		Lilium_regale
+		Lilium_philadelphicum
+		Lilium_parryi
+		Lilium_mackliniae
+		Lilium_henricii
+		Lilium_wardii
+		Lilium_primulinum
+		Lilium_bakerianum
+		Lilium_amoenum
+		Lilium_taliense
+		Lilium_nepalense
+		Nomocharis_saluenensis
+		Nomocharis_aperta
+		Nomocharis_meleagrina
+		Nomocharis_basilissa
+		Nomocharis_pardanthina
+		Nomocharis_farreri
+		Lilium_souliei
+		Lilium_nanum
+		Lilium_duchartrei
+		Lilium_lankongense
+		Lilium_washingtonianum
+		Lilium_bolanderi
+		Lilium_columbianum
+		Lilium_occidentale
+		Lilium_humboldtii
+		Lilium_rubescens
+		Lilium_maritimum
+		Lilium_parvum
+		Lilium_kelloggii
+		Lilium_pardalinum
+		Lilium_michiganense
+		Lilium_canadense
+		Lilium_michauxii
+		Lilium_grayi
+		Lilium_superbum
+		Lilium_kelleyanum
+		Lilium_polyphyllum
+		Lilium_debile
+		Lilium_avenaceum
+		Lilium_myriophyllum
+		Lilium_pilosiusculum
+		Fritillaria_legionensis
+		Fritillaria_ojaiensis
+		Fritillaria_grandiflora
+		Fritillaria_rhodocanakis
+		Fritillaria_yuzhongensis
+		Fritillaria_olgae
+		Fritillaria_pinetorum
+		Fritillaria_viridea
+		Fritillaria_euboeica
+		Fritillaria_lagodechiana
+		Fritillaria_brandegeei
+		Fritillaria_rhodia
+		Fritillaria_biflora
+		Fritillaria_pelinaea
+		Fritillaria_epirotica
+		Fritillaria_purdyi
+		Fritillaria_chlororhabdota
+		Fritillaria_kamtschatcensis
+		Fritillaria_nervosa
+		Medeola_virginiana
+		Clintonia_andrewsiana
+		Clintonia_uniflora
+		Clintonia_umbellulata
+		Clintonia_borealis
+	;
+END;
+BEGIN TREES;
+	TRANSLATE
+		1	Streptopus_amplexifolius,
+		2	Streptopus_lanceolatus,
+		3	Streptopus_simplex,
+		4	Scoliopus_hallii,
+		5	Scoliopus_bigelovii,
+		6	Prosartes_trachycarpa,
+		7	Prosartes_smithii,
+		8	Prosartes_lanuginosa,
+		9	Prosartes_maculata,
+		10	Calochortus_plummerae,
+		11	Calochortus_macrocarpus,
+		12	Calochortus_ambiguus,
+		13	Calochortus_gunnisonii,
+		14	Calochortus_nuttallii,
+		15	Calochortus_aureus,
+		16	Calochortus_leichtlinii,
+		17	Calochortus_kennedyi,
+		18	Calochortus_clavatus,
+		19	Calochortus_bruneaunis,
+		20	Calochortus_concolor,
+		21	Calochortus_argillosus,
+		22	Calochortus_venustus,
+		23	Calochortus_superbus,
+		24	Calochortus_vestae,
+		25	Calochortus_luteus,
+		26	Calochortus_catalinae,
+		27	Calochortus_dunnii,
+		28	Calochortus_davidsonianus,
+		29	Calochortus_flexuosus,
+		30	Calochortus_palmeri,
+		31	Calochortus_splendens,
+		32	Calochortus_amoenus,
+		33	Calochortus_albus,
+		34	Calochortus_uniflorus,
+		35	Calochortus_amabilis,
+		36	Calochortus_pulchellus,
+		37	Calochortus_umbellatus,
+		38	Calochortus_tiburonensis,
+		39	Calochortus_monophyllus,
+		40	Calochortus_tolmiei,
+		41	Calochortus_lyallii,
+		42	Calochortus_nitidus,
+		43	Calochortus_apiculatus,
+		44	Calochortus_weedii,
+		45	Calochortus_coeruleus,
+		46	Calochortus_minimus,
+		47	Calochortus_howellii,
+		48	Calochortus_subalpinus,
+		49	Calochortus_eurycarpus,
+		50	Calochortus_persistens,
+		51	Calochortus_nudus,
+		52	Calochortus_elegans,
+		53	Calochortus_longebarbatus,
+		54	Calochortus_umpquaensis,
+		55	Calochortus_obispoensis,
+		56	Calochortus_panamintensis,
+		57	Calochortus_simulans,
+		58	Calochortus_invenustus,
+		59	Calochortus_vesta,
+		60	Clintonia_udensis,
+		61	Tricyrtis_affinis,
+		62	Tricyrtis_macrantha,
+		63	Tricyrtis_perfoliata,
+		64	Tricyrtis_flava,
+		65	Tricyrtis_latifolia,
+		66	Tricyrtis_maculata,
+		67	Tricyrtis_formosana,
+		68	Tricyrtis_ravenii,
+		69	Tricyrtis_macropoda,
+		70	Tricyrtis_puberula,
+		71	Tricyrtis_dilatata,
+		72	Gagea_terraccianoana,
+		73	Gagea_turkestanica,
+		74	Gagea_lutea,
+		75	Gagea_nakaiana,
+		76	Gagea_artemczukii,
+		77	Gagea_chanae,
+		78	Gagea_helenae,
+		79	Gagea_fedtschenkoana,
+		80	Gagea_podolica,
+		81	Gagea_erubescens,
+		82	Gagea_transversalis,
+		83	Gagea_aipetriensis,
+		84	Gagea_pratensis,
+		85	Gagea_pomeranica,
+		86	Gagea_pusilla,
+		87	Gagea_paczoskii,
+		88	Gagea_tisoniana,
+		89	Gagea_triflora,
+		90	Gagea_chlorantha,
+		91	Gagea_serotina,
+		92	Gagea_graeca,
+		93	Gagea_bulbifera,
+		94	Gagea_graminifolia,
+		95	Gagea_dayana,
+		96	Gagea_vegeta,
+		97	Gagea_commutata,
+		98	Gagea_alexeenkoana,
+		99	Gagea_caroli-kochii,
+		100	Gagea_reticulata,
+		101	Gagea_chomutovae,
+		102	Gagea_stipitata,
+		103	Gagea_ova,
+		104	Gagea_spathacea,
+		105	Gagea_tenera,
+		106	Gagea_sicula,
+		107	Gagea_chrysantha,
+		108	Gagea_soleirolii,
+		109	Gagea_nevadensis,
+		110	Gagea_durieui,
+		111	Gagea_granatellii,
+		112	Gagea_foliosa,
+		113	Gagea_mauritanica,
+		114	Gagea_peduncularis,
+		115	Gagea_bohemica,
+		116	Gagea_dubia,
+		117	Gagea_villosa,
+		118	Gagea_fistulosa,
+		119	Gagea_fragifera,
+		120	Gagea_glacialis,
+		121	Gagea_polidorii,
+		122	Gagea_gageoides,
+		123	Gagea_confusa,
+		124	Gagea_elegans,
+		125	Gagea_granulosa,
+		126	Gagea_davlianidzeae,
+		127	Gagea_minima,
+		128	Gagea_praemixta,
+		129	Gagea_popovii,
+		130	Gagea_fibrosa,
+		131	Gagea_glaucescens,
+		132	Gagea_luberonensis,
+		133	Gagea_charadzeae,
+		134	Gagea_minutiflora,
+		135	Gagea_joannis,
+		136	Gagea_reverchonii,
+		137	Gagea_calantha,
+		138	Gagea_calyptrifolia,
+		139	Gagea_kamelinii,
+		140	Gagea_micrantha,
+		141	Gagea_ludmilae,
+		142	Gagea_paniculata,
+		143	Gagea_subtilis,
+		144	Gagea_germainae,
+		145	Gagea_longiscapa,
+		146	Erythronium_sibiricum,
+		147	Erythronium_caucasicum,
+		148	Erythronium_dens-canis,
+		149	Erythronium_japonicum,
+		150	Erythronium_americanum,
+		151	Erythronium_propullans,
+		152	Erythronium_umbilicatum,
+		153	Erythronium_albidum,
+		154	Erythronium_mesochoreum,
+		155	Erythronium_klamathense,
+		156	Erythronium_purpurascens,
+		157	Erythronium_pluriflorum,
+		158	Erythronium_tuolumnense,
+		159	Erythronium_quinaultense,
+		160	Erythronium_oregonum,
+		161	Erythronium_elegans,
+		162	Erythronium_revolutum,
+		163	Erythronium_helenae,
+		164	Erythronium_californicum,
+		165	Erythronium_multiscapideum,
+		166	Erythronium_citrinum,
+		167	Erythronium_hendersonii,
+		168	Erythronium_grandiflorum,
+		169	Erythronium_montanum,
+		170	Erythronium_rostratum,
+		171	Tulipa_uniflora,
+		172	Tulipa_linifolia,
+		173	Tulipa_aitchisonii,
+		174	Tulipa_clusiana,
+		175	Tulipa_praestans,
+		176	Tulipa_montana,
+		177	Tulipa_biflora,
+		178	Tulipa_turkestanica,
+		179	Tulipa_bifloriformis,
+		180	Tulipa_neustruevae,
+		181	Tulipa_pulchella,
+		182	Tulipa_saxatilis,
+		183	Tulipa_regelii,
+		184	Tulipa_aucheriana,
+		185	Tulipa_orphanidea,
+		186	Tulipa_sylvestris,
+		187	Tulipa_humilis,
+		188	Tulipa_sprengeri,
+		189	Tulipa_cretica,
+		190	Tulipa_tarda,
+		191	Tulipa_iliensis,
+		192	Tulipa_greigii,
+		193	Tulipa_vvedenskyi,
+		194	Tulipa_lanata,
+		195	Tulipa_armena,
+		196	Tulipa_gesneriana,
+		197	Tulipa_lehmanniana,
+		198	Tulipa_undulatifolia,
+		199	Tulipa_agenensis,
+		200	Tulipa_aleppensis,
+		201	Tulipa_julia,
+		202	Tulipa_systola,
+		203	Tulipa_suaveolens,
+		204	Tulipa_urumiensis,
+		205	Tulipa_fosteriana,
+		206	Tulipa_bakeri,
+		207	Tulipa_cinnabarina,
+		208	Tulipa_kuschkensis,
+		209	Tulipa_hungarica,
+		210	Tulipa_persica,
+		211	Tulipa_heterophylla,
+		212	Tulipa_altaica,
+		213	Tulipa_tianschanica,
+		214	Tulipa_korolkovii,
+		215	Tulipa_kaufmanniana,
+		216	Tulipa_dubia,
+		217	Tulipa_ostrowskiana,
+		218	Tulipa_schmidtii,
+		219	Tulipa_nitida,
+		220	Tulipa_carinata,
+		221	Tulipa_subquinquefolia,
+		222	Tulipa_sinkiangensis,
+		223	Tulipa_cypria,
+		224	Tulipa_micheliana,
+		225	Tulipa_hoogiana,
+		226	Tulipa_ingens,
+		227	Tulipa_alberti,
+		228	Tulipa_oculus-solis,
+		229	Tulipa_scardica,
+		230	Tulipa_violacea,
+		231	Notholirion_macrophyllum,
+		232	Notholirion_bulbuliferum,
+		233	Notholirion_campanulatum,
+		234	Notholirion_thomsonianum,
+		235	Cardiocrinum_giganteum,
+		236	Cardiocrinum_cathayanum,
+		237	Cardiocrinum_cordatum,
+		238	Fritillaria_camschatcensis,
+		239	Fritillaria_pudica,
+		240	Fritillaria_falcata,
+		241	Fritillaria_liliacea,
+		242	Fritillaria_striata,
+		243	Fritillaria_agrestis,
+		244	Fritillaria_pluriflora,
+		245	Fritillaria_micrantha,
+		246	Fritillaria_glauca,
+		247	Fritillaria_atropurpurea,
+		248	Fritillaria_recurva,
+		249	Fritillaria_phaeanthera,
+		250	Fritillaria_maximowiczii,
+		251	Fritillaria_dagana,
+		252	Fritillaria_davidii,
+		253	Fritillaria_chlorantha,
+		254	Fritillaria_straussii,
+		255	Fritillaria_orientalis,
+		256	Fritillaria_gussichiae,
+		257	Fritillaria_carica,
+		258	Fritillaria_forbesii,
+		259	Fritillaria_fleischeriana,
+		260	Fritillaria_sororum,
+		261	Fritillaria_graeca,
+		262	Fritillaria_pinardii,
+		263	Fritillaria_pontica,
+		264	Fritillaria_zagrica,
+		265	Fritillaria_bithynica,
+		266	Fritillaria_stribrnyi,
+		267	Fritillaria_drenovskii,
+		268	Fritillaria_montana,
+		269	Fritillaria_oranensis,
+		270	Fritillaria_lusitanica,
+		271	Fritillaria_involucrata,
+		272	Fritillaria_tubiformis,
+		273	Fritillaria_tenella,
+		274	Fritillaria_meleagris,
+		275	Fritillaria_conica,
+		276	Fritillaria_davisii,
+		277	Fritillaria_mutabilis,
+		278	Fritillaria_ehrhartii,
+		279	Fritillaria_acmopetala,
+		280	Fritillaria_latifolia,
+		281	Fritillaria_kotschyana,
+		282	Fritillaria_olivieri,
+		283	Fritillaria_uva-vulpis,
+		284	Fritillaria_reuteri,
+		285	Fritillaria_kurdica,
+		286	Fritillaria_armena,
+		287	Fritillaria_aurea,
+		288	Fritillaria_caucasica,
+		289	Fritillaria_crassifolia,
+		290	Fritillaria_michailovskyi,
+		291	Fritillaria_atrolineata,
+		292	Fritillaria_assyriaca,
+		293	Fritillaria_karelinii,
+		294	Fritillaria_bucharica,
+		295	Fritillaria_stenanthera,
+		296	Fritillaria_amabilis,
+		297	Fritillaria_japonica,
+		298	Fritillaria_koidzumiana,
+		299	Fritillaria_kaiensis,
+		300	Fritillaria_muraiana,
+		301	Fritillaria_pallidiflora,
+		302	Fritillaria_walujewii,
+		303	Fritillaria_yuminensis,
+		304	Fritillaria_tortifolia,
+		305	Fritillaria_verticillata,
+		306	Fritillaria_ussuriensis,
+		307	Fritillaria_monantha,
+		308	Fritillaria_anhuiensis,
+		309	Fritillaria_thunbergii,
+		310	Fritillaria_taipaiensis,
+		311	Fritillaria_hupehensis,
+		312	Fritillaria_dajinensis,
+		313	Fritillaria_mellea,
+		314	Fritillaria_sichuanica,
+		315	Fritillaria_cirrhosa,
+		316	Fritillaria_unibracteata,
+		317	Fritillaria_persica,
+		318	Fritillaria_sewerzowii,
+		319	Fritillaria_eduardii,
+		320	Fritillaria_imperialis,
+		321	Fritillaria_raddeana,
+		322	Lilium_szovitsianum,
+		323	Lilium_monadelphum,
+		324	Lilium_ciliatum,
+		325	Lilium_jankae,
+		326	Lilium_candidum,
+		327	Lilium_carniolicum,
+		328	Lilium_bosniacum,
+		329	Lilium_chalcedonicum,
+		330	Lilium_albanicum,
+		331	Lilium_ledebourii,
+		332	Lilium_pyrenaicum,
+		333	Lilium_pomponium,
+		334	Lilium_maculatum,
+		335	Lilium_bulbiferum,
+		336	Lilium_tenuifolium,
+		337	Lilium_concolor,
+		338	Lilium_callosum,
+		339	Lilium_amabile,
+		340	Lilium_lancifolium,
+		341	Lilium_cernuum,
+		342	Lilium_martagon,
+		343	Lilium_medeoloides,
+		344	Lilium_distichum,
+		345	Lilium_tsingtauense,
+		346	Lilium_hansonii,
+		347	Lilium_pumilum,
+		348	Lilium_pensylvanicum,
+		349	Lilium_davidii,
+		350	Lilium_leichtlinii,
+		351	Lilium_longiflorum,
+		352	Lilium_wallichianum,
+		353	Lilium_formosanum,
+		354	Lilium_philippinense,
+		355	Lilium_brownii,
+		356	Lilium_nobilissimum,
+		357	Lilium_speciosum,
+		358	Lilium_japonicum,
+		359	Lilium_auratum,
+		360	Lilium_rubellum,
+		361	Lilium_catesbaei,
+		362	Lilium_henryi,
+		363	Lilium_sulphureum,
+		364	Lilium_sargentiae,
+		365	Lilium_regale,
+		366	Lilium_philadelphicum,
+		367	Lilium_parryi,
+		368	Lilium_mackliniae,
+		369	Lilium_henricii,
+		370	Lilium_wardii,
+		371	Lilium_primulinum,
+		372	Lilium_bakerianum,
+		373	Lilium_amoenum,
+		374	Lilium_taliense,
+		375	Lilium_nepalense,
+		376	Nomocharis_saluenensis,
+		377	Nomocharis_aperta,
+		378	Nomocharis_meleagrina,
+		379	Nomocharis_basilissa,
+		380	Nomocharis_pardanthina,
+		381	Nomocharis_farreri,
+		382	Lilium_souliei,
+		383	Lilium_nanum,
+		384	Lilium_duchartrei,
+		385	Lilium_lankongense,
+		386	Lilium_washingtonianum,
+		387	Lilium_bolanderi,
+		388	Lilium_columbianum,
+		389	Lilium_occidentale,
+		390	Lilium_humboldtii,
+		391	Lilium_rubescens,
+		392	Lilium_maritimum,
+		393	Lilium_parvum,
+		394	Lilium_kelloggii,
+		395	Lilium_pardalinum,
+		396	Lilium_michiganense,
+		397	Lilium_canadense,
+		398	Lilium_michauxii,
+		399	Lilium_grayi,
+		400	Lilium_superbum,
+		401	Lilium_kelleyanum,
+		402	Lilium_polyphyllum,
+		403	Lilium_debile,
+		404	Lilium_avenaceum,
+		405	Lilium_myriophyllum,
+		406	Lilium_pilosiusculum,
+		407	Fritillaria_legionensis,
+		408	Fritillaria_ojaiensis,
+		409	Fritillaria_grandiflora,
+		410	Fritillaria_rhodocanakis,
+		411	Fritillaria_yuzhongensis,
+		412	Fritillaria_olgae,
+		413	Fritillaria_pinetorum,
+		414	Fritillaria_viridea,
+		415	Fritillaria_euboeica,
+		416	Fritillaria_lagodechiana,
+		417	Fritillaria_brandegeei,
+		418	Fritillaria_rhodia,
+		419	Fritillaria_biflora,
+		420	Fritillaria_pelinaea,
+		421	Fritillaria_epirotica,
+		422	Fritillaria_purdyi,
+		423	Fritillaria_chlororhabdota,
+		424	Fritillaria_kamtschatcensis,
+		425	Fritillaria_nervosa,
+		426	Medeola_virginiana,
+		427	Clintonia_andrewsiana,
+		428	Clintonia_uniflora,
+		429	Clintonia_umbellulata,
+		430	Clintonia_borealis
+	;
+	TREE * UNTITLED = [&R] (((1:9.625661,2:9.62566):0.367801,3:9.99346):106.883422,(((4:2.78802,5:2.78802):6.965726,((6:1.523704,(7:0.700205,8:0.700205):0.8235):2.085593,9:3.609298):6.144449):36.840622,(((10:8.63738,(((11:4.548642,((12:0.480565,13:0.480565):3.406964,((14:0.697052,15:0.697052):2.652675,(16:2.313667,((17:1.048118,18:1.048118):0.924619,(19:1.734248,20:1.734249):0.238488):0.340931):1.03606):0.537802):0.661113):2.053009,(21:2.818743,((22:1.610882,(23:1.074272,24:1.074272):0.536611):0.895441,(25:2.146759,(26:1.940741,(27:1.378697,(28:0.989239,(29:0.982663,(30:0.862486,31:0.862486):0.120176):0.006577):0.389458):0.562044):0.206019):0.359564):0.312419):3.782908):0.840899,(((((32:1.797803,33:1.797803):0.007343,34:1.805146):0.782767,(35:1.385048,((36:0.238331,37:0.238331):0.806848,38:1.045179):0.339869):1.202865):0.386553,(39:1.36368,40:1.36368):1.610786):1.760073,((((41:2.678706,42:2.678706):0.807204,43:3.485911):0.476793,(((44:2.726794,45:2.726794):0.543728,46:3.270522):0.635337,(((47:1.686609,48:1.68661):0.252619,49:1.939229):0.224058,((50:1.04078,(51:1.027646,52:1.027646):0.013134):1.066042,53:2.106821):0.056466):1.742572):0.056844):0.108937,54:4.071641):0.662899):2.708011):1.19483):0.128594,55:8.765974,56:8.76596,57:8.76596,58:8.76596,59:8.76596):37.481606,((60:24.514408,(61:5.282601,(62:4.620665,((63:2.147011,64:2.147011):2.459824,(65:4.074664,(66:3.567431,((67:2.612353,68:2.612353):0.807008,69:3.419361):0.14807):0.507233):0.532172):0.013829):0.661936,70:5.28259,71:5.28259):19.231808):20.510817,(((((72:6.733715,(73:2.916795,((74:1.113721,75:1.113721):1.456906,((76:0.814176,((77:0.184572,78:0.184572):0.620063,(((79:0.647956,80:0.647956):0.004852,81:0.652808):0.006466,(82:0.026668,83:0.026668):0.632607):0.145361):0.009541):1.119822,((84:0.023547,85:0.023547):1.874694,(86:1.029747,(87:0.414367,88:0.414367):0.61538):0.868494):0.035755):0.63663):0.346168):3.81692):6.829916,89:13.563631):0.034219,((90:11.943336,(91:9.087498,92:9.087498):2.855837):1.165758,((93:8.039918,((94:2.981628,95:2.981628):0.611568,(96:1.908872,(97:1.541502,((98:0.774606,99:0.774606):0.353174,100:1.127779):0.413722):0.36737):1.684325):4.446723):4.018213,(((101:7.02376,(102:1.162818,103:1.162818):5.860943):0.894218,(104:7.371648,(105:6.613842,((((106:0.162858,107:0.162858):4.057912,(108:2.791546,(109:1.885725,(110:1.873233,(111:0.4031,(112:0.392621,113:0.392621):0.01048):1.470133):0.012492):0.90582):1.429225):0.194239,(114:4.139702,(115:3.860561,116:3.860561):0.279141):0.275307):0.21185,(117:2.406067,(118:0.68269,(119:0.435236,(120:0.197197,121:0.197197):0.238039):0.247454):1.723377):2.220793):1.986983):0.757805):0.546331):0.349219,(122:7.542499,(123:3.315632,(((124:0.035986,125:0.035986):0.496315,126:0.532301):1.879465,127:2.411766):0.903866):4.226867):0.724699):3.790933):1.050962):0.488757,128:13.59784,129:13.59784,130:13.59784,131:13.59784,132:13.59784,133:13.59784,134:13.59784,135:13.59784,136:13.59784,137:13.59784,138:13.59784,139:13.59784,140:13.59784,141:13.59784,142:13.59784,143:13.59784,144:13.59784,145:13.59784):19.256506,((((146:1.567522,147:1.567522):5.635569,(148:4.71362,149:4.71362):2.489471):3.444437,((150:6.363437,(151:1.593749,(152:1.255713,(153:0.545505,154:0.545505):0.710208):0.338036):4.769688):3.02608,(155:6.081334,((156:3.659301,(157:3.645222,158:3.645222):0.014079):0.671426,((159:0.971755,(160:0.777745,(161:0.611988,162:0.611988):0.165757):0.194009):3.060063,((163:2.883705,(164:2.062634,(165:1.761744,(166:0.382884,167:0.382884):1.37886):0.30089):0.821071):0.790468,(168:2.446978,169:2.446977):1.227196):0.357645):0.298909):1.750608):3.308183):1.258011,170:10.64752):3.610267,(171:8.735342,((172:4.032374,((173:1.237778,174:1.237778):2.26143,(175:1.98426,176:1.98426):1.514949):0.533165):3.660412,(((177:2.639273,(178:1.179152,179:1.179152):1.46012):2.523042,((180:4.504978,((181:3.382002,(182:3.368755,(183:2.079482,184:2.079482):1.289273):0.013248):0.744265,((185:2.006906,186:2.006906):1.195883,(187:2.865964,(188:2.734187,189:2.734187):0.131778):0.336824):0.923478):0.378711):0.02297,190:4.527948):0.634367):2.370048,((191:4.584157,(((192:1.898848,193:1.898848):0.016219,194:1.915067):1.667108,((195:0.370535,196:0.370535):2.501134,(197:2.746795,((198:1.531585,(199:0.770582,200:0.770582):0.761004):0.682221,(201:2.198818,202:2.198818):0.014988):0.532989):0.124873):0.710507):1.001982):0.495501,203:5.079657):2.452704):0.160423):1.042557):5.522453,204:14.25779,205:14.25779,206:14.25779,207:14.25779,208:14.25779,209:14.25779,210:14.25779,211:14.25779,212:14.25779,213:14.25779,214:14.25779,215:14.25779,216:14.25779,217:14.25779,218:14.25779,219:14.25779,220:14.25779,221:14.25779,222:14.25779,223:14.25779,224:14.25779,225:14.25779,226:14.25779,227:14.25779,228:14.25779,229:14.25779,230:14.25779):18.596561):2.643791,((((231:2.815403,(232:1.053131,233:1.053131):1.762272):3.272205,234:6.087608):9.92013,((235:7.795442,(236:3.83264,237:3.83264):3.962802):7.677873,(((238:5.201592,(239:3.702132,((240:2.386462,(241:1.490165,((242:0.442791,243:0.442791):1.032004,244:1.474796):0.01537):0.896297):0.794237,((245:1.53136,246:1.53136):0.602368,(247:2.094283,(248:0.171971,249:0.171971):1.922312):0.039445):1.046971):0.521433):1.49946):2.797459,(250:4.057197,251:4.057197):3.941854):4.823008,((252:10.82829,(((((253:0.037891,254:0.037891):4.427814,(255:3.339215,(((256:1.473195,(257:1.467821,(258:1.463443,((((259:0.718523,260:0.718523):0.017593,261:0.736117):0.014725,(262:0.133122,263:0.133122):0.61772):0.70853,264:1.459372):0.004071):0.004378):0.005374):0.00751,(265:0.609854,266:0.609854):0.870851):0.016258,267:1.496963):1.842252):1.12649):3.708929,(((268:2.598387,269:2.598387):1.613305,(270:4.200267,(271:3.863357,(272:1.514567,273:1.514568):2.348789):0.336911):0.011425):0.948519,(274:4.612186,((((275:1.353598,(276:0.690722,277:0.690722):0.662876):1.105607,(278:2.450346,279:2.450347):0.008858):0.012878,280:2.472082):0.426181,(((281:2.595338,((282:0.020943,283:0.020943):2.374731,284:2.395673):0.199664):0.038092,(((285:1.064288,286:1.064288):1.512966,((287:1.421398,288:1.421398):0.825335,(289:1.731392,290:1.731392):0.515341):0.330521):0.005865,291:2.583119):0.05031):0.010628,292:2.644058):0.254206):1.713922):0.548026):3.014424):0.888882,(((293:0.978963,294:0.978963):2.766138,295:3.745102):4.886716,((296:2.572936,297:2.572937):1.408464,((298:1.84179,299:1.84179):0.978741,300:2.820531):1.160868):4.650418):0.431699):0.628861,(((301:2.63706,(302:2.487136,(303:1.472706,(304:0.52974,305:0.52974):0.942967):1.01443):0.149924):2.857353,((306:3.314271,((307:0.379954,308:0.379954):0.041747,309:0.421701):2.89257):1.378657,(310:3.433715,(((311:1.301843,312:1.301843):1.765943,(313:2.626515,(314:2.396695,315:2.396695):0.229821):0.441271):0.276558,316:3.344345):0.08937):1.259213):0.801485):2.452294,(317:7.215034,(318:4.299614,(319:3.574827,(320:2.220815,321:2.220815):1.354012):0.724787):2.915421):0.731673):1.74567):1.135912):1.942008,((((322:2.499708,323:2.499707):3.665659,(324:6.151616,((((325:4.079946,326:4.079947):0.332728,(327:2.951269,328:2.951269):1.461405):0.131092,329:4.543767):0.104444,(330:3.906776,(331:3.87934,(332:3.424181,333:3.424181):0.455159):0.027436):0.741435):1.503406):0.01375):2.140334,(((334:4.567541,((335:3.447256,(((336:1.093287,(337:0.804846,338:0.804846):0.28844):1.711071,339:2.804357):0.32365,340:3.128008):0.319249):1.000403,((341:4.239106,((((342:1.418635,343:1.418634):0.837398,(344:1.092164,345:1.092164):1.163869):0.214254,346:2.470287):1.654467,(347:3.799717,348:3.799718):0.325037):0.114352):0.091734,349:4.33084):0.116819):0.119883):0.162706,350:4.730248):0.779934,((351:2.070625,(352:1.423016,(353:0.88654,354:0.88654):0.536477):0.647608):0.907186,355:2.977811):2.532371):2.795519):1.41446,(((((((356:2.778275,357:2.778275):0.053841,358:2.832116):0.891549,(359:1.029458,360:1.029458):2.694208):2.657517,((361:3.148175,362:3.148175):0.281373,((363:0.27695,364:0.27695):0.62826,365:0.90521):2.524338):2.951635):0.989071,(366:6.836536,((367:5.208811,(368:2.371391,369:2.371391):2.83742):1.60795,((370:4.323582,(371:3.2544,((372:1.876079,373:1.87608):1.220293,374:3.096372):0.158028):1.069182):2.275155,(375:4.966288,(((376:1.141976,377:1.141976):1.882561,(378:1.976722,((379:0.670665,380:0.670665):0.483458,381:1.154124):0.822599):1.047814):1.343675,382:4.36821):0.598077):1.63245):0.218023):0.019774):0.533719):0.169711,(383:5.205985,(384:2.38441,385:2.38441):2.821575):2.33398):1.930784,(386:5.850766,(((387:1.313416,388:1.313416):3.633173,((389:3.1873,390:3.1873):0.029122,(391:2.97347,(392:2.966809,393:2.966809):0.006661):0.242952):1.730166):0.487101,(((394:3.873995,395:3.873995):1.275621,((396:2.840768,397:2.840768):0.220146,((398:1.347036,399:1.347036):1.409024,400:2.756059):0.304854):2.088702):0.04686,401:5.196476):0.237214):0.417076):3.619983):0.249412,402:9.72015,403:9.72015,404:9.72015,405:9.72015,406:9.72015):3.050138):0.051761,407:12.82205,408:12.82205,409:12.82205,410:12.82205,411:12.82205,412:12.82205,413:12.82205,414:12.82205,415:12.82205,416:12.82205,417:12.82205,418:12.82205,419:12.82205,420:12.82205,421:12.82205,422:12.82205,423:12.82205,424:12.82205,425:12.82205):2.651256):0.534423):18.34245,(426:22.395905,((427:1.066805,428:1.066805):0.706321,(429:0.424726,430:0.424726):1.3484):20.622777):11.954284):1.14796):9.527078):1.222355):0.346787):70.282869)mrcaott121ott1439;
+END;

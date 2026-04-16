@@ -1,0 +1,79 @@
+#NEXUS
+[R-package APE, Wed Dec  3 15:05:24 2025]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX = 33;
+	TAXLABELS
+		Curculio_distinguendus
+		Curculio_dentipes
+		Dendroctonus_adjunctus
+		Dendroctonus_brevicomis
+		Dendroctonus_approximatus
+		Dendroctonus_ponderosae
+		Dendroctonus_jeffreyi
+		Dendroctonus_valens
+		Dendroctonus_terebrans
+		Dendroctonus_punctatus
+		Dendroctonus_micans
+		Dendroctonus_rufipennis
+		Dendroctonus_pseudotsugae
+		Dryocoetes_autographus
+		Dryocoetes_affaber
+		Ips_typographus
+		Orthotomicus_proximus
+		Orthotomicus_caelatus
+		Pityogenes_knechteli
+		Pityogenes_quadridens
+		Pityogenes_chalcographus
+		Pityogenes_hopkinsi
+		Acalles_camelus
+		Acalles_fallax
+		Nedyus_quadrimaculatus
+		Zacladus_geranii
+		Scolytus_mali
+		Hypera_postica
+		Centricnemus_leucogrammus
+		Diaprepes_abbreviatus
+		Adexius_scrobipennis
+		Cosmopolites_sordidus
+		Gymnetron_tetrum
+	;
+END;
+BEGIN TREES;
+	TRANSLATE
+		1	Curculio_distinguendus,
+		2	Curculio_dentipes,
+		3	Dendroctonus_adjunctus,
+		4	Dendroctonus_brevicomis,
+		5	Dendroctonus_approximatus,
+		6	Dendroctonus_ponderosae,
+		7	Dendroctonus_jeffreyi,
+		8	Dendroctonus_valens,
+		9	Dendroctonus_terebrans,
+		10	Dendroctonus_punctatus,
+		11	Dendroctonus_micans,
+		12	Dendroctonus_rufipennis,
+		13	Dendroctonus_pseudotsugae,
+		14	Dryocoetes_autographus,
+		15	Dryocoetes_affaber,
+		16	Ips_typographus,
+		17	Orthotomicus_proximus,
+		18	Orthotomicus_caelatus,
+		19	Pityogenes_knechteli,
+		20	Pityogenes_quadridens,
+		21	Pityogenes_chalcographus,
+		22	Pityogenes_hopkinsi,
+		23	Acalles_camelus,
+		24	Acalles_fallax,
+		25	Nedyus_quadrimaculatus,
+		26	Zacladus_geranii,
+		27	Scolytus_mali,
+		28	Hypera_postica,
+		29	Centricnemus_leucogrammus,
+		30	Diaprepes_abbreviatus,
+		31	Adexius_scrobipennis,
+		32	Cosmopolites_sordidus,
+		33	Gymnetron_tetrum
+	;
+	TREE * UNTITLED = [&R] (((((((1:24.3,2:24.3)'300':56.65767,((((((3:15.4715,(4:6.85989,5:6.85989)'466':8.61161)'473':6.17164,(6:8.50032,7:8.50032)'476':13.14282)'472':0,(8:14.09572,9:14.09572)'465':7.54742)'482':1.38982,(10:11.74192,11:11.74192)'464':11.29104)'489':2.51165,(12:14.36512,13:14.36512)'488':11.17949)'493':54.27447,((14:20.26913,15:20.26913)'1102':56.84745,((16:32.7388,(17:29.27091,18:29.27091)'1160':3.46789)'1171':7.05649,(19:26.31717,(20:20.79525,(21:12.71174,22:12.71174)'939':8.08351)'1178':5.52192)'1177':13.47812)'1183':37.32129)'622':2.7025)'1197':1.13859)'1196':1.08621,((23:9.1,24:9.1)'1352':68.55164,((25:61.64393,26:61.64393)'2031':11.1639,27:72.80783)'1719':4.84381)'619':4.39224)'2103':0.78698,(28:81.50282,(29:66.03924,30:66.03924)'2397':15.46358)'2475':1.32804)'2474':1.45226,31:84.28312)'2611':2.54294,32:86.82606)'2709':7.64222,33:94.46828)'2983';
+END;

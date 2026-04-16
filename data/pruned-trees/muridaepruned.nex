@@ -1,0 +1,127 @@
+#NEXUS
+[R-package APE, Wed Dec  3 15:05:26 2025]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX = 57;
+	TAXLABELS
+		Archboldomys_luzonensis
+		Chrotomys_silaceus
+		Dasymys_incomtus
+		Dasymys_rufulus
+		Lemniscomys_barbarus
+		Rhabdomys_pumilio
+		Otomys_irroratus
+		Vandeleuria_oleracea
+		Apodemus_agrarius
+		Apodemus_peninsulae
+		Apodemus_speciosus
+		Apodemus_uralensis
+		Mastomys_coucha
+		Mastomys_erythroleucus
+		Mastomys_natalensis
+		Mastomys_huberti
+		Praomys_daltoni
+		Stenocephalemys_albipes
+		Stenocephalemys_griseicauda
+		Stenocephalemys_albocaudata
+		Mus_minutoides
+		Mus_musculoides
+		Mus_mattheyi
+		Mus_macedonicus
+		Mus_musculus
+		Mus_cervicolor
+		Mus_pahari
+		Bandicota_bengalensis
+		Bandicota_indica
+		Nesokia_indica
+		Rattus_rattus
+		Rattus_tanezumi
+		Rattus_exulans
+		Rattus_nitidus
+		Rattus_norvegicus
+		Niviventer_confucianus
+		Crunomys_suncoides
+		Maxomys_surifer
+		Phloeomys_cumingi
+		Hapalomys_delacouri
+		Acomys_dimidiatus
+		Lophuromys_brevicaudus
+		Lophuromys_melanonyx
+		Lophuromys_chrysopus
+		Rhombomys_opimus
+		Meriones_meridianus
+		Meriones_unguiculatus
+		Meriones_shawi
+		Meriones_crassus
+		Meriones_rex
+		Meriones_libycus
+		Meriones_persicus
+		Psammomys_obesus
+		Gerbillus_tarabuli
+		Taterillus_arenarius
+		Taterillus_pygargus
+		Gerbillurus_tytonis
+	;
+END;
+BEGIN TREES;
+	TRANSLATE
+		1	Archboldomys_luzonensis,
+		2	Chrotomys_silaceus,
+		3	Dasymys_incomtus,
+		4	Dasymys_rufulus,
+		5	Lemniscomys_barbarus,
+		6	Rhabdomys_pumilio,
+		7	Otomys_irroratus,
+		8	Vandeleuria_oleracea,
+		9	Apodemus_agrarius,
+		10	Apodemus_peninsulae,
+		11	Apodemus_speciosus,
+		12	Apodemus_uralensis,
+		13	Mastomys_coucha,
+		14	Mastomys_erythroleucus,
+		15	Mastomys_natalensis,
+		16	Mastomys_huberti,
+		17	Praomys_daltoni,
+		18	Stenocephalemys_albipes,
+		19	Stenocephalemys_griseicauda,
+		20	Stenocephalemys_albocaudata,
+		21	Mus_minutoides,
+		22	Mus_musculoides,
+		23	Mus_mattheyi,
+		24	Mus_macedonicus,
+		25	Mus_musculus,
+		26	Mus_cervicolor,
+		27	Mus_pahari,
+		28	Bandicota_bengalensis,
+		29	Bandicota_indica,
+		30	Nesokia_indica,
+		31	Rattus_rattus,
+		32	Rattus_tanezumi,
+		33	Rattus_exulans,
+		34	Rattus_nitidus,
+		35	Rattus_norvegicus,
+		36	Niviventer_confucianus,
+		37	Crunomys_suncoides,
+		38	Maxomys_surifer,
+		39	Phloeomys_cumingi,
+		40	Hapalomys_delacouri,
+		41	Acomys_dimidiatus,
+		42	Lophuromys_brevicaudus,
+		43	Lophuromys_melanonyx,
+		44	Lophuromys_chrysopus,
+		45	Rhombomys_opimus,
+		46	Meriones_meridianus,
+		47	Meriones_unguiculatus,
+		48	Meriones_shawi,
+		49	Meriones_crassus,
+		50	Meriones_rex,
+		51	Meriones_libycus,
+		52	Meriones_persicus,
+		53	Psammomys_obesus,
+		54	Gerbillus_tarabuli,
+		55	Taterillus_arenarius,
+		56	Taterillus_pygargus,
+		57	Gerbillurus_tytonis
+	;
+	TREE * UNTITLED = [&R] ((((((1:4.406612,2:4.406612):5.575463,(((((3:1.609277,4:1.609277):3.898088,(5:4.703449,6:4.703449):0.803916):1.468194,7:6.975559):2.436276,8:9.411835):0.275294,((((9:4.713096,10:4.713096):0.320061,11:5.033157):0.986583,12:6.01974):3.281698,((((13:1.682255,((14:1.332512,15:1.332512):0.325322,16:1.657834):0.024422):1.985744,17:3.668001):1.677168,((18:1.361446,19:1.361446):0.268996,20:1.630442):3.714725):3.564714,(((21:2.065537,22:2.065537):1.287055,23:3.352591):3.08167,(((24:2.125112,25:2.125112):2.201942,26:4.327055):1.676739,27:6.003794):0.430468):2.475619):0.391557):0.385691):0.294946):0.087293,(((((28:0.730058,29:0.730058):0.812849,30:1.542908):1.448467,(((31:0.245042,32:0.245042):1.950042,33:2.195085):0.486579,(34:0.966262,35:0.966262):1.715402):0.309711):2.19394,36:5.185315):1.440113,(37:4.768657,38:4.768657):1.856772):3.443939):1.523594,39:11.592961):1.30126,40:12.894222):4.496284,((41:8.889998,((42:0.850151,43:0.850151):1.273515,44:2.123666):6.766333):7.11,((((45:5.071682,((((46:2.960686,47:2.960686):0.360437,48:3.321123):0.151501,((49:1.162659,50:1.162659):1.435376,51:2.598035):0.874589):0.671511,52:4.144135):0.927547):0.387233,53:5.458915):2.002368,(54:6.996282,(55:0.577749,56:0.577749):6.418532):0.465001):2.75137,57:10.212653):5.787348):1.390506);
+END;

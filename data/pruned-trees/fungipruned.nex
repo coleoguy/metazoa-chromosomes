@@ -1,0 +1,93 @@
+#NEXUS
+[R-package APE, Wed Dec  3 15:05:24 2025]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX = 40;
+	TAXLABELS
+		Agaricus_bisporus
+		Pleurotus_ostreatus
+		Schizophyllum_commune
+		Ustilago_maydis
+		Aspergillus_niger
+		Aspergillus_oryzae
+		Aspergillus_flavus
+		Aspergillus_fumigatus
+		Aspergillus_versicolor
+		Aspergillus_parasiticus
+		Penicillium_janthinellum
+		Histoplasma_capsulatum
+		Sclerotinia_sclerotiorum
+		Acremonium_chrysogenum
+		Fusarium_chlamydosporum
+		Fusarium_sporotrichioides
+		Fusarium_poae
+		Fusarium_avenaceum
+		Fusarium_tricinctum
+		Fusarium_oxysporum
+		Fusarium_solani
+		Beauveria_bassiana
+		Trichoderma_reesei
+		Tolypocladium_inflatum
+		Neurospora_crassa
+		Ophiostoma_ulmi
+		Colletotrichum_lindemuthianum
+		Curvularia_lunata
+		Alternaria_alternata
+		Pyrenophora_teres
+		Lipomyces_starkeyi
+		Candida_albicans
+		Kluyveromyces_aestuarii
+		Saccharomyces_uvarum
+		Saccharomyces_paradoxus
+		Saccharomyces_cerevisiae
+		Saccharomyces_mikatae
+		Saccharomyces_kudriavzevii
+		Saccharomyces_bayanus
+		Schizosaccharomyces_pombe
+	;
+END;
+BEGIN TREES;
+	TRANSLATE
+		1	Agaricus_bisporus,
+		2	Pleurotus_ostreatus,
+		3	Schizophyllum_commune,
+		4	Ustilago_maydis,
+		5	Aspergillus_niger,
+		6	Aspergillus_oryzae,
+		7	Aspergillus_flavus,
+		8	Aspergillus_fumigatus,
+		9	Aspergillus_versicolor,
+		10	Aspergillus_parasiticus,
+		11	Penicillium_janthinellum,
+		12	Histoplasma_capsulatum,
+		13	Sclerotinia_sclerotiorum,
+		14	Acremonium_chrysogenum,
+		15	Fusarium_chlamydosporum,
+		16	Fusarium_sporotrichioides,
+		17	Fusarium_poae,
+		18	Fusarium_avenaceum,
+		19	Fusarium_tricinctum,
+		20	Fusarium_oxysporum,
+		21	Fusarium_solani,
+		22	Beauveria_bassiana,
+		23	Trichoderma_reesei,
+		24	Tolypocladium_inflatum,
+		25	Neurospora_crassa,
+		26	Ophiostoma_ulmi,
+		27	Colletotrichum_lindemuthianum,
+		28	Curvularia_lunata,
+		29	Alternaria_alternata,
+		30	Pyrenophora_teres,
+		31	Lipomyces_starkeyi,
+		32	Candida_albicans,
+		33	Kluyveromyces_aestuarii,
+		34	Saccharomyces_uvarum,
+		35	Saccharomyces_paradoxus,
+		36	Saccharomyces_cerevisiae,
+		37	Saccharomyces_mikatae,
+		38	Saccharomyces_kudriavzevii,
+		39	Saccharomyces_bayanus,
+		40	Schizosaccharomyces_pombe
+	;
+	TREE * UNTITLED = [&R] ((((1:88.546,2:88.546)'1432':17.18318,3:105.72918)'620':336.71082,4:442.44)'4094':199.59,(((((((((5:62.42848,(6:3.32246,7:3.32246)'7105':59.10602)'7110':0,8:62.42848)'7116':24.6572,9:87.08568)'7114':0,10:87.08568)'7180':1.44815,11:88.53383)'7072':91.25193,12:179.78576)'7408':171.99572,((13:320.40792,((14:177.40392,((((((15:7.58294,(16:3.67105,17:3.67105)'8109':3.91189)'8118':17.14574,(18:2.0241,19:2.0241)'8132':22.70458)'8131':13.8041,20:38.53278)'8190':28.80762,21:67.3404)'8125':89.08854,((22:133.4175,23:133.4175)'8304':21.0825,24:154.5)'8506':1.92894)'8516':7.72245,(25:153.33119,26:153.33119)'8840':10.8202)'8864':13.25253)'8881':72.57974,27:249.98366)'9006':70.42426)'9139':28.6342,(28:25.42584,(29:12.82723,30:12.82723)'9357':12.59861)'9356':323.61628)'9455':2.73936)'9454':171.66671,(31:489.4872,(32:235,(33:114,(34:16.76897,((((35:4.98046,36:4.98046)'10633':3.38128,37:8.36174)'10636':3.37144,38:11.73318)'10632':4.38682,39:16.12)'10412':0.64897)'10645':97.23103)'10736':121)'10772':254.4872)'8560':33.96099)'8559':0,40:523.44819)'10817':118.58181)'10823';
+END;

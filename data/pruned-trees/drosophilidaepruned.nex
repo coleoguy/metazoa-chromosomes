@@ -1,0 +1,717 @@
+#NEXUS
+[R-package APE, Wed Dec  3 15:05:24 2025]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX = 352;
+	TAXLABELS
+		Chymomyza_amoena
+		Chymomyza_procnemis
+		Drosophila_busckii
+		Drosophila_mettleri
+		Drosophila_eremophila
+		Drosophila_wheeleri
+		Drosophila_aldrichi
+		Drosophila_mulleri
+		Drosophila_mojavensis
+		Drosophila_hexastigma
+		Drosophila_spenceri
+		Drosophila_propachuca
+		Drosophila_longicornis
+		Drosophila_pachuca
+		Drosophila_mainlandi
+		Drosophila_ritae
+		Drosophila_hamatofila
+		Drosophila_stalkeri
+		Drosophila_buzzatii
+		Drosophila_serido
+		Drosophila_borborema
+		Drosophila_starmeri
+		Drosophila_uniseta
+		Drosophila_martensis
+		Drosophila_meridionalis
+		Drosophila_meridiana
+		Drosophila_pegasa
+		Drosophila_fulvimacula
+		Drosophila_fulvimaculoides
+		Drosophila_peninsularis
+		Drosophila_repleta
+		Drosophila_limensis
+		Drosophila_canapalpa
+		Drosophila_neorepleta
+		Drosophila_mercatorum
+		Drosophila_paranaensis
+		Drosophila_nigricruria
+		Drosophila_nigrospiracula
+		Drosophila_anceps
+		Drosophila_leonis
+		Drosophila_moju
+		Drosophila_fascioloides
+		Drosophila_bifurca
+		Drosophila_hydeoides
+		Drosophila_hydei
+		Drosophila_eohydei
+		Drosophila_nigrohydei
+		Drosophila_canalinea
+		Drosophila_endobranchia
+		Drosophila_gasici
+		Drosophila_brncici
+		Drosophila_mesophragmatica
+		Drosophila_pavani
+		Drosophila_gaucha
+		Drosophila_viracochi
+		Drosophila_pachea
+		Drosophila_nannoptera
+		Drosophila_acanthoptera
+		Drosophila_bromeliae
+		Drosophila_camargoi
+		Drosophila_ararama
+		Drosophila_gibberosa
+		Drosophila_talamancana
+		Drosophila_montana
+		Drosophila_lacicola
+		Drosophila_borealis
+		Drosophila_flavomontana
+		Drosophila_littoralis
+		Drosophila_ezoana
+		Drosophila_novamexicana
+		Drosophila_americana
+		Drosophila_lummei
+		Drosophila_virilis
+		Drosophila_kanekoi
+		Drosophila_asper
+		Drosophila_polychaeta
+		Drosophila_latifshahi
+		Scaptomyza_albovittata
+		Scaptomyza_adusta
+		Scaptomyza_pallida
+		Scaptomyza_hamata
+		Scaptomyza_anomala
+		Scaptomyza_varifrons
+		Scaptomyza_palmae
+		Scaptomyza_graminum
+		Drosophila_turbata
+		Drosophila_recticilia
+		Drosophila_gradata
+		Drosophila_hawaiiensis
+		Drosophila_silvarentis
+		Drosophila_formella
+		Drosophila_flexipes
+		Drosophila_balioptera
+		Drosophila_pullipes
+		Drosophila_grimshawi
+		Drosophila_disjuncta
+		Drosophila_affinidisjuncta
+		Drosophila_bostrycha
+		Drosophila_crucigera
+		Drosophila_engyochracea
+		Drosophila_limitata
+		Drosophila_ochracea
+		Drosophila_claytonae
+		Drosophila_obatai
+		Drosophila_sodomae
+		Drosophila_sejuncta
+		Drosophila_murphyi
+		Drosophila_orphnopeza
+		Drosophila_sproati
+		Drosophila_villosipedis
+		Drosophila_orthofascia
+		Drosophila_ciliaticrus
+		Drosophila_sobrina
+		Drosophila_montgomeryi
+		Drosophila_vesciseta
+		Drosophila_odontophallus
+		Drosophila_digressa
+		Drosophila_hexachaetae
+		Drosophila_conspicua
+		Drosophila_fasciculisetae
+		Drosophila_lineosetae
+		Drosophila_discreta
+		Drosophila_glabriapex
+		Drosophila_pilimana
+		Drosophila_gymnobasis
+		Drosophila_prolaticilia
+		Drosophila_basisetae
+		Drosophila_paucipuncta
+		Drosophila_prostopalpis
+		Drosophila_distinguenda
+		Drosophila_inedita
+		Drosophila_divaricata
+		Drosophila_punalua
+		Drosophila_hemipeza
+		Drosophila_planitibia
+		Drosophila_differens
+		Drosophila_silvestris
+		Drosophila_heteroneura
+		Drosophila_neopicta
+		Drosophila_substenoptera
+		Drosophila_nigribasis
+		Drosophila_cyrtoloma
+		Drosophila_melanocephala
+		Drosophila_obscuripes
+		Drosophila_hanaulae
+		Drosophila_ingens
+		Drosophila_neoperkinsi
+		Drosophila_oahuensis
+		Drosophila_quasianomalipes
+		Drosophila_anomalipes
+		Drosophila_picticornis
+		Drosophila_setosifrons
+		Drosophila_hamifera
+		Drosophila_paenehamifera
+		Drosophila_truncipenna
+		Drosophila_setosimentum
+		Drosophila_ochrobasis
+		Drosophila_adiastola
+		Drosophila_cilifera
+		Drosophila_clavisetae
+		Drosophila_micromyia
+		Drosophila_primaeva
+		Drosophila_imparisetae
+		Drosophila_atroscutellata
+		Drosophila_adunca
+		Drosophila_mimica
+		Drosophila_nigra
+		Drosophila_annulipes
+		Drosophila_quinaria
+		Drosophila_palustris
+		Drosophila_subpalustris
+		Drosophila_guttifera
+		Drosophila_macroptera
+		Drosophila_nigromaculata
+		Drosophila_unispina
+		Drosophila_brachynephros
+		Drosophila_phalerata
+		Drosophila_falleni
+		Drosophila_innubila
+		Drosophila_angularis
+		Drosophila_macrospina
+		Drosophila_funebris
+		Drosophila_pinicola
+		Drosophila_atrata
+		Drosophila_neoguaramunu
+		Drosophila_ornatipennis
+		Drosophila_polymorpha
+		Drosophila_belladunni
+		Drosophila_dunni
+		Drosophila_similis
+		Drosophila_nigrodunni
+		Drosophila_arawakana
+		Drosophila_parthenogenetica
+		Drosophila_cardinoides
+		Drosophila_neocardini
+		Drosophila_acutilabella
+		Drosophila_cardini
+		Drosophila_neomorpha
+		Drosophila_paramediostriata
+		Drosophila_mediodiffusa
+		Drosophila_mediopictoides
+		Drosophila_griseolineata
+		Drosophila_mediostriata
+		Drosophila_setula
+		Drosophila_guaru
+		Drosophila_mediopunctata
+		Drosophila_roehrae
+		Drosophila_unipunctata
+		Drosophila_tripunctata
+		Drosophila_metzii
+		Drosophila_albirostris
+		Drosophila_sticta
+		Drosophila_mediosignata
+		Drosophila_bandeirantorum
+		Drosophila_pallidipennis
+		Drosophila_putrida
+		Drosophila_guaraja
+		Drosophila_testacea
+		Drosophila_bizonata
+		Drosophila_hypocausta
+		Drosophila_rubida
+		Drosophila_neohypocausta
+		Drosophila_sulfurigaster
+		Drosophila_neonasuta
+		Drosophila_kohkoa
+		Drosophila_pulaua
+		Drosophila_curviceps
+		Drosophila_kepulauana
+		Drosophila_albomicans
+		Drosophila_nasuta
+		Drosophila_pallidifrons
+		Drosophila_ruberrima
+		Drosophila_immigrans
+		Drosophila_pararubida
+		Drosophila_sternopleuralis
+		Drosophila_subsaltans
+		Drosophila_neocordata
+		Drosophila_emarginata
+		Drosophila_prosaltans
+		Drosophila_austrosaltans
+		Drosophila_saltans
+		Drosophila_lusaltans
+		Drosophila_sturtevanti
+		Drosophila_sucinea
+		Drosophila_capricorni
+		Drosophila_nebulosa
+		Drosophila_insularis
+		Drosophila_pavlovskiana
+		Drosophila_paulistorum
+		Drosophila_willistoni
+		Drosophila_tropicalis
+		Drosophila_fumipennis
+		Drosophila_ercepeae
+		Drosophila_varians
+		Drosophila_atripex
+		Drosophila_phaeopleura
+		Drosophila_ananassae
+		Drosophila_pallidosa
+		Drosophila_pseudoananassae
+		Drosophila_parabipectinata
+		Drosophila_bipectinata
+		Drosophila_pseudotakahashii
+		Drosophila_paralutea
+		Drosophila_prostipennis
+		Drosophila_lutescens
+		Drosophila_takahashii
+		Drosophila_mimetica
+		Drosophila_suzukii
+		Drosophila_biarmipes
+		Drosophila_eugracilis
+		Drosophila_simulans
+		Drosophila_sechellia
+		Drosophila_mauritiana
+		Drosophila_melanogaster
+		Drosophila_orena
+		Drosophila_erecta
+		Drosophila_yakuba
+		Drosophila_ficusphila
+		Drosophila_rhopaloa
+		Drosophila_prolongata
+		Drosophila_lucipennis
+		Drosophila_elegans
+		Drosophila_baimaii
+		Drosophila_barbarae
+		Drosophila_mayri
+		Drosophila_birchii
+		Drosophila_bicornuta
+		Drosophila_serrata
+		Drosophila_parvula
+		Drosophila_kanapiae
+		Drosophila_leontia
+		Drosophila_bocki
+		Drosophila_kikkawai
+		Drosophila_lini
+		Drosophila_bocqueti
+		Drosophila_seguyi
+		Drosophila_nikananu
+		Drosophila_davidi
+		Drosophila_vulcana
+		Drosophila_tsacasi
+		Drosophila_bakoue
+		Drosophila_greeni
+		Drosophila_jambulina
+		Drosophila_punjabiensis
+		Drosophila_nagarholensis
+		Drosophila_rufa
+		Drosophila_quadraria
+		Drosophila_auraria
+		Drosophila_biauraria
+		Drosophila_triauraria
+		Drosophila_bifasciata
+		Drosophila_imaii
+		Drosophila_ambigua
+		Drosophila_tristis
+		Drosophila_obscura
+		Drosophila_subsilvestris
+		Drosophila_eskoi
+		Drosophila_subobscura
+		Drosophila_guanche
+		Drosophila_miranda
+		Drosophila_pseudoobscura
+		Drosophila_persimilis
+		Drosophila_helvetica
+		Drosophila_tolteca
+		Drosophila_azteca
+		Drosophila_athabasca
+		Drosophila_affinis
+		Drosophila_tenebrosa
+		Drosophila_aracea
+		Drosophila_histrio
+		Drosophila_quadrilineata
+		Drosophila_robusta
+		Drosophila_sordidula
+		Drosophila_pseudosordidula
+		Drosophila_moriwakii
+		Drosophila_colorata
+		Drosophila_euronotus
+		Drosophila_paramelanica
+		Drosophila_melanica
+		Drosophila_nigromelanica
+		Drosophila_micromelanica
+		Drosophila_tsigana
+		Drosophila_lacertosa
+		Hirtodrosophila_pictiventris
+		Mycodrosophila_poecilogastra
+		Zaprionus_tuberculatus
+		Zaprionus_sepsoides
+		Zaprionus_inermis
+		Zaprionus_indianus
+		Zaprionus_vittiger
+		Drosophila_repletoides
+		Samoaia_leonensis
+	;
+END;
+BEGIN TREES;
+	TRANSLATE
+		1	Chymomyza_amoena,
+		2	Chymomyza_procnemis,
+		3	Drosophila_busckii,
+		4	Drosophila_mettleri,
+		5	Drosophila_eremophila,
+		6	Drosophila_wheeleri,
+		7	Drosophila_aldrichi,
+		8	Drosophila_mulleri,
+		9	Drosophila_mojavensis,
+		10	Drosophila_hexastigma,
+		11	Drosophila_spenceri,
+		12	Drosophila_propachuca,
+		13	Drosophila_longicornis,
+		14	Drosophila_pachuca,
+		15	Drosophila_mainlandi,
+		16	Drosophila_ritae,
+		17	Drosophila_hamatofila,
+		18	Drosophila_stalkeri,
+		19	Drosophila_buzzatii,
+		20	Drosophila_serido,
+		21	Drosophila_borborema,
+		22	Drosophila_starmeri,
+		23	Drosophila_uniseta,
+		24	Drosophila_martensis,
+		25	Drosophila_meridionalis,
+		26	Drosophila_meridiana,
+		27	Drosophila_pegasa,
+		28	Drosophila_fulvimacula,
+		29	Drosophila_fulvimaculoides,
+		30	Drosophila_peninsularis,
+		31	Drosophila_repleta,
+		32	Drosophila_limensis,
+		33	Drosophila_canapalpa,
+		34	Drosophila_neorepleta,
+		35	Drosophila_mercatorum,
+		36	Drosophila_paranaensis,
+		37	Drosophila_nigricruria,
+		38	Drosophila_nigrospiracula,
+		39	Drosophila_anceps,
+		40	Drosophila_leonis,
+		41	Drosophila_moju,
+		42	Drosophila_fascioloides,
+		43	Drosophila_bifurca,
+		44	Drosophila_hydeoides,
+		45	Drosophila_hydei,
+		46	Drosophila_eohydei,
+		47	Drosophila_nigrohydei,
+		48	Drosophila_canalinea,
+		49	Drosophila_endobranchia,
+		50	Drosophila_gasici,
+		51	Drosophila_brncici,
+		52	Drosophila_mesophragmatica,
+		53	Drosophila_pavani,
+		54	Drosophila_gaucha,
+		55	Drosophila_viracochi,
+		56	Drosophila_pachea,
+		57	Drosophila_nannoptera,
+		58	Drosophila_acanthoptera,
+		59	Drosophila_bromeliae,
+		60	Drosophila_camargoi,
+		61	Drosophila_ararama,
+		62	Drosophila_gibberosa,
+		63	Drosophila_talamancana,
+		64	Drosophila_montana,
+		65	Drosophila_lacicola,
+		66	Drosophila_borealis,
+		67	Drosophila_flavomontana,
+		68	Drosophila_littoralis,
+		69	Drosophila_ezoana,
+		70	Drosophila_novamexicana,
+		71	Drosophila_americana,
+		72	Drosophila_lummei,
+		73	Drosophila_virilis,
+		74	Drosophila_kanekoi,
+		75	Drosophila_asper,
+		76	Drosophila_polychaeta,
+		77	Drosophila_latifshahi,
+		78	Scaptomyza_albovittata,
+		79	Scaptomyza_adusta,
+		80	Scaptomyza_pallida,
+		81	Scaptomyza_hamata,
+		82	Scaptomyza_anomala,
+		83	Scaptomyza_varifrons,
+		84	Scaptomyza_palmae,
+		85	Scaptomyza_graminum,
+		86	Drosophila_turbata,
+		87	Drosophila_recticilia,
+		88	Drosophila_gradata,
+		89	Drosophila_hawaiiensis,
+		90	Drosophila_silvarentis,
+		91	Drosophila_formella,
+		92	Drosophila_flexipes,
+		93	Drosophila_balioptera,
+		94	Drosophila_pullipes,
+		95	Drosophila_grimshawi,
+		96	Drosophila_disjuncta,
+		97	Drosophila_affinidisjuncta,
+		98	Drosophila_bostrycha,
+		99	Drosophila_crucigera,
+		100	Drosophila_engyochracea,
+		101	Drosophila_limitata,
+		102	Drosophila_ochracea,
+		103	Drosophila_claytonae,
+		104	Drosophila_obatai,
+		105	Drosophila_sodomae,
+		106	Drosophila_sejuncta,
+		107	Drosophila_murphyi,
+		108	Drosophila_orphnopeza,
+		109	Drosophila_sproati,
+		110	Drosophila_villosipedis,
+		111	Drosophila_orthofascia,
+		112	Drosophila_ciliaticrus,
+		113	Drosophila_sobrina,
+		114	Drosophila_montgomeryi,
+		115	Drosophila_vesciseta,
+		116	Drosophila_odontophallus,
+		117	Drosophila_digressa,
+		118	Drosophila_hexachaetae,
+		119	Drosophila_conspicua,
+		120	Drosophila_fasciculisetae,
+		121	Drosophila_lineosetae,
+		122	Drosophila_discreta,
+		123	Drosophila_glabriapex,
+		124	Drosophila_pilimana,
+		125	Drosophila_gymnobasis,
+		126	Drosophila_prolaticilia,
+		127	Drosophila_basisetae,
+		128	Drosophila_paucipuncta,
+		129	Drosophila_prostopalpis,
+		130	Drosophila_distinguenda,
+		131	Drosophila_inedita,
+		132	Drosophila_divaricata,
+		133	Drosophila_punalua,
+		134	Drosophila_hemipeza,
+		135	Drosophila_planitibia,
+		136	Drosophila_differens,
+		137	Drosophila_silvestris,
+		138	Drosophila_heteroneura,
+		139	Drosophila_neopicta,
+		140	Drosophila_substenoptera,
+		141	Drosophila_nigribasis,
+		142	Drosophila_cyrtoloma,
+		143	Drosophila_melanocephala,
+		144	Drosophila_obscuripes,
+		145	Drosophila_hanaulae,
+		146	Drosophila_ingens,
+		147	Drosophila_neoperkinsi,
+		148	Drosophila_oahuensis,
+		149	Drosophila_quasianomalipes,
+		150	Drosophila_anomalipes,
+		151	Drosophila_picticornis,
+		152	Drosophila_setosifrons,
+		153	Drosophila_hamifera,
+		154	Drosophila_paenehamifera,
+		155	Drosophila_truncipenna,
+		156	Drosophila_setosimentum,
+		157	Drosophila_ochrobasis,
+		158	Drosophila_adiastola,
+		159	Drosophila_cilifera,
+		160	Drosophila_clavisetae,
+		161	Drosophila_micromyia,
+		162	Drosophila_primaeva,
+		163	Drosophila_imparisetae,
+		164	Drosophila_atroscutellata,
+		165	Drosophila_adunca,
+		166	Drosophila_mimica,
+		167	Drosophila_nigra,
+		168	Drosophila_annulipes,
+		169	Drosophila_quinaria,
+		170	Drosophila_palustris,
+		171	Drosophila_subpalustris,
+		172	Drosophila_guttifera,
+		173	Drosophila_macroptera,
+		174	Drosophila_nigromaculata,
+		175	Drosophila_unispina,
+		176	Drosophila_brachynephros,
+		177	Drosophila_phalerata,
+		178	Drosophila_falleni,
+		179	Drosophila_innubila,
+		180	Drosophila_angularis,
+		181	Drosophila_macrospina,
+		182	Drosophila_funebris,
+		183	Drosophila_pinicola,
+		184	Drosophila_atrata,
+		185	Drosophila_neoguaramunu,
+		186	Drosophila_ornatipennis,
+		187	Drosophila_polymorpha,
+		188	Drosophila_belladunni,
+		189	Drosophila_dunni,
+		190	Drosophila_similis,
+		191	Drosophila_nigrodunni,
+		192	Drosophila_arawakana,
+		193	Drosophila_parthenogenetica,
+		194	Drosophila_cardinoides,
+		195	Drosophila_neocardini,
+		196	Drosophila_acutilabella,
+		197	Drosophila_cardini,
+		198	Drosophila_neomorpha,
+		199	Drosophila_paramediostriata,
+		200	Drosophila_mediodiffusa,
+		201	Drosophila_mediopictoides,
+		202	Drosophila_griseolineata,
+		203	Drosophila_mediostriata,
+		204	Drosophila_setula,
+		205	Drosophila_guaru,
+		206	Drosophila_mediopunctata,
+		207	Drosophila_roehrae,
+		208	Drosophila_unipunctata,
+		209	Drosophila_tripunctata,
+		210	Drosophila_metzii,
+		211	Drosophila_albirostris,
+		212	Drosophila_sticta,
+		213	Drosophila_mediosignata,
+		214	Drosophila_bandeirantorum,
+		215	Drosophila_pallidipennis,
+		216	Drosophila_putrida,
+		217	Drosophila_guaraja,
+		218	Drosophila_testacea,
+		219	Drosophila_bizonata,
+		220	Drosophila_hypocausta,
+		221	Drosophila_rubida,
+		222	Drosophila_neohypocausta,
+		223	Drosophila_sulfurigaster,
+		224	Drosophila_neonasuta,
+		225	Drosophila_kohkoa,
+		226	Drosophila_pulaua,
+		227	Drosophila_curviceps,
+		228	Drosophila_kepulauana,
+		229	Drosophila_albomicans,
+		230	Drosophila_nasuta,
+		231	Drosophila_pallidifrons,
+		232	Drosophila_ruberrima,
+		233	Drosophila_immigrans,
+		234	Drosophila_pararubida,
+		235	Drosophila_sternopleuralis,
+		236	Drosophila_subsaltans,
+		237	Drosophila_neocordata,
+		238	Drosophila_emarginata,
+		239	Drosophila_prosaltans,
+		240	Drosophila_austrosaltans,
+		241	Drosophila_saltans,
+		242	Drosophila_lusaltans,
+		243	Drosophila_sturtevanti,
+		244	Drosophila_sucinea,
+		245	Drosophila_capricorni,
+		246	Drosophila_nebulosa,
+		247	Drosophila_insularis,
+		248	Drosophila_pavlovskiana,
+		249	Drosophila_paulistorum,
+		250	Drosophila_willistoni,
+		251	Drosophila_tropicalis,
+		252	Drosophila_fumipennis,
+		253	Drosophila_ercepeae,
+		254	Drosophila_varians,
+		255	Drosophila_atripex,
+		256	Drosophila_phaeopleura,
+		257	Drosophila_ananassae,
+		258	Drosophila_pallidosa,
+		259	Drosophila_pseudoananassae,
+		260	Drosophila_parabipectinata,
+		261	Drosophila_bipectinata,
+		262	Drosophila_pseudotakahashii,
+		263	Drosophila_paralutea,
+		264	Drosophila_prostipennis,
+		265	Drosophila_lutescens,
+		266	Drosophila_takahashii,
+		267	Drosophila_mimetica,
+		268	Drosophila_suzukii,
+		269	Drosophila_biarmipes,
+		270	Drosophila_eugracilis,
+		271	Drosophila_simulans,
+		272	Drosophila_sechellia,
+		273	Drosophila_mauritiana,
+		274	Drosophila_melanogaster,
+		275	Drosophila_orena,
+		276	Drosophila_erecta,
+		277	Drosophila_yakuba,
+		278	Drosophila_ficusphila,
+		279	Drosophila_rhopaloa,
+		280	Drosophila_prolongata,
+		281	Drosophila_lucipennis,
+		282	Drosophila_elegans,
+		283	Drosophila_baimaii,
+		284	Drosophila_barbarae,
+		285	Drosophila_mayri,
+		286	Drosophila_birchii,
+		287	Drosophila_bicornuta,
+		288	Drosophila_serrata,
+		289	Drosophila_parvula,
+		290	Drosophila_kanapiae,
+		291	Drosophila_leontia,
+		292	Drosophila_bocki,
+		293	Drosophila_kikkawai,
+		294	Drosophila_lini,
+		295	Drosophila_bocqueti,
+		296	Drosophila_seguyi,
+		297	Drosophila_nikananu,
+		298	Drosophila_davidi,
+		299	Drosophila_vulcana,
+		300	Drosophila_tsacasi,
+		301	Drosophila_bakoue,
+		302	Drosophila_greeni,
+		303	Drosophila_jambulina,
+		304	Drosophila_punjabiensis,
+		305	Drosophila_nagarholensis,
+		306	Drosophila_rufa,
+		307	Drosophila_quadraria,
+		308	Drosophila_auraria,
+		309	Drosophila_biauraria,
+		310	Drosophila_triauraria,
+		311	Drosophila_bifasciata,
+		312	Drosophila_imaii,
+		313	Drosophila_ambigua,
+		314	Drosophila_tristis,
+		315	Drosophila_obscura,
+		316	Drosophila_subsilvestris,
+		317	Drosophila_eskoi,
+		318	Drosophila_subobscura,
+		319	Drosophila_guanche,
+		320	Drosophila_miranda,
+		321	Drosophila_pseudoobscura,
+		322	Drosophila_persimilis,
+		323	Drosophila_helvetica,
+		324	Drosophila_tolteca,
+		325	Drosophila_azteca,
+		326	Drosophila_athabasca,
+		327	Drosophila_affinis,
+		328	Drosophila_tenebrosa,
+		329	Drosophila_aracea,
+		330	Drosophila_histrio,
+		331	Drosophila_quadrilineata,
+		332	Drosophila_robusta,
+		333	Drosophila_sordidula,
+		334	Drosophila_pseudosordidula,
+		335	Drosophila_moriwakii,
+		336	Drosophila_colorata,
+		337	Drosophila_euronotus,
+		338	Drosophila_paramelanica,
+		339	Drosophila_melanica,
+		340	Drosophila_nigromelanica,
+		341	Drosophila_micromelanica,
+		342	Drosophila_tsigana,
+		343	Drosophila_lacertosa,
+		344	Hirtodrosophila_pictiventris,
+		345	Mycodrosophila_poecilogastra,
+		346	Zaprionus_tuberculatus,
+		347	Zaprionus_sepsoides,
+		348	Zaprionus_inermis,
+		349	Zaprionus_indianus,
+		350	Zaprionus_vittiger,
+		351	Drosophila_repletoides,
+		352	Samoaia_leonensis
+	;
+	TREE * UNTITLED = [&R] ((1:20.54303,2:20.54303)'139':39.61407,(3:49.23776,((((((((((((((((((4:7.04995,5:7.04995)'143':9.95595,(((((((((((6:0.50404,7:0.50404)'21':5.7014,8:6.20544)'156':1.71288,9:7.91832)'153':3.81725,(((10:7.16522,11:7.16522)'175':2.13542,((((12:0.4769,13:0.4769)'182':0.1521,14:0.629)'166':0.5346,15:1.1636)'152':7.00995,16:8.17355)'151':1.12709)'150':0.82676,17:10.1274)'20':1.60817)'188':0.49411,((18:6.04744,(19:4.42587,(20:1.06918,21:1.06918)'187':3.35669)'200':1.62157)'207':1.18508,((22:4.39885,23:4.39885)'213':1.10198,24:5.50083)'212':1.73169)'211':4.99716)'205':0,(25:0.55002,26:0.55002)'220':11.67966)'218':0.79066,27:13.02034)'204':0.49955,(((((28:2.6025,29:2.6025)'225':7.1637,30:9.7662)'229':0.57905,((31:4.77772,32:4.77772)'228':1.39702,(33:0.0566,34:0.0566)'224':6.11814)'234':4.17051)'233':0.84599,(35:3.42985,36:3.42985)'223':7.76139)'203':0.88368,37:12.07492)'199':1.44497)'240':0.53039,((38:12.32922,39:12.32922)'238':0,40:12.32922)'198':1.72106)'196':0.63088,(41:9.4426,42:9.4426)'246':5.23856)'251':0.49068,(43:9.83464,(((44:2.52303,45:2.52303)'245':0.6558,46:3.17883)'255':2.74873,47:5.92756)'254':3.90708)'266':5.3372)'265':1.83406)'263':4.65287,((48:10.70278,49:10.70278)'262':9.09736,(((50:0.20294,51:0.20294)'275':1.90227,52:2.10521)'274':2.53903,((53:1.4449,54:1.4449)'281':2.63418,55:4.07908)'279':0.56516)'273':15.1559)'261':1.85863)'259':1.73585,(((56:13.35902,(57:10.63751,58:10.63751)'243':2.72151)'195':1.7814,59:15.14042)'194':8.2542,60:23.39462)'18':0)'12':0.18824,((61:2.92367,62:2.92367)'294':2.24641,63:5.17008)'297':18.41278)'302':3.40904,((((64:2.47646,65:2.47646)'301':1.34731,66:3.82377)'306':0,67:3.82377)'300':6.47442,(((68:6.28548,69:6.28548)'291':1.63886,(((70:1.35572,71:1.35572)'290':1.72428,72:3.08)'289':1.0295,73:4.1095)'288':3.81484)'315':0.69334,74:8.61768)'314':1.68051)'313':16.69371)'287':0,((75:2.93791,76:2.93791)'323':3.12772,77:6.06563)'321':20.92627)'332':0.75226,((((((78:12.6502,79:12.6502)'412':2.45863,80:15.10883)'411':2.5149,(((81:0.50728,82:0.50728)'473':1.22678,83:1.73406)'476':1.49752,84:3.23158)'472':14.39215)'482':1.21567,85:18.8394)'493':7.8447,(((((((((((((((((86:0.48439,87:0.48439)'485':0.29599,88:0.78038)'463':0.10926,89:0.88964)'499':0.16513,90:1.05477)'496':0.31325,91:1.36802)'462':0.36847,92:1.73649)'410':1.62779,((93:2.10989,(((94:1.10163,95:1.10163)'506':0.79877,((96:0.74039,97:0.74039)'505':0,98:0.74039)'510':1.16001)'504':0,99:1.9004)'408':0.20949)'407':0.38708,(100:1.90499,(((((101:0.73958,102:0.73958)'520':0.2208,103:0.96038)'519':0.48212,(104:0.30566,105:0.30566)'518':1.13684)'527':0.11625,106:1.55875)'526':0.07846,((((107:0.77973,108:0.77973)'525':0.27869,109:1.05842)'517':0.35303,110:1.41145)'516':0.13028,((111:0.74915,112:0.74915)'515':0.42763,113:1.17678)'534':0.36495)'514':0.09548)'406':0.26778)'392':0.59198)'543':0.86731)'542':1.48982,((((114:1.89718,115:1.89718)'538':0.41886,116:2.31604)'537':0.11406,(117:2.14089,118:2.14089)'554':0.28921)'553':0.18755,(119:2.4113,(((120:0.65065,121:0.65065)'560':0.11931,122:0.76996)'558':0.35715,(123:0.91858,124:0.91858)'550':0.20853)'364':1.28419)'10':0.20635)'569':2.23645)'567':0,125:4.8541)'581':0.08401,(((((126:1.12169,127:1.12169)'579':0.26852,128:1.39021)'584':0.80748,129:2.19769)'578':0.4961,(130:1.77877,(131:1.58365,132:1.58365)'589':0.19512)'593':0.91502)'592':0.13485,133:2.82864)'588':2.10947)'587':1.50001,(((134:3.10362,((135:1.04191,136:1.04191)'577':0.85809,(137:0.6,138:0.6)'576':1.3)'575':1.20362)'574':0.69071,(((139:1.42238,140:1.42238)'573':0.77762,141:2.2)'572':1.24079,(((((142:0.6,143:0.6)'566':0.37097,144:0.97097)'564':0,(145:0.9,146:0.9)'604':0.07097)'603':0.16461,147:1.13558)'563':1.65726,148:2.79284)'9':0.64795)'635':0.35354)'634':0,(149:0.82208,150:0.82208)'633':2.97225)'641':2.64379)'644':2.43813,(151:4.6,152:4.6)'640':4.27625)'632':2.58147,((((153:0.45201,154:0.45201)'648':1.45036,155:1.90237)'660':0.60696,(((156:0.39476,157:0.39476)'659':0.47471,(158:0.38753,159:0.38753)'658':0.48194)'656':1.28853,160:2.158)'654':0.35133)'653':6.03112,161:8.54045)'670':2.91727)'669':0,162:11.45772)'668':0.06317,((163:1.88665,164:1.88665)'709':5.18783,165:7.07448)'705':4.44641)'691':0.07059,166:11.59148)'725':0.07072,167:11.6622)'732':15.0219)'730':0,168:26.6841)'748':1.06006)'685':0.93391,((((((((169:4.40958,(170:0.62204,171:0.62204)'684':3.78754)'760':2.09042,172:6.5)'759':6.16938,173:12.66938)'758':0,174:12.66938)'757':4.06308,((((175:5.27256,176:5.27256)'629':2.49034,177:7.7629)'774':0,(178:4.60697,179:4.60697)'772':3.15593)'777':3.80798,180:11.57088)'771':5.16158)'770':6.78481,((181:8.87528,182:8.87528)'791':0.03875,183:8.91403)'790':14.60324)'786':0.68183,(((((((184:14.79105,185:14.79105)'785':2.81922,186:17.61027)'796':0.16862,(((((187:2.98824,188:2.98824)'784':3.50236,((189:0.146,190:0.146)'804':4.57902,(191:0.66293,192:0.66293)'815':4.06209)'828':1.76558)'827':1.10997,((193:2.41097,194:2.41097)'826':0.0831,195:2.49407)'822':5.1065)'821':4.64063,196:12.2412)'835':0,(197:9.09768,198:9.09768)'834':3.14352)'820':5.53769)'840':1.64638,(((((199:3.46078,200:3.46078)'839':0,201:3.46078)'819':4.8164,202:8.27718)'811':6.22719,203:14.50437)'849':4.74693,204:19.2513)'848':0.17397)'847':2.77231,205:22.19758)'810':1.93446,(((((206:0.66112,207:0.66112)'809':12.10515,208:12.76627)'859':2.56299,209:15.32926)'862':2.89879,((((210:0.27834,211:0.27834)'803':14.22198,212:14.50032)'870':2.55127,213:17.05159)'875':0.49398,214:17.54557)'867':0.68248)'886':0.00533,215:18.23338)'889':5.89866)'883':0,(((216:10.55043,217:10.55043)'882':0,218:10.55043)'880':2.5351,219:13.08553)'878':11.04651)'866':0.06706)'802':0.26994,(((((((220:0.57614,221:0.57614)'801':15.48032,222:16.05646)'769':1.04432,(((((223:1.65707,224:1.65707)'904':0.03749,((225:0.88027,226:0.88027)'908':0.00735,227:0.88762)'902':0.80694)'901':0,228:1.69456)'900':0.07268,(229:0.74314,230:0.74314)'898':1.0241)'768':2.0998,231:3.86704)'628':13.23374)'919':2.39458,232:19.49536)'918':0,233:19.49536)'915':3.34986,234:22.84522)'913':0,235:22.84522)'926':1.62382)'626':4.20903)'931':0.91379,(((236:19.13708,(((237:14.5933,238:14.5933)'930':1.17842,(239:2.91007,((240:1.81577,241:1.81577)'935':1.07012,242:2.88589)'929':0.02418)'625':12.86165)'623':2.41512,243:18.18684)'956':0.95024)'955':2.42359,((244:1.21169,245:1.21169)'954':19.04285,((246:19.21357,(247:8.39687,(((248:1.63577,249:1.63577)'953':4.74749,250:6.38326)'951':0,251:6.38326)'966':2.01361)'950':10.8167)'970':0,252:19.21357)'969':1.04097)'949':1.30613)'948':5.9991,((((253:12.07585,254:12.07585)'1006':2.69663,(((255:5.95832,256:5.95832)'1003':1.30625,(257:1.68441,258:1.68441)'1015':5.58016)'1018':2.22309,(259:5.06484,(260:1.06751,261:1.06751)'1014':3.99733)'1024':4.42282)'1023':5.28482)'1022':10.80598,((((((((262:6.94142,(((263:1.64683,264:1.64683)'1001':2.52395,265:4.17078)'1034':1.60716,266:5.77794)'1000':1.16348)'982':2.09187,267:9.03329)'1040':3.14667,(268:7.376,269:7.376)'1038':4.80396)'1037':3.25428,270:15.43424)'1053':7.57363,((((271:2.24134,272:2.24134)'1059':2.38256,273:4.6239)'1057':0,274:4.6239)'1056':6.94583,((275:4.98206,276:4.98206)'1052':3.01794,277:8)'1047':3.56973)'1046':11.43814)'1070':0,278:23.00787)'1073':2.21705,(((279:3.89,280:3.89)'1069':9.20226,281:13.09226)'1082':2.17795,282:15.27021)'1076':9.95471)'1068':0,(283:16.06946,((((((((284:1.82128,285:1.82128)'1088':1.07168,286:2.89296)'1094':3.33114,287:6.2241)'1093':1.26653,((288:4.97178,289:4.97178)'1098':1.19885,290:6.17063)'1092':1.32)'1104':0.29837,(((291:0.63,292:0.63)'1103':1.6133,293:2.2433)'1102':0.7744,294:3.0177)'1087':4.7713)'1067':1.95204,(((((295:4.19224,(296:3.18283,297:3.18283)'1116':1.00941)'1110':0.58845,298:4.78069)'1044':0.33516,299:5.11585)'1123':0.382,(300:1.15498,301:1.15498)'1121':4.34287)'979':0.51603,(302:5.09975,303:5.09975)'1130':0.91413)'1129':3.72716)'1128':0.52628,(304:5.06566,305:5.06566)'1137':5.20166)'1142':3.15534,(306:5.94461,(((307:1.75034,308:1.75034)'1126':0.36689,309:2.11723)'978':0.48917,310:2.6064)'1145':3.33821)'977':7.47805)'946':2.6468)'945':9.15546)'1151':0.35354)'1150':0.62224,((311:4.08452,312:4.08452)'944':9.1994,((((((313:3.78814,314:3.78814)'1165':1.56429,315:5.35243)'1163':2.4846,316:7.83703)'1161':0.61655,317:8.45358)'1160':3.78158,(318:3.06564,319:3.06564)'940':9.16952)'939':0.03242,(((320:2.09604,(321:1.36028,322:1.36028)'1178':0.73576)'1177':3.55368,323:5.64972)'1183':2.06966,((324:2.79198,325:2.79198)'1182':1.28981,(326:3.09592,327:3.09592)'1176':0.98587)'938':3.63759)'622':4.5482)'1198':1.01634)'1209':12.91678)'1208':1.35907)'1206':2.03209)'1204':5.50254,328:35.0944)'1216':2.59177,329:37.68617)'1221':1.01277,330:38.69894)'1215':1.50342,331:40.20236)'1226':3.6161,(((((332:4.71513,333:4.71513)'1194':2.38062,334:7.09575)'1234':7.81861,(335:7.18411,336:7.18411)'1237':7.73025)'1233':4.228,(((((337:1.82584,338:1.82584)'1232':0.82552,339:2.65136)'1242':4.42117,340:7.07253)'1246':1.33265,341:8.40518)'1245':4.71539,342:13.12057)'1231':6.02179)'1230':4.30926,343:23.45162)'1266':20.36684)'1300':0,(344:32.40764,345:32.40764)'1329':11.41082)'1326':0.62949,((((346:1.065,347:1.065)'1313':5.7667,348:6.8317)'1352':3.48668,(349:4.75788,350:4.75788)'1379':5.5605)'1345':25.5272,351:35.84558)'1390':8.60237)'1388':2.67732,352:47.12527)'1399':2.11249)'1404':10.91934)'1403';
+END;

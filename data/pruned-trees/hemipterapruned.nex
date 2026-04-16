@@ -1,0 +1,105 @@
+#NEXUS
+[R-package APE, Wed Dec  3 15:05:25 2025]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX = 46;
+	TAXLABELS
+		Kermes_quercus
+		Ceroplastes_japonicus
+		Coccus_hesperidum
+		Phoenicococcus_marlatti
+		Chionaspis_salicis
+		Parlatoria_oleae
+		Aonidiella_aurantii
+		Dactylopius_confusus
+		Dactylopius_coccus
+		Pseudococcus_longispinus
+		Pseudococcus_maritimus
+		Dysmicoccus_brevipes
+		Planococcus_citri
+		Antonina_graminis
+		Puto_yuccae
+		Puto_albicans
+		Icerya_purchasi
+		Gigantococcus_maximus
+		Marchalina_hellenica
+		Bemisia_tabaci
+		Gerris_marginatus
+		Neogerris_parvulus
+		Limnogonus_fossarum
+		Hebrus_ruficeps
+		Eurystylus_coelestialium
+		Stenodema_calcarata
+		Anthocoris_nemorum
+		Amphiareus_obscuriceps
+		Cimex_pipistrelli
+		Lygocoris_pabulinus
+		Plagiognathus_yomogi
+		Plagiognathus_chrysanthemi
+		Capsus_ater
+		Stenotus_rubrovittatus
+		Deraeocoris_olivaceus
+		Orthocephalus_funestus
+		Orthotylus_flavosparsus
+		Monalocoris_americanus
+		Reduvius_personatus
+		Sinea_diadema
+		Staliastes_rufus
+		Rasahus_thoracicus
+		Joppeicus_paradoxus
+		Phlegyas_abbreviatus
+		Dolycoris_baccarum
+		Nezara_viridula
+	;
+END;
+BEGIN TREES;
+	TRANSLATE
+		1	Kermes_quercus,
+		2	Ceroplastes_japonicus,
+		3	Coccus_hesperidum,
+		4	Phoenicococcus_marlatti,
+		5	Chionaspis_salicis,
+		6	Parlatoria_oleae,
+		7	Aonidiella_aurantii,
+		8	Dactylopius_confusus,
+		9	Dactylopius_coccus,
+		10	Pseudococcus_longispinus,
+		11	Pseudococcus_maritimus,
+		12	Dysmicoccus_brevipes,
+		13	Planococcus_citri,
+		14	Antonina_graminis,
+		15	Puto_yuccae,
+		16	Puto_albicans,
+		17	Icerya_purchasi,
+		18	Gigantococcus_maximus,
+		19	Marchalina_hellenica,
+		20	Bemisia_tabaci,
+		21	Gerris_marginatus,
+		22	Neogerris_parvulus,
+		23	Limnogonus_fossarum,
+		24	Hebrus_ruficeps,
+		25	Eurystylus_coelestialium,
+		26	Stenodema_calcarata,
+		27	Anthocoris_nemorum,
+		28	Amphiareus_obscuriceps,
+		29	Cimex_pipistrelli,
+		30	Lygocoris_pabulinus,
+		31	Plagiognathus_yomogi,
+		32	Plagiognathus_chrysanthemi,
+		33	Capsus_ater,
+		34	Stenotus_rubrovittatus,
+		35	Deraeocoris_olivaceus,
+		36	Orthocephalus_funestus,
+		37	Orthotylus_flavosparsus,
+		38	Monalocoris_americanus,
+		39	Reduvius_personatus,
+		40	Sinea_diadema,
+		41	Staliastes_rufus,
+		42	Rasahus_thoracicus,
+		43	Joppeicus_paradoxus,
+		44	Phlegyas_abbreviatus,
+		45	Dolycoris_baccarum,
+		46	Nezara_viridula
+	;
+	TREE * UNTITLED = [&R] (((((((1:187.29154,(2:52.69558,3:52.69558)'25':134.59596)'35':18.11396,((4:76.00276,(5:61.63568,(6:32.55482,7:32.55482)'34':29.08086)'43':14.36708)'33':111.05947,(8:26.74105,9:26.74105)'56':160.32118)'63':18.34327)'47':15.03791,((((10:28.44656,11:28.44656)'68':14.77768,12:43.22424)'73':33.81429,13:77.03853)'72':60.81087,14:137.8494)'87':82.59401)'83':19.12003,(15:4.40257,16:4.40257)'82':235.16087)'79':20.622,((17:45.47312,18:45.47312)'66':138.14512,19:183.61824)'106':76.5672)'111':6.96431,20:267.14975)'1404':22.90491,(((21:92.57,(22:57.91954,23:57.91954)'2997':34.65046)'3027':98.74586,24:191.31586)'3025':55.03464,((((25:97.4603,26:97.4603)'3069':110.9208,((((((27:81.53,28:81.53)'3135':43.7685,29:125.2985)'3163':6.46432,30:131.76282)'3162':33.46032,(31:49.6339,32:49.6339)'3200':115.58924)'3241':5.31923,(((33:55.1711,34:55.1711)'3248':59.38522,35:114.55632)'3292':28.1594,((36:118.80739,37:118.80739)'3302':5.62261,38:124.43)'614':18.28572)'3317':27.82665)'3327':3.49437,(((39:60.16,40:60.16)'3538':3.86,41:64.02)'3629':29.265,42:93.285)'3511':80.75174)'3809':34.34436)'3821':8.93062,43:217.31172)'3769':0,(44:164.10406,(45:51.6572,46:51.6572)'3922':112.44686)'3949':53.20766)'3887':29.03878)'3974':43.70416);
+END;
