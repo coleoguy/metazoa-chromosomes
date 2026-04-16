@@ -1,0 +1,130 @@
+cff-version: 1.2.0
+message: "If you use this dataset or code, please cite the preprint below."
+title: "Dismantling Chromosomal Stasis Across the Eukaryotic Tree of Life"
+authors:
+  - family-names: Copeland
+    given-names: Megan
+  - family-names: McConnell
+    given-names: Meghann
+  - family-names: Barboza
+    given-names: Andres
+  - family-names: Abraham
+    given-names: Hannah M.
+  - family-names: Alfieri
+    given-names: James
+  - family-names: Arackal
+    given-names: Steven
+  - family-names: Bernard
+    given-names: Carrie E.
+  - family-names: Bryant
+    given-names: Kiedon
+  - family-names: Cast
+    given-names: Shelbie
+  - family-names: Chien
+    given-names: Sean
+  - family-names: Clark
+    given-names: Emily
+  - family-names: Cruz
+    given-names: Cassandra E.
+  - family-names: Diaz
+    given-names: Aileen Y.
+  - family-names: Deiterman
+    given-names: Olivia
+  - family-names: Girish
+    given-names: Riya
+  - family-names: Harper
+    given-names: Kaya
+  - family-names: Hjelmen
+    given-names: Carl E.
+  - family-names: Thompson
+    given-names: Michelle J.
+  - family-names: Koehl
+    given-names: Rachel
+  - family-names: Koneru
+    given-names: Tanvi
+  - family-names: Laird
+    given-names: Kenzie
+  - family-names: Lee
+    given-names: Yoonseo
+  - family-names: Lopez
+    given-names: Virginia R.
+  - family-names: Murphy
+    given-names: Mallory
+  - family-names: Perez
+    given-names: Nayeli
+  - family-names: Schmalz
+    given-names: Sarah
+  - family-names: Sylvester
+    given-names: Terrence
+  - family-names: Blackmon
+    given-names: Heath
+    orcid: "https://orcid.org/0000-0002-3730-0985"
+date-released: 2026-04-14
+doi: 10.64898/2026.04.14.718287
+url: "https://doi.org/10.64898/2026.04.14.718287"
+repository-code: "https://github.com/coleoguy/metazoa-chromosomes"
+license: MIT
+preferred-citation:
+  type: article
+  title: "Dismantling Chromosomal Stasis Across the Eukaryotic Tree of Life"
+  year: 2026
+  journal: bioRxiv
+  doi: 10.64898/2026.04.14.718287
+  url: "https://www.biorxiv.org/content/early/2026/04/16/2026.04.14.718287"
+  authors:
+    - family-names: Copeland
+      given-names: Megan
+    - family-names: McConnell
+      given-names: Meghann
+    - family-names: Barboza
+      given-names: Andres
+    - family-names: Abraham
+      given-names: Hannah M.
+    - family-names: Alfieri
+      given-names: James
+    - family-names: Arackal
+      given-names: Steven
+    - family-names: Bernard
+      given-names: Carrie E.
+    - family-names: Bryant
+      given-names: Kiedon
+    - family-names: Cast
+      given-names: Shelbie
+    - family-names: Chien
+      given-names: Sean
+    - family-names: Clark
+      given-names: Emily
+    - family-names: Cruz
+      given-names: Cassandra E.
+    - family-names: Diaz
+      given-names: Aileen Y.
+    - family-names: Deiterman
+      given-names: Olivia
+    - family-names: Girish
+      given-names: Riya
+    - family-names: Harper
+      given-names: Kaya
+    - family-names: Hjelmen
+      given-names: Carl E.
+    - family-names: Thompson
+      given-names: Michelle J.
+    - family-names: Koehl
+      given-names: Rachel
+    - family-names: Koneru
+      given-names: Tanvi
+    - family-names: Laird
+      given-names: Kenzie
+    - family-names: Lee
+      given-names: Yoonseo
+    - family-names: Lopez
+      given-names: Virginia R.
+    - family-names: Murphy
+      given-names: Mallory
+    - family-names: Perez
+      given-names: Nayeli
+    - family-names: Schmalz
+      given-names: Sarah
+    - family-names: Sylvester
+      given-names: Terrence
+    - family-names: Blackmon
+      given-names: Heath
